@@ -1,0 +1,74 @@
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-30px);
+    }
+}
+
+::-webkit-scrollbar, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-button, ::-webkit-scrollbar-track {
+    visibility: hidden;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    background: #fbfbfb;
+    color: #626262;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #262626;
+    transition: .2s all ease-in-out;
+}
+
+a:hover {
+    color: #d9d9d9;
+}
+
+.background {
+    z-index: -10;
+    height: 100vh;
+    width: auto;
+    display: block;
+    background-size: cover;
+    background: url("https://source.unsplash.com/1920x1080/?nature") no-repeat fixed center;
+}
+
+.go {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-left: 50%;
+    padding: 60px;
+    color: #262626;
+    transition: 1s all ease-in-out;
+}
+
+.go:hover{
+    animation: bounce 2s;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.about {
+}
