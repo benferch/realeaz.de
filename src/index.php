@@ -35,9 +35,9 @@
                 <li>
                     <a href="./portfolio.php" onclick="closeNav();">Portfolio</a>
                 </li>
-                <li>
+                <!--- <li>
                     <a href="./buy.php" onclick="closeNav();">Kaufen</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="./contact.php" onclick="closeNav();">Kontakt</a>
                 </li>
@@ -61,7 +61,7 @@
             <a href="#about"><i class="fa fa-arrow-down fa-3x"></i></a>
         </div>
     </div>
-    <div id="about">
+    <div id="content">
         <h1>Über mich</h1>
         <p></p>
     </div>
