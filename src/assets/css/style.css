@@ -11,7 +11,7 @@
 }
 
 ::-webkit-scrollbar, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-button, ::-webkit-scrollbar-track {
-    visibility: hidden;
+    display: none;
 }
 
 html {
@@ -49,7 +49,7 @@ a:hover {
     right: 0;
     left: 0;
     margin-left: 50%;
-    padding: 60px;
+    padding-bottom: 60px;
     color: #262626;
     transition: 1s all ease-in-out;
 }
