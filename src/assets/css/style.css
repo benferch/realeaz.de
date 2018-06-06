@@ -37,7 +37,8 @@ a:hover {
 .background {
     z-index: -10;
     height: 100vh;
-    width: auto;
+    width: 200%;
+    margin-left: -1em;
     display: block;
     background-size: cover;
     background: url("https://source.unsplash.com/1920x1080/?nature") no-repeat fixed center;
