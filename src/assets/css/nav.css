@@ -49,8 +49,8 @@ nav #closebtn {
     width: 30px;
     cursor: pointer;
     position: absolute;
-    top: 50px;
-    right: 70px;
+    top: 2.4em;
+    right: 2.7em;
 }
 
 nav ul {
