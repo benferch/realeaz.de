@@ -14,7 +14,8 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
-    <script type="text/javascript" src="./assets/js/app.js"></script>
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
     <script type="text/javascript">
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
@@ -29,7 +30,10 @@
     <nav id="nav" class="fullheight fullwidth flex vertical-center horizontal-center" style="transform: translateY(-100vh);">
         <img id="closebtn" onclick="closeNav();" class="icon" src="./assets/img/closenav.png">
         <div class="nav">
-            <ul class="menu">
+            <ul class="menu text center">
+                <li>
+                    <img src="./assets/img/logo.png" style="height: 50px; width: 50px;">
+                </li>
                 <li>
                     <a href="./index.php" onclick="closeNav();">Home</a>
                 </li>
@@ -64,7 +68,9 @@
     </div>
     <div id="content">
         <h1>Über mich</h1>
-        <p></p>
+        <p>Hey, ich bin Ben, 15 Jahre alt und wohne auf Rügen. <br>
+        Einen Großteil meine Freizeit verbringe ich damit Webseiten zu erstellen. Außerdem engagiere ich mich seit etwa 10 Jahren bei der Jugendfeuerwehr. <br>
+        Falls Du mich kontaktieren möchtest, nutze gern das <a href="./contact.php">Kontaktformular</a>, oder schreibe mir eine <a href="mailto:hello@realeaz.de">E-Mail</a>.</p>
     </div>
 </body>
 </html>

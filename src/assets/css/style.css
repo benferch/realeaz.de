@@ -20,7 +20,7 @@ html {
     border: 0;
 
     background: #fbfbfb;
-    color: #626262;
+    color: #111111;
     font-family: 'Proxima Nova', Georgia, sans-serif;
 }
 
@@ -28,10 +28,13 @@ a, a:visited {
     text-decoration: none;
     color: #262626;
     transition: .2s all ease-in-out;
+    border-bottom: 0.2em solid #111111;
 }
 
 a:hover {
     color: #d9d9d9;
+    background-color: #111111;
+
 }
 
 .background {
@@ -44,6 +47,10 @@ a:hover {
     background: url("https://source.unsplash.com/1920x1080/?nature") no-repeat fixed center;
 }
 
+.landing h1 {
+    color: white;
+}
+
 .go {
     position: absolute;
     bottom: 0;
@@ -54,6 +61,22 @@ a:hover {
     transition: 1s all ease-in-out;
     display: flex;
     justify-content: center;
+}
+
+.go a {
+    border: none;
+}
+
+.go a:hover {
+    background-color: transparent;
+}
+
+#navbar a {
+    border: none;
+}
+
+#navbar a:hover {
+    background-color: transparent;
 }
 
 .go:hover{
@@ -72,7 +95,7 @@ a:hover {
     text-align: center;
 }
 
-.content {
+#content {
     padding-left: 5em;
     padding-right: 5em;
 }

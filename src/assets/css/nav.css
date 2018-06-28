@@ -58,8 +58,13 @@ nav ul {
     list-style: none;
 }
 
+.nav ul li a {
+    border-bottom: none;
+}
+
 nav ul li a:hover {
     color: #b9b9b9;
+    background-color: transparent;
 }
 
 aside#navbar {
