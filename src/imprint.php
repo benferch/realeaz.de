@@ -15,6 +15,8 @@
             crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
     <script type="text/javascript" src="assets/js/nav.js"></script>
+    <script type="text/javascript" src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/matomo.js"></script>
     <script type="text/javascript">
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
