@@ -35,16 +35,16 @@
                     <img src="./assets/img/logo.png" style="height: 50px; width: 50px;">
                 </li>
                 <li>
-                    <a href="./index.php" onclick="closeNav();">Home</a>
+                    <a href="#" onclick="closeNav();">Home</a>
                 </li>
                 <li>
-                    <a href="./portfolio.php" onclick="closeNav();">Portfolio</a>
+                    <a href="#about" onclick="closeNav();">Über mich</a>
                 </li>
-                <!--- <li>
-                    <a href="./buy.php" onclick="closeNav();">Kaufen</a>
-                </li> -->
                 <li>
-                    <a href="./contact.php" onclick="closeNav();">Kontakt</a>
+                    <a href="#portfolio" onclick="closeNav();">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#contact" onclick="closeNav();">Kontakt</a>
                 </li>
             </ul>
         </div>
@@ -67,10 +67,18 @@
         </div>
     </div>
     <div id="content">
-        <h1>Über mich</h1>
-        <p>Hey, ich bin Ben, 15 Jahre alt und wohne auf Rügen. <br>
-        Einen Großteil meine Freizeit verbringe ich damit Webseiten zu erstellen. Außerdem engagiere ich mich seit etwa 10 Jahren bei der Jugendfeuerwehr. <br>
-        Falls Du mich kontaktieren möchtest, nutze gern das <a href="./contact.php">Kontaktformular</a>, oder schreibe mir eine <a href="mailto:hello@realeaz.de">E-Mail</a>.</p>
+        <div class="about" id="about">
+            <h1>Über mich</h1>
+            <p>Hey, ich bin Ben, 15 Jahre alt und wohne auf Rügen. <br>
+            Einen Großteil meine Freizeit verbringe ich damit Webseiten zu erstellen. Außerdem engagiere ich mich seit etwa 10 Jahren bei der Jugendfeuerwehr. <br>
+            Falls Du mich kontaktieren möchtest, nutze gern das <a href="./contact.php">Kontaktformular</a>, oder schreibe mir eine <a href="mailto:hello@realeaz.de">E-Mail</a>.</p>
+        </div>
+        <div class="portfolio" id="portfolio">
+
+        </div>
+        <div class="contact" id="contact">
+
+        </div>
     </div>
 </body>
 </html>
