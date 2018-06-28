@@ -8,6 +8,7 @@
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
     <link type="text/css" rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.min.css" />
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

@@ -21,7 +21,7 @@ html {
 
     background: #fbfbfb;
     color: #626262;
-    font-family: "Avenir Next", "Avenir", sans-serif;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
 }
 
 a, a:visited {
@@ -37,8 +37,8 @@ a:hover {
 .background {
     z-index: -10;
     height: 100vh;
-    width: 200%;
     margin-left: -1em;
+    margin-right: -0.5em;
     display: block;
     background-size: cover;
     background: url("https://source.unsplash.com/1920x1080/?nature") no-repeat fixed center;
@@ -47,12 +47,13 @@ a:hover {
 .go {
     position: absolute;
     bottom: 0;
-    right: 0;
     left: 0;
-    margin-left: 50%;
+    right: 0;
     padding-bottom: 60px;
     color: #262626;
     transition: 1s all ease-in-out;
+    display: flex;
+    justify-content: center;
 }
 
 .go:hover{
@@ -72,4 +73,6 @@ a:hover {
 }
 
 .content {
+    padding-left: 5em;
+    padding-right: 5em;
 }
