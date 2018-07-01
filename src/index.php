@@ -36,7 +36,7 @@
                     <img src="./assets/img/logo.png" style="height: 50px; width: 50px;">
                 </li>
                 <li>
-                    <a href="#" onclick="closeNav();">Home</a>
+                    <a href="/" onclick="closeNav();">Home</a>
                 </li>
                 <li>
                     <a href="#about" onclick="closeNav();">Über mich</a>

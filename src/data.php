@@ -33,16 +33,10 @@
     <div class="nav">
         <ul class="menu">
             <li>
-                <a href="./index.php" onclick="closeNav();">Home</a>
+                <img src="./assets/img/logo.png" style="height: 50px; width: 50px;">
             </li>
             <li>
-                <a href="./portfolio.php" onclick="closeNav();">Portfolio</a>
-            </li>
-            <!--- <li>
-                <a href="./buy.php" onclick="closeNav();">Kaufen</a>
-            </li> -->
-            <li>
-                <a href="./contact.php" onclick="closeNav();">Kontakt</a>
+                <a href="/" onclick="closeNav();">Home</a>
             </li>
         </ul>
     </div>
