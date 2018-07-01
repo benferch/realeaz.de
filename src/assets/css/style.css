@@ -57,7 +57,7 @@ a:hover {
     left: 0;
     right: 0;
     padding-bottom: 60px;
-    color: #262626;
+    color: white;
     transition: 1s all ease-in-out;
     display: flex;
     justify-content: center;
@@ -69,6 +69,7 @@ a:hover {
 
 .go a:hover {
     background-color: transparent;
+    color: #d9d9d9;
 }
 
 #navbar a {
