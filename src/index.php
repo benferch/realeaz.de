@@ -71,7 +71,7 @@
         <div class="about" id="about">
             <h1>Über mich</h1>
             <p>Hey, ich bin Ben, 15 Jahre alt und wohne auf Rügen. <br>
-            Einen Großteil meine Freizeit verbringe ich damit Webseiten zu erstellen. Außerdem engagiere ich mich seit etwa 9 Jahren bei der Jugendfeuerwehr. <br>
+            Einen Großteil meine Freizeit verbringe ich damit, Webseiten zu erstellen. Außerdem engagiere ich mich seit etwa 9 Jahren bei der Jugendfeuerwehr. <br>
             Falls Du mich kontaktieren möchtest, nutze gern das <a href="./contact">Kontaktformular</a>, oder schreibe mir eine <a href="mailto:hello@realeaz.de">E-Mail</a>.</p>
         </div>
         <div class="portfolio" id="portfolio">

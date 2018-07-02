@@ -21,7 +21,7 @@ RewriteCond %{REQUEST_FILENAME}.php -f
 
 RewriteRule ^(.*)$ $1.php
 
-<filesMatch ".(jpg|jpeg|png|gif|ico)$">
+<filesMatch ".(jpg|jpeg|png|gif|ico|woff)$">
 Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 
