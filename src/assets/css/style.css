@@ -103,6 +103,7 @@ a:hover {
 }
 
 .footer {
+    margin-top: 2em;
     padding-left: 3em;
     position: absolute;
     right: 0;
@@ -113,4 +114,10 @@ a:hover {
 
 .footer a {
     color: #d9d9d9;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
