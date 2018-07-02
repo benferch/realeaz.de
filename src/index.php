@@ -64,7 +64,7 @@
             <h1>realeaz.de</h1>
         </div>
         <div class="go">
-            <a href="#about"><i class="fa fa-arrow-down fa-3x"></i></a>
+            <a href="#content"><i class="fa fa-arrow-down fa-3x"></i></a>
         </div>
     </div>
     <div id="content">
@@ -72,7 +72,7 @@
             <h1>Über mich</h1>
             <p>Hey, ich bin Ben, 15 Jahre alt und wohne auf Rügen. <br>
             Einen Großteil meine Freizeit verbringe ich damit Webseiten zu erstellen. Außerdem engagiere ich mich seit etwa 9 Jahren bei der Jugendfeuerwehr. <br>
-            Falls Du mich kontaktieren möchtest, nutze gern das <a href="./contact.php">Kontaktformular</a>, oder schreibe mir eine <a href="mailto:hello@realeaz.de">E-Mail</a>.</p>
+            Falls Du mich kontaktieren möchtest, nutze gern das <a href="./contact">Kontaktformular</a>, oder schreibe mir eine <a href="mailto:hello@realeaz.de">E-Mail</a>.</p>
         </div>
         <div class="portfolio" id="portfolio">
 
@@ -80,6 +80,9 @@
         <div class="contact" id="contact">
 
         </div>
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; 2017&ndash; <?php echo date("Y"); ?> &#124; realeaz.de &#124; <a class="footer-imprint" href="./imprint">Impressum</a> &#124; <a class="footer-imprint" href="./data">Datenschutz</a></p>
     </div>
 </body>
 </html>
