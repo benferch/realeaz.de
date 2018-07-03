@@ -5,19 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>ben.</title>
     <link rel="icon" type="image/png" href="./assets/img/logo.png">
-    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="./assets/css/style.css">
-    <link type="text/css" rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/fontawesome-5.0.4.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/nav.css">
     <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css">
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
-    <script type="text/javascript" src="assets/js/nav.js"></script>
-    <script type="text/javascript" src="assets/js/index.js"></script>
-    <script type="text/javascript" src="assets/js/matomo.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"
+    <script type="text/javascript" src="./assets/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="./assets/js/nav.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
+    <script type="text/javascript" src="./assets/js/matomo.js"></script>
     <script type="text/javascript">
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
@@ -85,16 +82,43 @@
                             <img class="preview" src="./assets/img/project1.png">
                         </div>
                 </a>
-                <a href="https://github.com/realeaz/www">
+                <a href="https://github.com/realeaz/rgb-generator">
                     <div class="item">
-                        <h1>Meine Webseite</h1>
-                        <img class="preview" src="./assets/img/project1.png">
+                        <h1>RGB-Generator</h1>
+                        <img class="preview" src="./assets/img/project3.png">
+                    </div>
+                </a>
+                <a href="https://github.com/Jugendhackt/MetaPeta">
+                    <div class="item">
+                        <h1>MetaPeta</h1>
+                        <img class="preview" src="./assets/img/project4.png">
                     </div>
                 </a>
             </div>
         </div>
+        <?php include('./assets/form/form_process.php'); ?>
         <div class="contact" id="contact">
-
+            <form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+                <fieldset>
+                    <input placeholder="Ihr Name" type="text" name="name" value="<?= $name ?>" autofocus class="input">
+                    <span class="error"><?= $name_error ?></span>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Ihre E-Mail-Adresse" type="text" name="email" value="<?= $email ?>" class="input">
+                    <span class="error"><?= $email_error ?></span>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Ihre Telefonnummer" type="text" name="phone" value="<?= $phone ?>" class="input">
+                    <span class="error"><?= $phone_error ?></span>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Ihre Nachricht" value="<?= $message ?>" name="message" class="input"></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Senden" class="btn" >Senden</button>
+                </fieldset>
+                <div class="success"><?= $success ?></div>
+            </form>
         </div>
     </div>
     <div class="footer">
