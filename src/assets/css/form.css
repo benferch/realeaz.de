@@ -1,18 +1,23 @@
 input[type="text"], input[type="email"], textarea {
     font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
     padding: 1em;
-    width: 80em;
-    margin: 2em;
+    width: auto;
+    margin-top: 1em;
+    margin-right: 1em ;
+    margin-bottom: 1.7em;
     outline: none;
     border: #111111 1px solid;
     transition: all .3s ease-in-out;
-    border-radius: 25px;
-    resize: none;
+    border-radius: 25px 25px 0 25px;
 }
 
 textarea {
     height: 15em;
-    width: 136em;
+    width: 100em;
+}
+
+input[type="text"], input[type="email"] {
+    width: 20em;
 }
 
 input[type="text"]:hover, input[type="email"]:hover, textarea:hover, input[type="text"]:focus, input[type="email"]:focus, textarea:focus {

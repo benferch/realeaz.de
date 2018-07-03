@@ -30,7 +30,7 @@
     <nav id="nav" class="fullheight fullwidth flex vertical-center horizontal-center" style="transform: translateY(-100vh);">
         <img id="closebtn" onclick="closeNav();" class="icon" src="./assets/img/closenav.png">
         <div class="nav">
-            <ul class="menu text center">
+            <ul class="menu">
                 <li>
                     <img src="./assets/img/logo.png" style="height: 50px; width: 50px;">
                 </li>
@@ -99,7 +99,7 @@
                     </div>
                 </a>
                 <div class="item">
-                    <h3>Und ich habe noch ein paar weiter Projekte, die meisten Projekte sind auf <span class="underline"><a href="https://github.com/realeaz">Github</a></span> zu finden. </h3>
+                    <h3>Und ich habe noch ein paar weiter Projekte,<br> die meisten Projekte sind auf <span class="underline"><a href="https://github.com/realeaz">Github</a></span> zu finden. </h3>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
                     <input id="email" name="email" placeholder="E-Mail" type="email" required>
                 </div>
                 <textarea name="message" placeholder="Nachricht"></textarea>
-                <div class="flex bottom">
+                <div class="bottom">
                     <input type="checkbox" name="approval" id="approval" value="approval" required>
                     <label for="approval">
                         Ich akzeptiere die <a href="./data.php">Datenschutzbestimmungen</a>.

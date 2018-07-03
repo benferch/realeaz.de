@@ -103,9 +103,8 @@ a:hover {
 }
 
 #content {
-    padding-top: 1em;
-    padding-left: 5em;
-    padding-right: 5em;
+    margin-left: 5em;
+    margin-right: 5em;
 }
 
 .footer {
@@ -171,4 +170,55 @@ a:hover {
 
 .sweethover:hover {
     transform: translateY(20px);
+}
+
+@media screen and (max-device-width: 900px) {
+    html {
+        line-height: 1.4;
+    }
+    .preview {
+        width: 20em !important;
+    }
+    form .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    input[type="text"], input[type="email"] {
+        width: auto;
+    }
+    textarea {
+        max-width: 70%;
+    }
+    form button {
+        margin-top: 1em;
+    }
+    #content {
+        margin: 0;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .item {
+        width: auto;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    .background {
+        margin: 0;
+    }
+    input[type="text"], input[type="email"], textarea {
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+    .bottom {
+        display: flex;
+        justify-content: center;
+    }
+    .bottom button {
+        margin-right: 1em;
+    }
+    .bottom label {
+        padding-left: 0.3em;
+    }
 }
