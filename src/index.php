@@ -78,12 +78,20 @@
         <div class="portfolio" id="portfolio">
                 <h1>Portfolio</h1>
                 <p>Hier sind einige Projekte, an denen ich bisher gearbeitet habe, oder mitgewirkt habe.</p>
-            <a href="https://github.com/realeaz/www">
+            <div class="work">
+                <a href="https://github.com/realeaz/www">
+                        <div class="item">
+                            <h1>Meine Webseite</h1>
+                            <img class="preview" src="./assets/img/project1.png">
+                        </div>
+                </a>
+                <a href="https://github.com/realeaz/www">
                     <div class="item">
                         <h1>Meine Webseite</h1>
                         <img class="preview" src="./assets/img/project1.png">
                     </div>
-            </a>
+                </a>
+            </div>
         </div>
         <div class="contact" id="contact">
 

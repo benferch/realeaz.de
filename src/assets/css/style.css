@@ -116,8 +116,3 @@ a:hover {
     color: #d9d9d9;
 }
 
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}

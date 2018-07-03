@@ -3,18 +3,35 @@
     flex-direction: column;
     border-radius: 30px;
     padding: 1em;
+    margin-right: 2em;
     transition: all .5s ease-in-out;
     width: 40em;
     align-items: center;
+    color: #111111;
 }
 
 .item:hover {
     transform: translateY(10px);
     box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
+    color: #111111;
 }
 
 .preview {
     height: auto;
     width: 30em;
     padding-right: 2em;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.work a {
+    border: 0;
+}
+
+.work a:hover {
+    background-color: transparent;
 }
