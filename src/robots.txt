@@ -1,0 +1,12 @@
+User-agent: *
+
+Disallow: /assets/
+
+Disallow: /legaldisclosure
+Disallow: /legaldisclosure.html
+
+Disallow: /imprint
+Disallow: /imprint.php
+
+Disallow: /error
+Disallow: /error.php
