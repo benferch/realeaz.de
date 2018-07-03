@@ -1,8 +1,9 @@
 <?php
 
 // define variables and set to empty values
-$name_error = $email_error = "";
+$name_error = $email_error = $acceptance_error = "";
 $name = $email = $message = $success = "";
+$termsAccepted = false;
 
 //form is submitted with POST method
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

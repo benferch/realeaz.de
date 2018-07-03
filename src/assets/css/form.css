@@ -9,12 +9,16 @@
     font-size: 14px;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
+#contact input[type="text"], #contact input[type="email"], #contact textarea, #contact button[type="submit"] {
+    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+.name {
+    width: 5em;
+}
 
 #contact {
     background:#F9F9F9;
-    padding:25px;
-    margin:50px 0;
 }
 
 #contact h3 {
@@ -94,4 +98,14 @@ fieldset {
 }
 :-ms-input-placeholder {
     color:#888;
+}
+
+.acceptance {
+    display: flex;
+    flex-direction: row;
+}
+
+.acceptance p {
+    padding-left: 0.5em;
+    transform: translateY(-0.9em);
 }

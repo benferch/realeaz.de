@@ -8,6 +8,7 @@
     transition: all .5s ease-in-out;
     width: 40em;
     align-items: center;
+    justify-content: center;
     color: #111111;
 }
 

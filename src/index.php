@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>ben.</title>
     <link rel="icon" type="image/png" href="./assets/img/logo.png">
-    <link rel="stylesheet" type="text/css" href="./assets/css/fontawesome-5.0.4.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/nav.css">
     <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
-    <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"
-    <script type="text/javascript" src="./assets/js/smoothscroll.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/smooth-scroll.js"></script>
     <script type="text/javascript" src="./assets/js/nav.js"></script>
     <script type="text/javascript" src="./assets/js/index.js"></script>
     <script type="text/javascript" src="./assets/js/matomo.js"></script>
@@ -95,22 +95,28 @@
                         <img class="preview" src="./assets/img/project4.png">
                     </div>
                 </a>
+                <div class="item">
+                    <h3>Und noch ein paar weiter Projekte, die meisten Projekte sind auf <a href="https://github.com/realeaz">Github</a> zu finden. </h3>
+                </div>
             </div>
         </div>
         <?php include('./assets/form/form_process.php'); ?>
         <div class="contact" id="contact">
-            <form id="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-                <fieldset>
-                    <input placeholder="Ihr Name" type="text" name="name" value="<?= $name ?>" autofocus class="input">
-                    <span class="error"><?= $name_error ?></span>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Ihre E-Mail-Adresse" type="text" name="email" value="<?= $email ?>" class="input">
-                    <span class="error"><?= $email_error ?></span>
-                </fieldset>
+            <form class="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+                <div class="flex">
+                    <fieldset>
+                        <input placeholder="Ihr Name" type="text" name="name" value="<?= $name ?>" class="input name" required>
+                    </fieldset>
+                    <fieldset>
+                        <input placeholder="Ihre E-Mail-Adresse" type="text" name="email" value="<?= $email ?>" class="input mail" required>
+                    </fieldset>
+                </div>
                 <fieldset>
                     <textarea placeholder="Ihre Nachricht" value="<?= $message ?>" name="message" class="input"></textarea>
                 </fieldset>
+                <div class="acceptance">
+                    <input class="input" type="checkbox" name="checkbox" value="<?= $terms ?>" id="agree" required> <p> Ich habe die <a href="./data">Datenschutzbedingungen</a> und bin damit einverstanden </p>
+                </div>
                 <fieldset>
                     <button name="submit" type="submit" id="contact-submit" data-submit="...Senden" class="btn" >Senden</button>
                 </fieldset>
