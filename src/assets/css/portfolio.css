@@ -18,6 +18,10 @@
     color: #111111;
 }
 
+.item h1 {
+    border: 0;
+}
+
 .preview {
     height: auto;
     width: 30em;
