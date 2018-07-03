@@ -96,31 +96,25 @@
                     </div>
                 </a>
                 <div class="item">
-                    <h3>Und noch ein paar weiter Projekte, die meisten Projekte sind auf <a href="https://github.com/realeaz">Github</a> zu finden. </h3>
+                    <h3>Und ich habe noch ein paar weiter Projekte, die meisten Projekte sind auf <span class="underline"><a href="https://github.com/realeaz">Github</a></span> zu finden. </h3>
                 </div>
             </div>
         </div>
-        <?php include('./assets/form/form_process.php'); ?>
         <div class="contact" id="contact">
-            <form class="contact" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+            <h1>Kontakt</h1>
+            <form accept-charset="UTF-8" action="https://usebasin.com/f/09871bf8a5ff" enctype="multipart/form-data" method="POST">
                 <div class="flex">
-                    <fieldset>
-                        <input placeholder="Ihr Name" type="text" name="name" value="<?= $name ?>" class="input name" required>
-                    </fieldset>
-                    <fieldset>
-                        <input placeholder="Ihre E-Mail-Adresse" type="text" name="email" value="<?= $email ?>" class="input mail" required>
-                    </fieldset>
+                    <input name="name" placeholder="Name" type="text" required>
+                    <input id="email" name="email" placeholder="E-Mail" type="email" required>
                 </div>
-                <fieldset>
-                    <textarea placeholder="Ihre Nachricht" value="<?= $message ?>" name="message" class="input"></textarea>
-                </fieldset>
-                <div class="acceptance">
-                    <input class="input" type="checkbox" name="checkbox" value="<?= $terms ?>" id="agree" required> <p> Ich habe die <a href="./data">Datenschutzbedingungen</a> und bin damit einverstanden </p>
+                <textarea name="message" placeholder="Nachricht"></textarea>
+                <div class="flex bottom">
+                    <input type="checkbox" name="approval" id="approval" value="approval" required>
+                    <label for="approval">
+                        Ich akzeptiere die <a href="./data.php">Datenschutzbestimmungen</a>.
+                    </label>
+                    <button name="send" type="submit">Senden</button>
                 </div>
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Senden" class="btn" >Senden</button>
-                </fieldset>
-                <div class="success"><?= $success ?></div>
             </form>
         </div>
     </div>

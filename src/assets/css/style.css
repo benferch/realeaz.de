@@ -24,10 +24,15 @@ html {
     font-family: 'Proxima Nova', Georgia, sans-serif;
 }
 
+h1 {
+    margin-top: 3em;
+    border-bottom: #262626 0.1em solid;
+}
+
 a, a:visited {
     text-decoration: none;
     color: #262626;
-    transition: .2s all ease-in-out;
+    transition: .4s all ease-in-out;
     border-bottom: 0.2em solid #111111;
 }
 
@@ -49,6 +54,7 @@ a:hover {
 
 .landing h1 {
     color: white;
+    border: 0;
 }
 
 .go {
@@ -116,3 +122,12 @@ a:hover {
     color: #d9d9d9;
 }
 
+.underline {
+    border-bottom: 0.2em solid #111111;
+    transition: .4s all ease-in-out;
+}
+
+.underline:hover {
+    color: #d9d9d9;
+    background-color: #111111;
+}
