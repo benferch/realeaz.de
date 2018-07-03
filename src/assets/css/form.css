@@ -15,7 +15,7 @@ textarea {
     width: 136em;
 }
 
-input[type="text"]:hover, input[type="email"]:hover, textarea:hover {
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover, input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     box-shadow: 0 0 30px 0 rgba(17,17,17,1);
     transform: translateY(1em);
 }

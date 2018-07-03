@@ -131,3 +131,44 @@ a:hover {
     color: #d9d9d9;
     background-color: #111111;
 }
+
+.socialmedia {
+    margin-bottom: 2em;
+}
+
+.socialmedia a {
+    border: 0;
+    transition: all .3s ease-in-out;
+}
+
+.socialmedia a:hover {
+    background-color: transparent;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-gitlab {
+    color: #6b4fbb;
+}
+
+.fa-bitbucket {
+    color: #0747a6;
+}
+
+.fa-instagram {
+    color: #de3371;
+}
+
+.fa-github{
+    color: #24292e;
+}
+
+.sweethover {
+    transition: all .4s ease-in-out;
+}
+
+.sweethover:hover {
+    transform: translateY(20px);
+}

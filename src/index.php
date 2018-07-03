@@ -44,6 +44,9 @@
                     <a href="#portfolio" onclick="closeNav();">Portfolio</a>
                 </li>
                 <li>
+                    <a href="#socialmedia" onclick="closeNav();">Soziale Medien</a>
+                </li>
+                <li>
                     <a href="#contact" onclick="closeNav();">Kontakt</a>
                 </li>
             </ul>
@@ -99,6 +102,14 @@
                     <h3>Und ich habe noch ein paar weiter Projekte, die meisten Projekte sind auf <span class="underline"><a href="https://github.com/realeaz">Github</a></span> zu finden. </h3>
                 </div>
             </div>
+        </div>
+        <div class="socialmedia" id="socialmedia">
+            <h1>Wo ich zu finden bin</h1>
+            <a href=""><i class="fab fa-twitter fa-5x sweethover"></i></a>
+            <a href=""><i class="fab fa-instagram fa-5x sweethover"></i></a>
+            <a href=""><i class="fab fa-github fa-5x sweethover"></i></a>
+            <a href=""><i class="fab fa-bitbucket fa-5x sweethover"></i></a>
+            <a href=""><i class="fab fa-gitlab fa-5x sweethover"></i></a>
         </div>
         <div class="contact" id="contact">
             <h1>Kontakt</h1>
