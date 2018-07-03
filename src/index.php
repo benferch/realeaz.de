@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/nav.css">
     <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
     <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"
     <script type="text/javascript" src="./assets/js/smoothscroll.js"></script>
     <script type="text/javascript" src="./assets/js/nav.js"></script>
@@ -106,10 +107,6 @@
                 <fieldset>
                     <input placeholder="Ihre E-Mail-Adresse" type="text" name="email" value="<?= $email ?>" class="input">
                     <span class="error"><?= $email_error ?></span>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Ihre Telefonnummer" type="text" name="phone" value="<?= $phone ?>" class="input">
-                    <span class="error"><?= $phone_error ?></span>
                 </fieldset>
                 <fieldset>
                     <textarea placeholder="Ihre Nachricht" value="<?= $message ?>" name="message" class="input"></textarea>

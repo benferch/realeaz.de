@@ -1,8 +1,8 @@
 <?php
 
 // define variables and set to empty values
-$name_error = $email_error = $phone_error = "";
-$name = $email = $phone = $message = $success = "";
+$name_error = $email_error = "";
+$name = $email = $message = $success = "";
 
 //form is submitted with POST method
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -26,20 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    if (empty($_POST["phone"])) {
-        $phone_error = "Ihre Telefonnummer fehlt.";
-    } else {
-        $phone = test_input($_POST["phone"]);
-
-    }
-
     if (empty($_POST["message"])) {
         $message = "";
     } else {
         $message = test_input($_POST["message"]);
     }
 
-    if ($name_error == '' and $email_error == '' and $phone_error == '' ){
+    if ($name_error == '' and $email_error == ''){
         $message_body = '';
         unset($_POST['submit']);
         foreach ($_POST as $key => $value){
@@ -50,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $subject = 'Anfrage';
         if (mail($to, $subject, $message_body, "From: noreply <noreply@realeaz.de>")){
             $success = "Ihre Anfrage wurde abgeschickt. Wir werden Sie schnellstmöglich kontaktieren.";
-            $name = $email = $phone = $message = '';
+            $name = $email = $message = '';
         }
     }
 
