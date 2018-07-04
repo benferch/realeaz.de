@@ -49,6 +49,9 @@
                 <li>
                     <a href="#contact" onclick="closeNav();">Kontakt</a>
                 </li>
+                <li>
+                    <a href="https://status.realeaz.de" onclick="closeNav();">Status</a>
+                </li>
             </ul>
         </div>
     </nav>
