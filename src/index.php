@@ -15,7 +15,6 @@
     <script type="text/javascript" src="./assets/js/smooth-scroll.js"></script>
     <script type="text/javascript" src="./assets/js/nav.js"></script>
     <script type="text/javascript" src="./assets/js/index.js"></script>
-    <script type="text/javascript" src="./assets/js/matomo.js"></script>
     <script type="text/javascript">
         var scroll = new SmoothScroll('a[href*="#"]');
     </script>
