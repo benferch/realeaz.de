@@ -26,6 +26,9 @@
     <meta name="twitter:site" content="@unrealeaz">
     <meta name="twitter:creator" content="@unrealeaz">
     <meta name="twitter:title" content="ben.">
+
+    <!-- Cookiebot -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="b4983dbd-bd99-41b6-a2b6-9c535bdd1518" type="text/javascript" async></script>
 </head>
 <body>
     <nav id="nav" class="fullheight fullwidth flex vertical-center horizontal-center" style="transform: translateY(-100vh);">
@@ -136,5 +139,8 @@
     <div class="footer">
         <p>Copyright &copy; 2017&ndash; <?php echo date("Y"); ?> &#124; realeaz.de &#124; <a class="footer-imprint" href="./imprint">Impressum</a> &#124; <a class="footer-imprint" href="./data">Datenschutz</a></p>
     </div>
+
+    <!-- Cookiebot -->
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/b4983dbd-bd99-41b6-a2b6-9c535bdd1518/cd.js" type="text/javascript" async></script>
 </body>
 </html>
