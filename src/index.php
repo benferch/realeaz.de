@@ -11,7 +11,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/portfolio.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/form.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/normalize.css">
     <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/smooth-scroll.js"></script>
     <script type="text/javascript" src="./assets/js/nav.js"></script>
@@ -139,8 +138,5 @@
     <div class="footer">
         <p>Copyright &copy; 2017&ndash; <?php echo date("Y"); ?> &#124; realeaz.de &#124; <a class="footer-imprint" href="./imprint">Impressum</a> &#124; <a class="footer-imprint" href="./data">Datenschutz</a></p>
     </div>
-
-    <!-- Cookiebot -->
-    <script id="CookieDeclaration" src="https://consent.cookiebot.com/b4983dbd-bd99-41b6-a2b6-9c535bdd1518/cd.js" type="text/javascript" async></script>
 </body>
 </html>
