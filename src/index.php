@@ -24,9 +24,15 @@
     <meta name="twitter:site" content="@unrealeaz">
     <meta name="twitter:creator" content="@unrealeaz">
     <meta name="twitter:title" content="ben.">
+    <meta property="og:url" content="https://realeaz.de">
+    <meta property="og:title" content="ben - realeaz.de">
+    <meta property="og:description" content="Hey, ich bin Ben (@unrealeaz - Twitter). Ich bin 15 Jahre alt und mache Webseiten." />
+    <meta property="og:image" content="https://realeaz.de/assets/img/profile.png">
 
-    <!-- Cookiebot -->
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="b4983dbd-bd99-41b6-a2b6-9c535bdd1518" type="text/javascript" async></script>
+    <meta name="description" lang="de" content="Hey, ich bin Ben (@unrealeaz - Twitter). Ich bin 15 Jahre alt und mache Webseiten.">
+    <meta name="description" lang="en" content="Hey, I am Ben (@unrealeaz - Twitter). I'm 15 years old and I develop websites.">
+    <meta name="keywords" content="personal-website">
+
 </head>
 <body>
     <nav id="nav" class="fullheight fullwidth flex vertical-center horizontal-center" style="transform: translateY(-100vh);">
