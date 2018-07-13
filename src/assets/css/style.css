@@ -47,6 +47,7 @@ a:hover {
     height: 100vh;
     margin-left: -1em;
     margin-right: -0.5em;
+    margin-top: -0.5em;
     display: block;
     background-size: cover;
     background: url("https://source.unsplash.com/1920x1080/?nature") no-repeat fixed center;
@@ -76,14 +77,6 @@ a:hover {
 .go a:hover {
     background-color: transparent;
     color: #d9d9d9;
-}
-
-#navbar a {
-    border: none;
-}
-
-#navbar a:hover {
-    background-color: transparent;
 }
 
 .go:hover{
@@ -220,5 +213,17 @@ a:hover {
     }
     .bottom label {
         padding-left: 0.3em;
+    }
+    .nav {
+        display: none;
+    }
+    .nav .icon {
+        display: unset !important;
+    }
+}
+
+@media screen and (min-device-width: 900px) {
+    textarea {
+        max-width: 70%;
     }
 }
