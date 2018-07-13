@@ -34,4 +34,7 @@
 .nav .icon {
     height: 50px;
     width: 50px;
+    position: fixed;
+    left: 0;
+    margin-left: 1em;
 }

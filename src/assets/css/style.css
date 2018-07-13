@@ -214,4 +214,10 @@ a:hover {
     .bottom label {
         padding-left: 0.3em;
     }
+    .nav {
+        display: none;
+    }
+    .nav .icon {
+        display: unset !important;
+    }
 }
