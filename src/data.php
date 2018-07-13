@@ -28,27 +28,17 @@
     <meta name="twitter:title" content="ben.">
 </head>
 <body>
-    <nav id="nav" class="fullheight fullwidth flex vertical-center horizontal-center" style="transform: translateY(-100vh);">
-        <img id="closebtn" onclick="closeNav();" class="icon" src="./assets/img/closenav.png">
-        <div class="nav">
-            <ul class="menu">
-                <li>
-                    <img src="./assets/img/logo.png" style="height: 50px; width: 50px;">
-                </li>
-                <li>
-                    <a href="/" onclick="closeNav();">Home</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <aside id="navbar" class="flex fullwidth horizontal-center">
-        <a href="/"><img src="./assets/img/logo.png" class="logo"></a>
-        <div class="hamburger" onclick="openNav()">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-        </div>
-    </aside>
+<div class="nav" id="nav">
+    <img class="icon left" src="./assets/img/logo.png">
+    <ul>
+        <li>
+            <a href="/">Home</a>
+        </li>
+        <li>
+            <a href="https://status.realeaz.de" target="_blank">Status</a>
+        </li>
+    </ul>
+</div>
     <div class="landing">
         <div class="background"></div>
         <div class="title">
