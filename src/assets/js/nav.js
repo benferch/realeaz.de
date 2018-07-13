@@ -1,10 +1,10 @@
-// nav stuff by https://github.com/floooooooooo/www/blob/master/assets/js/nav.js
-
-function openNav() {
-  document.getElementById('nav').style.transform = 'translateY(0%)'
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+    } else {
+        document.getElementById("nav").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
 }
-
-function closeNav() {
-  document.getElementById('nav').style.transform = 'translateY(-100%)'
-}
-

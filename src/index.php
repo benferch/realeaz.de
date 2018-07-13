@@ -35,7 +35,7 @@
 
 </head>
 <body>
-    <div class="nav">
+    <div class="nav" id="nav">
         <img class="icon left" src="./assets/img/logo.png">
         <ul>
             <li>
