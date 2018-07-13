@@ -35,42 +35,29 @@
 
 </head>
 <body>
-    <nav id="nav" class="fullheight fullwidth flex vertical-center horizontal-center" style="transform: translateY(-100vh);">
-        <img id="closebtn" onclick="closeNav();" class="icon" src="./assets/img/closenav.png">
-        <div class="nav">
-            <ul class="menu">
-                <li>
-                    <img src="./assets/img/logo.png" style="height: 50px; width: 50px;">
-                </li>
-                <li>
-                    <a href="/" onclick="closeNav();">Home</a>
-                </li>
-                <li>
-                    <a href="#about" onclick="closeNav();">Über mich</a>
-                </li>
-                <li>
-                    <a href="#portfolio" onclick="closeNav();">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#socialmedia" onclick="closeNav();">Soziale Medien</a>
-                </li>
-                <li>
-                    <a href="#contact" onclick="closeNav();">Kontakt</a>
-                </li>
-                <li>
-                    <a href="https://status.realeaz.de" onclick="closeNav();">Status</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <aside id="navbar" class="flex fullwidth horizontal-center">
-        <a href="/"><img src="./assets/img/logo.png" class="logo"></a>
-        <div class="hamburger" onclick="openNav()">
-            <span class="hamburger-box">
-                <span class="hamburger-inner"></span>
-            </span>
-        </div>
-    </aside>
+    <div class="nav">
+        <img class="icon left" src="./assets/img/logo.png">
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="#about" data-scroll>Über mich</a>
+            </li>
+            <li>
+                <a href="#portfolio" data-scroll>Portfolio</a>
+            </li>
+            <li>
+                <a href="#socialmedia" data-scroll>Soziale Medien</a>
+            </li>
+            <li>
+                <a href="#contact" data-scroll>Kontakt</a>
+            </li>
+            <li>
+                <a href="https://status.realeaz.de" target="_blank">Status</a>
+            </li>
+        </ul>
+    </div>
     <div class="landing">
         <div class="background"></div>
         <div class="title">
