@@ -1,3 +1,5 @@
+<!-- TODO: Scrollreveal working-->
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -6,7 +8,6 @@
     <title>ben.</title>
     <link rel="icon" type="image/png" href="./assets/img/logo.png">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
     <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/js/smooth-scroll.min.js"></script>
@@ -15,37 +16,46 @@
     <script type="text/javascript">
         var scroll = new SmoothScroll('a[href*="#"]');
 
-        window.sr = ScrollReveal();
-        sr.reveal('.reveal')
+
+        window.sr = ScrollReveal({
+            scale: 1,
+            delay: 50,
+            duration: 1200,
+        });
+        sr.reveal('.reveal');
     </script>
 </head>
 <body>
     <div class="nav" id="nav">
-        <img class="branding" src="./assets/img/logo.png">
+        <img class="branding" src="./assets/img/logo.png" onclick="window.open('.', '_blank')">
         <ul class="menu">
             <li>
                 <a href="#about">Über mich</a>
             </li>
             <li>
-                <a href="#portfolio">Portfolio</a>
+                &nbsp;<a href="#portfolio">Portfolio</a>
             </li>
             <li>
-                <a href="#contact">Kontakt</a>
+                &nbsp;<a href="#contact">Kontakt</a>
             </li>
             <li>
-                <a href="#socialmedia">Soziale Medien</a>
+                &nbsp;<a href="#socialmedia">Soziale Medien</a>
             </li>
         </ul>
     </div> <!-- end nav -->
     <div class="home">
-        <h1 class="reveal">
-            Ben F. - <br>
-            eaz
-        </h1>
+        <div class="title">
+            <h1 class="reveal" data-sr-id="1">
+                Ben F.
+            </h1>
+            <h3 class="reveal" data-sr-id="2">
+                eaz
+            </h3>
+        </div> <!-- end title -->
     </div> <!-- end home -->
     <div class="content">
         <div class="about" id="about">
-            <h1>Über mich</h1>
+            <h2>Über mich</h2>
             <p>Hey! <br> Ich bin Ben,
                 <script type="text/javascript">
                     function calculateAge(birthday) {
@@ -61,6 +71,7 @@
             </p>
         </div> <!-- end about -->
         <div class="portfolio" id="portfolio">
+            <h2>Portfolio</h2>
             <div class="item">
                 <div class="overlay">
                     <h3>Meine Webseite</h3>
@@ -84,7 +95,7 @@
             </div> <!-- end item -->
         </div> <!-- end portfolio -->
         <div class="contact" id="contact">
-            <h1>Kontakt</h1>
+            <h2>Kontakt</h2>
             <p>Entweder, können Sie das Kontakformular ausfüllen, oder mir eine <a href="mailto:ben@realeaz.de">E-Mail</a> schicken.</p>
             <form accept-charset="UTF-8" action="https://usebasin.com/f/09871bf8a5ff" enctype="multipart/form-data" method="POST">
                 <div class="flex">
@@ -102,7 +113,7 @@
             </form>
         </div> <!-- end contact -->
         <div class="socialmedia" id="socialmedia">
-            <h1>Soziale Medien</h1>
+            <h2>Soziale Medien</h2>
             <a href="https://realeaz.de/go/twitter"><i class="fab fa-twitter"></i></a>
             <a href="https://realeaz.de/go/instagram"><i class="fab fa-instagram"></i></a>
             <a href="https://realeaz.de/go/github"><i class="fab fa-github"></i></a>
