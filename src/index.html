@@ -1,5 +1,3 @@
-<!-- TODO: js working-->
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -48,8 +46,17 @@
     <div class="content">
         <div class="about" id="about">
             <h1>Über mich</h1>
-            <p>Hey! <br> Ich bin Ben, <span id="age"></span> Jahre alt und ich wohne auf Rügen. <br>
-            Seit etwa einem Jahr bin ich nun aktiv dabei Webseiten zu entwickeln und in der Zeit habe ich auch ein paar Projekte gemacht. <br></p>
+            <p>Hey! <br> Ich bin Ben,
+                <script type="text/javascript">
+                    function calculateAge(birthday) {
+                        var ageDifMs = Date.now() - birthday.getTime();
+                        var ageDate = new Date(ageDifMs);
+                        return Math.abs(ageDate.getUTCFullYear() - 1970)
+                    }
+                    document.write(calculateAge(new Date('8/10/2002')))
+                </script>
+                Jahre alt und ich wohne auf Rügen. <br>
+                Seit etwa einem Jahr bin ich nun aktiv dabei Webseiten zu entwickeln und in der Zeit habe ich auch ein paar Projekte gemacht. <br></p>
         </div> <!-- end about -->
         <div class="portfolio" id="portfolio">
             <div class="item">
@@ -102,7 +109,11 @@
         </div> <!-- end socialmedia -->
     </div> <!-- end content -->
     <div class="footer">
-        <p>Copyright &copy; 2017 &ndash; <span id="year"></span> &#124; realeaz.de <a href="./imprint">Impressum</a> &#124; <a href="./data">Datenschutzerklärung</a></p>
+        <p>Copyright &copy; 2017 &ndash;
+            <script type="text/javascript">
+                document.write(new Date().getFullYear());
+            </script>
+            &#124; realeaz.de <a href="./imprint">Impressum</a> &#124; <a href="./data">Datenschutzerklärung</a></p>
     </div> <!-- end footer -->
 </body>
 </html>
