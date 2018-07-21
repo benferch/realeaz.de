@@ -1,16 +1,11 @@
 // AGE
+function calculateAge(birthday) {
+    var ageDifMs = Date.now() - birthday.getTime();
+    var ageDate = new Date(ageDifMs);
+    return Math.abs(ageDate.getUTCFullYear() - 1970)
+}
 
-var birth = new Date('2002,08, 10')
-var now = new Date;
-var diff = now - birth;
-// Dates are set from 1970, so remove that to get the year
-var age = new Date(diff).getFullYear() - 1970
-
-var span = document.getElementById('age');
-span.innerHTML = age;
+document.getElementById('age').innerHTML = calculateAge(new Date('8/10/2002'))
 
 // YEAR
-
-var year = new Date().getFullYear();
-var footer = document.getElementById('year');
-footer.innerHTML = year;
+document.getElementById('year').innerHTML = new Date().getUTCFullYear()
