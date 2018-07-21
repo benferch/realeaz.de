@@ -1,3 +1,5 @@
+<!-- TODO: footer, js working-->
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -5,17 +7,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>ben.</title>
     <link rel="icon" type="image/png" href="./assets/img/logo.png">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/fontaewsome/css/all.css">
     <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="./assets/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="assets/js/smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="./assets/js/smooth-scroll.min.js"></script>
     <script type="text/javascript" src="./assets/js/index.js"></script>
     <script type="text/javascript">
         var scroll = new SmoothScroll('a[href*="#"]');
+
+        window.sr = ScrollReveal();
+        sr.reveal('.reveal')
     </script>
 </head>
 <body>
-
+    <div class="nav" id="nav">
+        <img class="branding" src="./assets/img/logo.png">
+        <ul class="menu">
+            <li>
+                <a href="#about">Über mich</a>
+            </li>
+            <li>
+                <a href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a href="#contact">Kontakt</a>
+            </li>
+            <li>
+                <a href="#socialmedia">Soziale Medien</a>
+            </li>
+        </ul>
+    </div> <!-- end nav -->
+    <div class="home">
+        <h1 class="reveal">
+            Ben F. <br>
+            eaz
+        </h1>
+    </div> <!-- end home -->
+    <div class="content">
+        <div class="about" id="about">
+            <h1>Über mich</h1>
+            <p>Hey! <br> Ich bin Ben, <span class="age" id="age"></span> Jahre alt und ich wohne auf Rügen. <br>
+            Seit etwa einem Jahr bin ich nun aktiv dabei Webseiten zu entwickeln und in der Zeit habe ich auch ein paar Projekte gemacht. <br></p>
+        </div> <!-- end about -->
+        <div class="portfolio" id="portfolio">
+            <div class="item">
+                <div class="overlay">
+                    <h3>Meine Webseite</h3>
+                    <span>webseite</span>
+                </div> <!-- end overlay -->
+            </div> <!-- end item -->
+            <div class="item">
+                <div class="overlay">
+                    <h3>RGB-Generator</h3>
+                    <span>webseite</span>
+                </div> <!-- end overlay -->
+            </div> <!-- end item -->
+            <div class="item">
+                <div class="overlay">
+                    <h3>MetaPeta</h3>
+                    <span>html & css</span>
+                </div> <!-- end overlay -->
+            </div> <!-- end item -->
+            <div class="item">
+                Und noch ein paar weitere sind auf <a href="https://github.com/realeaz">Github</a> zu finden.
+            </div> <!-- end item -->
+        </div> <!-- end portfolio -->
+        <div class="contact" id="contact">
+            <h1>Kontakt</h1>
+            <p>Entweder, können Sie das Kontakformular ausfüllen, oder mir eine <a href="mailto:ben@realeaz.de">E-Mail</a> schicken.</p>
+            <form accept-charset="UTF-8" action="https://usebasin.com/f/09871bf8a5ff" enctype="multipart/form-data" method="POST">
+                <div class="flex">
+                    <input name="name" placeholder="Name" type="text" required>
+                    <input id="email" name="email" placeholder="E-Mail" type="email" required>
+                </div>
+                <textarea name="message" placeholder="Nachricht"></textarea>
+                <div class="bottom">
+                    <input type="checkbox" name="approval" id="approval" value="approval" required>
+                    <label for="approval">
+                        Ich akzeptiere die <a href="./data.php">Datenschutzbestimmungen</a>.
+                    </label>
+                    <button name="send" type="submit">Senden</button>
+                </div>
+            </form>
+        </div> <!-- end contact -->
+        <div class="socialmedia" id="socialmedia">
+            <h1>Soziale Medien</h1>
+            <a href="https://realeaz.de/go/twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://realeaz.de/go/instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://realeaz.de/go/github"><i class="fab fa-github"></i></a>
+            <a href="https://realeaz.de/go/bitbucket"><i class="fab fa-bitbucket"></i></a>
+            <a href="https://realeaz.de/go/gitlab"><i class="fab fa-gitlab"></i></a>
+        </div> <!-- end socialmedia -->
+    </div> <!-- end content -->
+    <div class="footer">
+        <p>Copyright &copy; 2017 &ndash; <span id="year" class="year"></span> &#124; realeaz.de </p>
+    </div> <!-- end footer -->
 </body>
 </html>
