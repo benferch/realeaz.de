@@ -1,6 +1,6 @@
-ErrorDocument 404 /error.php
-ErrorDocument 403 /error.php
-ErrorDocument 401 /error.php
+ErrorDocument 404 /error.html
+ErrorDocument 403 /error.html
+ErrorDocument 401 /error.html
 
 Redirect /go/twitter https://twitter.com/unrealeaz
 Redirect /go/youtube https://www.youtube.com/channel/UCJJGxAWoIqsPmf3ieNa20hA
