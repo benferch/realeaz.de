@@ -30,7 +30,7 @@
         <img class="branding" src="./assets/img/logo.png" onclick="window.open('.', '_blank')">
         <ul class="menu">
             <li>
-                <a href="#about">Über mich</a>
+                &nbsp;<a href="#about">Über mich</a>
             </li>
             <li>
                 &nbsp;<a href="#portfolio">Portfolio</a>
@@ -55,8 +55,8 @@
     </div> <!-- end home -->
     <div class="content">
         <div class="about" id="about">
-            <h2>Über mich</h2>
-            <p>Hey! <br> Ich bin Ben,
+            <p><b>Hey!</b> </p> <br>
+            <p> Ich bin Ben,
                 <script type="text/javascript">
                     function calculateAge(birthday) {
                         var ageDifMs = Date.now() - birthday.getTime();
@@ -72,27 +72,26 @@
         </div> <!-- end about -->
         <div class="portfolio" id="portfolio">
             <h2>Portfolio</h2>
-            <div class="item">
-                <div class="overlay">
-                    <h3>Meine Webseite</h3>
-                    <span>webseite</span>
-                </div> <!-- end overlay -->
-            </div> <!-- end item -->
-            <div class="item">
-                <div class="overlay">
-                    <h3>RGB-Generator</h3>
-                    <span>webseite</span>
-                </div> <!-- end overlay -->
-            </div> <!-- end item -->
-            <div class="item">
-                <div class="overlay">
-                    <h3>MetaPeta</h3>
-                    <span>html & css</span>
-                </div> <!-- end overlay -->
-            </div> <!-- end item -->
-            <div class="item">
-                Und noch ein paar weitere sind auf <a href="https://github.com/realeaz">Github</a> zu finden.
-            </div> <!-- end item -->
+            <div class="preview">
+                <div class="item" style="background-image: url('./assets/img/project1.png');">
+                    <div class="overlay">
+                        <h3>Meine Webseite</h3>
+                        <span>webseite</span>
+                    </div> <!-- end overlay -->
+                </div> <!-- end item -->
+                <div class="item" style="background-image: url('./assets/img/project2.png');">
+                    <div class="overlay">
+                        <h3>RGB-Generator</h3>
+                        <span>webseite</span>
+                    </div> <!-- end overlay -->
+                </div> <!-- end item -->
+                <div class="item" style="background-image: url('./assets/img/project3.png')">
+                    <div class="overlay">
+                        <h3>MetaPeta</h3>
+                        <span>html & css</span>
+                    </div> <!-- end overlay -->
+                </div> <!-- end item -->
+            </div> <!-- end preview -->
         </div> <!-- end portfolio -->
         <div class="contact" id="contact">
             <h2>Kontakt</h2>
