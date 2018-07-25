@@ -213,3 +213,33 @@ a:hover {
     margin-top: 2vh;
     background-color: #9d9d9d;
 }
+
+/* IMPRINT AND PRIVACY DATA */
+.imprint, .data {
+    margin-top: 13vh;
+    color: white;
+}
+
+.imprint p, .data p {
+    color: white;
+}
+
+.imprint h1, .data h1 {
+    color: white;
+}
+
+.imprint h2, .data h2 {
+    color: white;
+}
+
+.imprint h3, .data h3 {
+    color: white;
+}
+
+.imprint span, .data span {
+    color: white;
+}
+
+.imprint strong, .data strong {
+    color: white
+}
