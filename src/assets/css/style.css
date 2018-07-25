@@ -181,3 +181,28 @@ a:hover {
     border: 2px solid dodgerblue !important;
     transform: scale(1.03);
 }
+
+/* SOCIALMEDIA */
+.fa-3x {
+    padding-right: 1rem;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-gitlab {
+    color: #6b4fbb;
+}
+
+.fa-bitbucket {
+    color: #0747a6;
+}
+
+.fa-instagram {
+    color: #de3371;
+}
+
+.fa-github{
+    color: #24292e;
+}
