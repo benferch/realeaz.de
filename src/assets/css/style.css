@@ -97,6 +97,7 @@ a:hover {
     margin-top: -12vh;
     margin-left: 3.3em;
     margin-right: 3.3em;
+    color: white !important;
 }
 
 /* ABOUT */
@@ -107,10 +108,12 @@ a:hover {
     margin-bottom: 10vh;
     margin-left: 10em;
     margin-right: 10em;
+    color: #3c3c3c;
 }
 
 /* PORTFOLIO */
 .portfolio {
+    color: white;
 }
 
 .preview {
@@ -138,9 +141,38 @@ a:hover {
     align-items: center;
     margin: auto;
     background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 99%,rgba(0,0,0,0.65) 100%);
-    color: white;
 }
 
 .item:hover .overlay{
     opacity: unset;
+}
+
+/* CONTACT */
+.contact {
+}
+
+.contact input[name], input[email] {
+    max-width: 80%;
+    width: 40%;
+    height: 2em;
+    margin: 1em;
+    padding: 0.5em;
+    border-radius: 1em;
+}
+
+.contact textarea {
+    max-width: 80%;
+    min-width: 80%;
+    min-height: 10vh;
+    max-height: 30vh;
+    width: 80%;
+    height: 10em;
+    margin: 1em;
+    padding: 0.5em;
+    padding: 0.5em;
+    border-radius: 1em 1em 0 1em;
+    transition: all .2s ease-in-out;
+}
+
+.contact textarea:active {
 }
