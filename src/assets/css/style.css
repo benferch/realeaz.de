@@ -245,3 +245,16 @@ a:hover {
 .imprint strong, .data strong {
     color: white
 }
+
+/* RESPONSIVE */
+@media screen and (max-device-width: 900px){
+    .nav .menu{
+        display: none;
+    }
+
+    .about {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1em;
+    }
+}
