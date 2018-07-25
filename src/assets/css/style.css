@@ -211,7 +211,9 @@ a:hover {
 .footer {
     padding: 1em;
     margin-top: 2vh;
-    background-color: #9d9d9d;
+    background-color: #9c9c9c;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 
 /* IMPRINT AND PRIVACY DATA */
