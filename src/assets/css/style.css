@@ -206,3 +206,10 @@ a:hover {
 .fa-github{
     color: #24292e;
 }
+
+/* FOOTER */
+.footer {
+    padding: 1em;
+    margin-top: 2vh;
+    background-color: #9d9d9d;
+}
