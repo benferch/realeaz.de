@@ -186,7 +186,6 @@ a:hover {
 
 .contact textarea:focus, input[name]:focus, input[email]:focus {
     border: 5px solid dodgerblue;
-    transform: scale(1.03);
 }
 
 /* SOCIALMEDIA */
