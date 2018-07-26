@@ -97,7 +97,6 @@ a:hover {
     margin-top: -12vh;
     margin-left: 3.3em;
     margin-right: 3.3em;
-    color: white !important;
 }
 
 /* ABOUT */
@@ -171,14 +170,13 @@ a:hover {
     height: 10em;
     margin: 1em;
     padding: 0.5em;
-    padding: 0.5em;
     border-radius: 1em 1em 0 1em;
     transition: all .2s linear;
     border: 0;
 }
 
 .contact textarea:focus, input:focus {
-    border: 2px solid dodgerblue !important;
+    border: 2px solid dodgerblue;
     transform: scale(1.03);
 }
 
@@ -254,7 +252,6 @@ a:hover {
 
     .about {
         width: 80%;
-        margin: auto;
-        margin-bottom: 1em;
+        margin: auto auto 1em;
     }
 }
