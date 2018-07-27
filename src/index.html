@@ -77,9 +77,11 @@
             <h2>Kontakt</h2>
             <p>Entweder, können Sie das Kontakformular ausfüllen, oder mir eine <a href="mailto:ben@realeaz.de">E-Mail</a> schicken.</p>
             <form accept-charset="UTF-8" action="https://usebasin.com/f/09871bf8a5ff" enctype="multipart/form-data" method="POST">
-                <input name="name" placeholder="Name" type="text" required>
-                <input id="email" name="email" placeholder="E-Mail" type="email" required>
-                <textarea name="message" placeholder="Nachricht"></textarea>
+                <div class="form">
+                    <input name="name" placeholder="Name" type="text" required>
+                    <input id="email" name="email" placeholder="E-Mail" type="email" required>
+                    <textarea name="message" placeholder="Nachricht" required></textarea>
+                </div>
                 <div class="approval">
                     <input type="checkbox" name="approval" id="approval" value="approval" required>
                     <label for="approval">

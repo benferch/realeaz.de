@@ -194,7 +194,7 @@ a:hover {
 .contact {
 }
 
-.contact input[name], input[email] {
+.contact .form input[name], input[email] {
     max-width: 80%;
     width: 40%;
     height: 2em;
@@ -205,7 +205,7 @@ a:hover {
     border: 0;
 }
 
-.contact textarea {
+.contact .form textarea {
     max-width: 80%;
     min-width: 80%;
     min-height: 10vh;
@@ -232,10 +232,8 @@ a:hover {
     border-bottom: 2px solid dodgerblue;
 }
 
-.contact.approval {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+.contact .approval {
+    padding-left: 1em;
 }
 
 /* SOCIALMEDIA */
