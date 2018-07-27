@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="nav" id="nav">
-        <img class="branding" src="./assets/img/logo.png" onclick="window.open('.')">
+        <img class="branding" src="./assets/img/logo.png" onclick="window.open('.', '_self')">
         <ul class="menu">
             <li>
                 &nbsp;<a href="#about">Über mich</a>
@@ -56,17 +56,17 @@
         <div class="portfolio reveal" id="portfolio">
             <h2>Portfolio</h2>
             <div class="preview">
-                <div class="thumbnail-container">
+                <div class="thumbnail-container" onclick="window.open('https://realeaz.de')">
                     <div class="thumbnail">
                         <iframe src="https://realeaz.de" frameborder="0" onload="this.style.opacity = 1"></iframe>
                     </div>
                 </div>
-                <div class="thumbnail-container">
+                <div class="thumbnail-container" onclick="window.open('https://rgb.realeaz.de')">
                     <div class="thumbnail">
                         <iframe src="https://rgb.realeaz.de/" frameborder="0" onload="this.style.opacity = 1"></iframe>
                     </div>
                 </div>
-                <div class="thumbnail-container">
+                <div class="thumbnail-container" onclick="window.open('https://jugendhackt.github.io/MetaPeta/')">
                     <div class="thumbnail">
                         <iframe src="https://jugendhackt.github.io/MetaPeta/" frameborder="0" onload="this.style.opacity = 1"></iframe>
                     </div>
