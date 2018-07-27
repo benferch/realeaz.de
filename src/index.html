@@ -56,24 +56,21 @@
         <div class="portfolio reveal" id="portfolio">
             <h2>Portfolio</h2>
             <div class="preview">
-                <div class="item" style="cursor: pointer; background-image: url('./assets/img/project1.png');" onclick="window.open('https://realeaz.de')">
-                    <div class="overlay">
-                        <h3>Meine Webseite</h3>
-                        <span>website</span>
-                    </div> <!-- end overlay -->
-                </div> <!-- end item -->
-                <div class="item" style="cursor: pointer; background-image: url('./assets/img/project2.png');" onclick="window.open('https://rgb.realeaz.de')">
-                    <div class="overlay">
-                        <h3>RGB-Generator</h3>
-                        <span>website</span>
-                    </div> <!-- end overlay -->
-                </div> <!-- end item -->
-                <div class="item" style="cursor: pointer; background-image: url('./assets/img/project3.png');" onclick="window.open('https://jugendhackt.github.io/MetaPeta/')">
-                    <div class="overlay">
-                        <h3>MetaPeta</h3>
-                        <span>html & css</span>
-                    </div> <!-- end overlay -->
-                </div> <!-- end item -->
+                <div class="thumbnail-container">
+                    <div class="thumbnail">
+                        <iframe src="https://realeaz.de" frameborder="0" onload="this.style.opacity = 1"></iframe>
+                    </div>
+                </div>
+                <div class="thumbnail-container">
+                    <div class="thumbnail">
+                        <iframe src="https://rgb.realeaz.de/" frameborder="0" onload="this.style.opacity = 1"></iframe>
+                    </div>
+                </div>
+                <div class="thumbnail-container">
+                    <div class="thumbnail">
+                        <iframe src="https://jugendhackt.github.io/MetaPeta/" frameborder="0" onload="this.style.opacity = 1"></iframe>
+                    </div>
+                </div>
             </div> <!-- end preview -->
         </div> <!-- end portfolio -->
         <div class="contact reveal" id="contact">
@@ -83,7 +80,7 @@
                 <input name="name" placeholder="Name" type="text" required>
                 <input id="email" name="email" placeholder="E-Mail" type="email" required>
                 <textarea name="message" placeholder="Nachricht"></textarea>
-                <div>
+                <div class="approval">
                     <input type="checkbox" name="approval" id="approval" value="approval" required>
                     <label for="approval">
                         Ich akzeptiere die <a href="./data.php">Datenschutzbestimmungen</a>.
