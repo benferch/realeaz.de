@@ -98,6 +98,19 @@ a:hover {
     margin-top: -12vh;
     margin-left: 3.3em;
     margin-right: 3.3em;
+    color: #d2d2d2;
+}
+
+.content h2 {
+    color: #d2d2d2;
+}
+
+.content p {
+    color: #d2d2d2;
+}
+
+.content label {
+    color: #d2d2d2;
 }
 
 /* ABOUT */
@@ -108,12 +121,15 @@ a:hover {
     margin-bottom: 10vh;
     margin-left: 10em;
     margin-right: 10em;
+}
+
+.about p {
     color: #3c3c3c;
 }
 
 /* PORTFOLIO */
 .portfolio {
-    color: white;
+    color: #d2d2d2;
 }
 
 .preview {
@@ -144,11 +160,11 @@ a:hover {
 }
 
 .overlay h3 {
-    color: white;
+    color: #d2d2d2;
 }
 
 .overlay span {
-    color: white;
+    color: #d2d2d2;
 }
 
 .item:hover .overlay{
@@ -180,12 +196,21 @@ a:hover {
     margin: 1em;
     padding: 0.5em;
     border-radius: 1em 1em 0 1em;
-    transition: all .2s linear;
     border: 0;
 }
 
-.contact textarea:focus, input[name]:focus, input[email]:focus {
-    border: 5px solid dodgerblue;
+.contact button {
+    text-transform: uppercase;
+    background-color: transparent;
+    color: dodgerblue;
+    transition: all .1s ease-in-out;
+    font-size: 1em;
+    border: 0;
+    margin: 1em;
+}
+
+.contact button:hover {
+    border-bottom: 2px solid dodgerblue;
 }
 
 /* SOCIALMEDIA */
@@ -225,31 +250,31 @@ a:hover {
 /* IMPRINT AND PRIVACY DATA */
 .imprint, .data {
     margin-top: 13vh;
-    color: white;
+    color: #d2d2d2;
 }
 
 .imprint p, .data p {
-    color: white;
+    color: #d2d2d2;
 }
 
 .imprint h1, .data h1 {
-    color: white;
+    color: #d2d2d2;
 }
 
 .imprint h2, .data h2 {
-    color: white;
+    color: #d2d2d2;
 }
 
 .imprint h3, .data h3 {
-    color: white;
+    color: #d2d2d2;
 }
 
 .imprint span, .data span {
-    color: white;
+    color: #d2d2d2;
 }
 
 .imprint strong, .data strong {
-    color: white
+    color: #d2d2d2
 }
 
 /* RESPONSIVE */
