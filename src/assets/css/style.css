@@ -254,6 +254,7 @@ a:hover {
 /* SKILLS */
 .skill {
     margin-bottom: 0.7em;
+    margin-left: 1em;
     position: relative;
     overflow-x: hidden;
 }

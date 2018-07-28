@@ -38,8 +38,11 @@
                 eaz
             </h3>
             <h4 class="reveal">
-                <span id="typing"></span>
+                <span id="typing-me"></span>
             </h4>
+            <h5 class="reveal">
+                <span id="typing"></span>
+            </h5>
         </div>
     </div>
     <div class="content">
@@ -81,57 +84,63 @@
         </div>
         <div class="skills reveal" id="skill">
             <h2>Skills</h2>
-            <div class="skill">
-                <h4>HTML5</h4>
-                <div class="skillbar html"></div>
-            </div>
-            <div class="skill">
-                <h4>CSS3</h4>
-                <div class="skillbar css"></div>
-            </div>
-            <div class="skill">
-                <h4>Bootstrap</h4>
-                <div class="skillbar bootstrap"></div>
-            </div>
-            <div class="skill">
-                <h4>JavaScript</h4>
-                <div class="skillbar js"></div>
-            </div>
-            <div class="skill">
-                <h4>jQuery</h4>
-                <div class="skillbar jquery"></div>
-            </div>
-            <div class="skill">
-                <h4>PHP</h4>
-                <div class="skillbar php"></div>
-            </div>
-            <div class="skill">
-                <h4>Wordpress</h4>
-                <div class="skillbar wp"></div>
-            </div>
-            <div class="skill">
-                <h4>Drupal</h4>
-                <div class="skillbar drupal"></div>
-            </div>
-            <div class="skill">
-                <h4>Twig</h4>
-                <div class="skillbar twig"></div>
-            </div>
-            <div class="skill">
-                <h4>Git</h4>
-                <div class="skillbar git"></div>
-            </div>
-            <div class="skill">
-                <h4>Windows</h4>
-                <div class="skillbar win"></div>
-            </div>
-            <div class="skill">
-                <h4>Linux</h4>
-                <div class="skillbar linux"></div>
-            </div>
-            <div class="skill">
-                <h4>macOS</h4>
-                <div class="skillbar macos"></div>
+            <div class="row">
+                <div class="column">
+                    <div class="skill">
+                        <h4>HTML5</h4>
+                        <div class="skillbar html"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>CSS3</h4>
+                        <div class="skillbar css"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Bootstrap</h4>
+                        <div class="skillbar bootstrap"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>JavaScript</h4>
+                        <div class="skillbar js"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>jQuery</h4>
+                        <div class="skillbar jquery"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>PHP</h4>
+                        <div class="skillbar php"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Wordpress</h4>
+                        <div class="skillbar wp"></div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="skill">
+                        <h4>Drupal</h4>
+                        <div class="skillbar drupal"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Twig</h4>
+                        <div class="skillbar twig"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Git</h4>
+                        <div class="skillbar git"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Windows</h4>
+                        <div class="skillbar win"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>Linux</h4>
+                        <div class="skillbar linux"></div>
+                    </div>
+                    <div class="skill">
+                        <h4>macOS</h4>
+                        <div class="skillbar macos"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="contact reveal" id="contact">
@@ -185,11 +194,20 @@
         });
         sr.reveal('.reveal');
 
-        new Typed('#typing', {
-            strings: ["Schüler", "Webentwickler", "Commit ins Abenteuerland!", "git pull a day keeps the conflicts away", "git: Comitted for life", "A commit a day keeps the mobs away", "May the --force be with you", "In case of fire: git commit, git push, leave the building"],
+        new Typed('#typing-me', {
+            strings: ["Schüler", "Webentwickler"],
             typeSpeed: 90,
             loop: true,
             backDelay: 800,
+            smartBackspace: true,
+            shuffle: true,
+        })
+
+        new Typed('#typing', {
+            strings: ["Commit ins Abenteuerland!", "git pull a day keeps the conflicts away", "git: Comitted for life", "A commit a day keeps the mobs away", "May the --force be with you", "In case of fire: git commit, git push, leave the building"],
+            typeSpeed: 110,
+            loop: true,
+            backDelay: 600,
             smartBackspace: true,
             shuffle: true,
         })
