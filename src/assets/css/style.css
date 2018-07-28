@@ -1,3 +1,35 @@
+/* ANIMATIONS */
+@-webkit-keyframes slideInLeft {
+    from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}
+
 /* TEXT */
 @font-face {
     font-family: "Poppins";
@@ -42,6 +74,12 @@ body {
 
 ::-webkit-scrollbar, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-button, ::-webkit-scrollbar-track {
     display: none;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* LINKS */
@@ -115,6 +153,10 @@ a:hover {
 }
 
 .content label {
+    color: #d2d2d2;
+}
+
+.content h4 {
     color: #d2d2d2;
 }
 
@@ -195,6 +237,10 @@ a:hover {
     right: 0;
     bottom: 0;
 }
+
+/* SKILLS */
+
+
 
 /* CONTACT */
 .contact {
