@@ -82,6 +82,19 @@ body {
     display: table;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 /* LINKS */
 a {
     text-decoration: none;
@@ -239,8 +252,81 @@ a:hover {
 }
 
 /* SKILLS */
+.skill {
+    margin-bottom: 0.7em;
+    position: relative;
+    overflow-x: hidden;
+}
 
+.skill:before {
+    height: 1em;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    content: "";
+    background-color: #5d5d5d;
+    width: 100%;
+}
 
+.skillbar {
+    width: 100%;
+    background-color: dodgerblue;
+    position: relative;
+    display: block;
+    height: 1em;
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 75%;
+}
+
+.bootstrap {
+    width: 70%;
+}
+
+.js {
+    width: 30%;
+}
+
+.jquery {
+    width: 40%;
+}
+
+.php {
+    width: 20%;
+}
+
+.wp {
+    width: 90%;
+}
+
+.drupal {
+    width: 30%;
+}
+
+.twig {
+    width: 20%;
+}
+
+.git {
+    width: 70%;
+}
+
+.win {
+    width: 90%;
+}
+
+.linux {
+    width: 70%;
+}
+
+.macos {
+    width: 75%;
+}
 
 /* CONTACT */
 .contact {
