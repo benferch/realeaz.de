@@ -3,10 +3,8 @@
 This is my personal Website, which you can find [here](https://realeaz.de/).
 
 ## Live
-This website will be viewable at [realeaz.de](https://realeaz.de) when it's finished.
+This repository is currently viewable at [live.realeaz.de](https://live.realeaz.de)
 
-## Set up
-If you really want to use it, which I don't recommend, you have to edit everything that doesn't fulfill your preferences.
 
 ## License
 
