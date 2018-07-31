@@ -66,12 +66,12 @@ body {
 /* LINKS */
 a {
     text-decoration: none;
-    color: #5d5d5d;
+    color: #fdfdfd;
     transition: .2s all ease-in-out;
 }
 
 a:hover {
-    color: #2b2b2b;
+    color: #1f1f1f;
 }
 
 /* NAVBAR */
@@ -127,6 +127,7 @@ a:hover {
 
 .content h2 {
     color: #d2d2d2;
+    margin-top: 0.8em;
 }
 
 .content p {
@@ -155,11 +156,16 @@ a:hover {
     color: #3c3c3c;
 }
 
-/* PORTFOLIO */
-.portfolio {
-    color: #d2d2d2;
+.about a {
+    color: #0a0a0a;
+    transition: all .2s ease-in-out;
 }
 
+.about a:hover {
+    color: #9c9c9c;
+}
+
+/* PORTFOLIO */
 .preview {
     display: flex;
     flex-direction: row;
@@ -298,9 +304,6 @@ a:hover {
 }
 
 /* CONTACT */
-.contact {
-}
-
 .contact .form input[name], input[email] {
     max-width: 80%;
     width: 40%;
@@ -329,7 +332,7 @@ a:hover {
     text-transform: uppercase;
     background-color: transparent;
     color: dodgerblue;
-    transition: all .1s ease-in-out;
+    transition: all .05s ease-in-out;
     font-size: 1em;
     border: 0;
     margin: 1em;
