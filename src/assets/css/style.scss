@@ -7,7 +7,6 @@ $lightblack: #1f1f1f;
 $blue: #1e90ff;
 $lightergray: #9c9c9c;
 
-
 // TEXT
 @font-face {
     font-family: "Poppins";
@@ -249,7 +248,7 @@ a:hover {
     position: absolute;
     bottom: 0;
     content: "";
-    background-color: $lightgray;
+    background-color: $bitlightgray;
     width: 100%;
 }
 
