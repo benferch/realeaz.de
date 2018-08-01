@@ -2,8 +2,8 @@ User-agent: *
 
 Disallow: /assets/
 
-Disallow: /legaldisclosure
-Disallow: /legaldisclosure.html
+Disallow: /data
+Disallow: /data.html
 
 Disallow: /imprint
 Disallow: /imprint.html
