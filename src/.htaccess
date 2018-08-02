@@ -20,7 +20,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.+)$ $1.html [L,QSA]
 
-<filesMatch ".(jpg|jpeg|png|gif|ico|woff)$">
+<filesMatch ".(jpg|jpeg|png|gif|ico|woff|svg)$">
 Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 
