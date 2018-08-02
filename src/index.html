@@ -48,16 +48,7 @@
     <div class="content">
         <div class="about" id="about">
             <p><b>Hey!</b> </p> <br>
-            <p> Ich bin Ben,
-                <script>
-                    function calculateAge(birthday) {
-                        var ageDifMs = Date.now() - birthday.getTime();
-                        var ageDate = new Date(ageDifMs);
-                        return Math.abs(ageDate.getUTCFullYear() - 1970)
-                    }
-                    document.write(calculateAge(new Date('8/10/2002')))
-                </script>
-                Jahre alt und wohne auf Rügen. <br>
+            <p> Ich bin Ben,&nbsp;<span id="age"></span>&nbsp;Jahre alt und wohne auf Rügen. <br>
                 Seit etwa einem Jahr bin ich nun aktiv dabei Webseiten zu entwickeln und in der Zeit habe ich auch ein paar Projekte gemacht. <br>
                 Kontaktieren können Sie mich per <a href="mailto:ben@realeaz.de">E-Mail</a>, oder per <a href="#contact">Kontaktformular</a> kontaktieren.
             </p>
@@ -171,11 +162,7 @@
         </div>
     </div>
     <div class="footer">
-        <p>&copy; 2017 &ndash;
-            <script>
-                document.write(new Date().getFullYear());
-            </script>
-            &#124; realeaz.de <a href="./imprint">Impressum</a> &#124; <a href="./data">Datenschutzerklärung</a> &#124; <a href="https://status.realeaz.de" target="_blank">Status</a></p>
+        <p>&copy; 2017 &ndash;&nbsp;<span id="year"></span>&nbsp;&#124; realeaz.de <a href="./imprint">Impressum</a> &#124; <a href="./data">Datenschutzerklärung</a> &#124; <a href="https://status.realeaz.de" target="_blank">Status</a></p>
     </div>
 
     <!-- js -->
