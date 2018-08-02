@@ -8,7 +8,7 @@ window.sr = ScrollReveal({
 sr.reveal('.reveal');
 
 new Typed('#typing-me', {
-    strings: ["Schüler", "Webentwickler"],
+    strings: ["Schüler", "Webentwickler", "Student", "Webdeveloper"],
     typeSpeed: 90,
     loop: true,
     backDelay: 800,
@@ -17,7 +17,7 @@ new Typed('#typing-me', {
 });
 
 new Typed('#typing', {
-    strings: ["Commit ins Abenteuerland!", "git pull a day keeps the conflicts away", "git: Comitted for life", "A commit a day keeps the mobs away", "May the --force be with you", "In case of fire: git commit, git push, leave the building"],
+    strings: ["git pull a day keeps the conflicts away", "git: Comitted for life", "A commit a day keeps the mobs away", "May the --force be with you", "In case of fire: git commit, git push, leave the building"],
     typeSpeed: 110,
     loop: true,
     backDelay: 600,
@@ -30,6 +30,3 @@ function calculateAge(birthday) {
     var ageDate = new Date(ageDifMs);
     return Math.abs(ageDate.getUTCFullYear() - 1970)
 }
-
-document.getElementById('age').innerHTML = calculateAge(new Date('8/10/2002'));
-document.getElementById('year').innerHTML = new Date().getFullYear();

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en, de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -13,7 +13,7 @@
         <img class="branding" src="./assets/img/logo.png" onclick="window.open('.', '_self')">
         <ul class="menu">
             <li>
-                &nbsp;<a href="#about">About</a>
+                &nbsp;<a href="#about" data-de="Über mich">About</a>
             </li>
             <li>
                 &nbsp;<a href="#portfolio">Portfolio</a>
@@ -22,10 +22,10 @@
                 &nbsp;<a href="#skill">Skills</a>
             </li>
             <li>
-                &nbsp;<a href="#contact">Kontakt</a>
+                &nbsp;<a href="#contact" data-de="Kontakt">Contact</a>
             </li>
             <li>
-                &nbsp;<a href="#socialmedia">Soziale Medien</a>
+                &nbsp;<a href="#socialmedia" data-de="Soziale Medien">Social Media</a>
             </li>
         </ul>
     </div>
@@ -47,10 +47,14 @@
     </div>
     <div class="content">
         <div class="about" id="about">
-            <p><b>Hey!</b> </p> <br>
-            <p> Ich bin Ben,&nbsp;<span id="age"></span>&nbsp;Jahre alt und wohne auf Rügen. <br>
-                Seit etwa einem Jahr bin ich nun aktiv dabei Webseiten zu entwickeln und in der Zeit habe ich auch ein paar Projekte gemacht. <br>
-                Kontaktieren können Sie mich per <a href="mailto:ben@realeaz.de">E-Mail</a>, oder per <a href="#contact">Kontaktformular</a> kontaktieren.
+            <p data-de="<b>Hey!</b><br>
+                Ich bin Ben,&nbsp;<span id='age'></span>&nbsp;Jahre alt und wohne auf Rügen. <br>
+                Seit etwa einem Jahr bin ich nun aktiv dabei Webseiten zu machen und in der Zeit habe ich auch an ein paar Projekte gearbeitet. <br>
+                Kontaktieren können Sie mich per <a href='mailto:ben@realeaz.de'>E-Mail</a>, oder per <a href='#contact'>Kontaktformular</a> kontaktieren.">
+                <b>Hey!</b><br>
+                I'm Ben,&nbsp;<span id="age"></span>&nbsp;years old and from Rügen. <br>
+                Since about a year I am now actively making websites. During this time I also workend on some projects. <br>
+                You can contact me via <a href="mailto:ben@realeaz.de">e-mail</a> or via the <a href="#contact">contact form</a>.
             </p>
         </div>
         <div class="portfolio reveal" id="portfolio">
@@ -135,25 +139,25 @@
             </div>
         </div>
         <div class="contact reveal" id="contact">
-            <h2>Kontakt</h2>
-            <p>Entweder, können Sie das Kontakformular ausfüllen, oder mir eine <a href="mailto:ben@realeaz.de">E-Mail</a> schicken.</p>
+            <h2 data-de="Kontakt">Contact</h2>
+            <p data-de="Entweder, können Sie das Kontakformular ausfüllen, oder mir eine <a href='mailto:ben@realeaz.de'>E-Mail</a> schicken.">You can either fill in the contact form, or send me an <a href="mailto:ben@realeaz.de">e-mail</a>.</p>
             <form accept-charset="UTF-8" action="https://usebasin.com/f/09871bf8a5ff" enctype="multipart/form-data" method="POST">
                 <div class="form">
                     <input name="name" placeholder="Name" type="text" required>
                     <input id="email" name="email" placeholder="E-Mail" type="email" required>
-                    <textarea name="message" placeholder="Nachricht" required></textarea>
+                    <textarea name="message" placeholder="Message" data-de="Nachricht" required></textarea>
                 </div>
                 <div class="approval">
                     <input type="checkbox" name="approval" id="approval" value="approval" required>
-                    <label for="approval">
-                        Ich akzeptiere die <a href="./data">Datenschutzbestimmungen</a>.
+                    <label for="approval" data-de="Ich akzeptiere die <a href='./data'>Datenschutzbestimmungen</a>.">
+                        I agree to the privacy policy
                     </label>
                 </div>
-                <button name="send" type="submit">Senden</button>
+                <button name="send" type="submit" data-de="Senden">Send</button>
             </form>
         </div>
         <div class="socialmedia reveal" id="socialmedia">
-            <h2>Soziale Medien</h2>
+            <h2 data-de="Soziale Medien">Social Media</h2>
             <a href="https://realeaz.de/go/twitter" target="_blank"><i class="fab fa-twitter fa-3x"></i></a>
             <a href="https://realeaz.de/go/instagram" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
             <a href="https://realeaz.de/go/github" target="_blank"><i class="fab fa-github fa-3x"></i></a>
@@ -162,7 +166,7 @@
         </div>
     </div>
     <div class="footer">
-        <p>&copy; 2017 &ndash;&nbsp;<span id="year"></span>&nbsp;&#124; realeaz.de <a href="./imprint">Impressum</a> &#124; <a href="./data">Datenschutzerklärung</a> &#124; <a href="https://status.realeaz.de" target="_blank">Status</a></p>
+        <p>&copy; 2017 &ndash;&nbsp;<span id="year"></span>&nbsp;&#124; realeaz.de <a href="./imprint" data-de="Impressum">Imprint</a> &#124; <a href="./data" data-de="Datenschutzerklärung">Privacy Policy</a> &#124; <a href="https://status.realeaz.de" target="_blank">Status</a></p>
     </div>
 
     <!-- js -->
@@ -172,5 +176,9 @@
     <script src="./assets/js/typed.min.js"></script>
     <script src="./assets/js/app.js"></script>
     <script src="./assets/js/language.js"></script>
+    <script>
+        document.getElementById('age').innerHTML = calculateAge(new Date('8/10/2002'))
+        document.getElementById('year').innerHTML = new Date().getFullYear()
+    </script>
 </body>
 </html>
