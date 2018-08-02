@@ -6,6 +6,7 @@ $lightgray: #4d4d4d;
 $lightblack: #1f1f1f;
 $blue: #1e90ff;
 $lightergray: #9c9c9c;
+$bitlightergray: #5d5d5d;
 
 // TEXT
 @font-face {
@@ -98,6 +99,7 @@ a:hover {
     height: 100px;
     width: 100px;
     cursor: pointer;
+    padding: 0.5em;
 }
 
 .nav {
@@ -248,7 +250,7 @@ a:hover {
     position: absolute;
     bottom: 0;
     content: "";
-    background-color: $bitlightgray;
+    background-color: $bitlightergray;
     width: 100%;
 }
 
