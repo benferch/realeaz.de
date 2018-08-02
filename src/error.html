@@ -5,19 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>ben.</title>
     <link rel="icon" type="image/png" href="./assets/img/icon.svg">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.scss">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="./assets/fonts/fonts.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
-    <script type="text/javascript" src="./assets/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/smooth-scroll.min.js"></script>
-    <script type="text/javascript" src="./assets/js/smooth-scroll.min.js"></script>
-    <script type="text/javascript" src="./assets/js/app.js"></script>
-    <script type="text/javascript">
-        var scroll = new SmoothScroll('a[href*="#"]');
-
-        window.sr = ScrollReveal();
-        sr.reveal('.reveal')
-    </script>
 </head>
 <body>
 <div class="nav" id="nav">
@@ -25,24 +15,32 @@
 </div>
 <div class="home" style="height: 100vh">
     <div class="title">
-        <h1 class="reveal">
-            Fehler!
+        <h1 class="reveal" data-de="Fehler!">
+            Error!
         </h1>
-        <h3 class="reveal">
-            Hier ist was schief gelaufen. <br>
-            Haben Sie es schon mit aus- und einschalten versucht?
+        <h3 class="reveal" data-de="Hier ist was schief gelaufen. <br>
+            Haben Sie es schon mit aus- und einschalten versucht?">
+            Something went wrong. <br>
+            Have you tried turning it off and on again?
         </h3>
-        <h4>Oder rufen Sie die <a href=".">Startseite</a> wieder auf.</h4>
+        <h4 data-de="Oder rufen Sie die <a href='.'>Startseite</a> wieder auf.">
+            Or open the <a href=".">startpage</a>.
+        </h4>
     </div>
 </div>
 <div class="content">
 </div>
 <div class="footer" style="position: absolute; bottom: 0; width: 200%;">
-    <p>&copy; 2017 &ndash;
-        <script type="text/javascript">
-            document.write(new Date().getFullYear());
-        </script>
-        &#124; realeaz.de <a href="./imprint">Impressum</a> &#124; <a href="./data">Datenschutzerklärung</a> &#124; <a href="https://status.realeaz.de" target="_blank">Status</a></p>
+    <p>&copy; 2017 &ndash;&nbsp;<span id="year"></span>&nbsp;&#124; realeaz.de <a href="./imprint" data-de="Impressum">Imprint</a> &#124; <a href="./data" data-de="Datenschutzerklärung">Privacy Policy</a> &#124; <a href="https://status.realeaz.de" target="_blank">Status</a></p>
 </div>
+
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/smooth-scroll.min.js"></script>
+<script src="./assets/js/smooth-scroll.min.js"></script>
+<script src="./assets/js/app.js"></script>
+<script src="./assets/js/language.js"></script>
+<script>
+    document.getElementById('year').innerHTML = new Date().getFullYear()
+</script>
 </body>
 </html>
