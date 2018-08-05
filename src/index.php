@@ -103,11 +103,11 @@
         </div>
         <div class="socialmedia" id="socialmedia">
             <h1>Wo ich zu finden bin</h1>
-            <a href=""><i class="fab fa-twitter fa-5x sweethover"></i></a>
-            <a href=""><i class="fab fa-instagram fa-5x sweethover"></i></a>
-            <a href=""><i class="fab fa-github fa-5x sweethover"></i></a>
-            <a href=""><i class="fab fa-bitbucket fa-5x sweethover"></i></a>
-            <a href=""><i class="fab fa-gitlab fa-5x sweethover"></i></a>
+            <a href="https://realeaz.de/go/twitter"><i class="fab fa-twitter fa-5x sweethover"></i></a>
+            <a href="https://realeaz.de/go/instagram"><i class="fab fa-instagram fa-5x sweethover"></i></a>
+            <a href="https://realeaz.de/go/github"><i class="fab fa-github fa-5x sweethover"></i></a>
+            <a href="https://rtealeaz.de/go/bitbucket"><i class="fab fa-bitbucket fa-5x sweethover"></i></a>
+            <a href="https://realeaz.de/go/gitlab"><i class="fab fa-gitlab fa-5x sweethover"></i></a>
         </div>
         <div class="contact" id="contact">
             <h1>Kontakt</h1>

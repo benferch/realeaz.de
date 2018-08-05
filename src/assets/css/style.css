@@ -227,3 +227,134 @@ a:hover {
         max-width: 70%;
     }
 }
+
+.item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    transition: all .4s ease-in-out;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    color: #111111;
+    padding: 1.7em;
+}
+
+.item:hover {
+    transform: translateY(10px);
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
+    color: #111111;
+}
+
+.item h1 {
+    border: 0;
+}
+
+.preview {
+    width: 30em;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.work a {
+    border: 0;
+}
+
+.work a:hover {
+    background-color: transparent;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 1em;
+    margin-right: 1em;
+    z-index: 10;
+    font-size: 1.4em;
+    transition: top 1s;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav ul li {
+    display: inline;
+    padding-right: 0.3em;
+}
+
+.transparentbg {
+    background-color: transparent;
+}
+
+.nav a {
+    border: 0;
+    font-weight: bolder;
+}
+
+.nav a:hover {
+    background-color: transparent;
+    color: #d9d9d9;
+}
+
+.nav .icon {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    left: 0;
+    margin-left: 1em;
+}
+
+input[type="text"], input[type="email"], textarea {
+    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif;
+    padding: 1em;
+    width: auto;
+    margin-top: 1em;
+    margin-right: 1em ;
+    margin-bottom: 1.7em;
+    outline: none;
+    border: #111111 1px solid;
+    transition: all .3s ease-in-out;
+    border-radius: 25px 25px 0 25px;
+}
+
+textarea {
+    height: 15em;
+    width: 100em;
+}
+
+input[type="text"], input[type="email"] {
+    width: 20em;
+}
+
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover, input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    box-shadow: 0 0 30px 0 rgba(17,17,17,1);
+    transform: translateY(1em);
+}
+
+button {
+    background-color: transparent;
+    border: #111111 2px solid;
+    border-radius: 20px;
+    padding: 10px;
+    width: 10em;
+    transition: all .3s ease-in-out;
+    margin-left: 2em;
+}
+
+button:hover {
+    background-color: #111111;
+    color: white;
+}
+
+input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+    font-size: 1.2em;
+}
