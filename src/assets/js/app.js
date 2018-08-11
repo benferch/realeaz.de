@@ -12,8 +12,8 @@ new Typed('#typing-me', {
     typeSpeed: 90,
     loop: true,
     backDelay: 800,
-    smartBackspace: true,
     shuffle: true,
+    fadeOut: true,
 });
 
 new Typed('#typing', {
@@ -21,7 +21,7 @@ new Typed('#typing', {
     typeSpeed: 110,
     loop: true,
     backDelay: 600,
-    smartBackspace: true,
+    fadeOut: true,
     shuffle: true,
 });
 

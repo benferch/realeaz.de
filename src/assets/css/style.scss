@@ -24,7 +24,7 @@ $bitlightergray: #5d5d5d;
 }
 
 * {
-    font-family: Poppins;
+    font-family: "Poppins";
     line-height: 1.5;
     hyphens: auto;
     margin: 0;
@@ -115,7 +115,7 @@ a:hover {
 // HOME
 .home {
     background-size: cover;
-    height: 87vh;
+    height: 94vh;
     background: linear-gradient( 135deg, #70F570 10%, #49C628 100%) no-repeat center;
 }
 
@@ -139,6 +139,9 @@ a:hover {
 .content h2 {
     color: $graywhite;
     margin-top: 0.8em;
+    display: inline-block;
+    border-bottom: 2px solid $bitlightergray;
+    margin-bottom: 0.8em;
 }
 
 .content p {
@@ -157,10 +160,11 @@ a:hover {
 .about {
     background-color: $smokewhite;
     padding: 1em;
-    border-radius: 1em;
-    margin-bottom: 10vh;
-    margin-left: 10em;
-    margin-right: 10em;
+    box-sizing: border-box;
+    max-width: 60%;
+    width: 900px;
+    border-radius: 0.3em;
+    margin: auto;
 }
 
 .about p {
