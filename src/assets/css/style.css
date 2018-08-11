@@ -282,6 +282,10 @@ a:hover {
 .contact .approval {
   padding-left: 1em; }
 
+.media {
+  display: flex;
+  flex-direction: row; }
+
 .fa-3x {
   padding-right: 1rem; }
 

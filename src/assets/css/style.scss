@@ -362,6 +362,10 @@ a:hover {
 }
 
 // SOCIALMEDIA
+.media {
+    display: flex;
+    flex-direction: row;
+}
 .fa-3x {
     padding-right: 1rem;
 }
@@ -385,7 +389,6 @@ a:hover {
 .fa-github{
     color: #24292e;
 }
-
 // FOOTER
 .footer {
     padding: 1em;
