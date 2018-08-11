@@ -271,20 +271,20 @@ a:hover {
   text-transform: uppercase;
   background-color: transparent;
   color: #1e90ff;
-  transition: all .05s ease-in-out;
   font-size: 1em;
   border: 0;
   margin: 1em; }
 
 .contact button:hover {
-  border-bottom: 2px solid #1e90ff; }
+  cursor: pointer; }
 
 .contact .approval {
   padding-left: 1em; }
 
 .media {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin-bottom: 6vh; }
 
 .fa-3x {
   padding-right: 1rem; }
@@ -303,6 +303,12 @@ a:hover {
 
 .fa-github {
   color: #24292e; }
+
+.fab {
+  transition: all .2s ease; }
+
+.fab:hover {
+  transform: scale(1.3) translateY(0.2em); }
 
 .footer {
   padding: 1em;
