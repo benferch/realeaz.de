@@ -9,7 +9,7 @@
   font-weight: bold;
   src: url("../fonts/Poppins/Poppins-Bold.ttf"); }
 * {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   line-height: 1.5;
   hyphens: auto;
   margin: 0;
@@ -81,7 +81,7 @@ a:hover {
 .home {
   background-size: cover;
   height: 94vh;
-  background: linear-gradient(135deg, #70F570 10%, #49C628 100%) no-repeat center; }
+  background: linear-gradient(135deg, #70F570 10%, #49C620 100%) no-repeat center; }
 
 .home .title {
   display: flex;
@@ -126,7 +126,7 @@ a:hover {
   color: #3c3c3c; }
 
 .about a {
-  color: #1f1f1f;
+  color: #1e90ff;
   transition: all .2s ease-in-out; }
 
 .about a:hover {
@@ -308,7 +308,7 @@ a:hover {
   transition: all .2s ease; }
 
 .fab:hover {
-  transform: scale(1.3) translateY(0.2em); }
+  transform: scale(1.3) rotate(-5deg); }
 
 .footer {
   padding: 1em;
