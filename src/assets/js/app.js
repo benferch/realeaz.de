@@ -1,3 +1,4 @@
+//Scrollreveal
 var scroll = new SmoothScroll('a[href*="#"]');
 
 window.sr = ScrollReveal({
@@ -7,6 +8,7 @@ window.sr = ScrollReveal({
 });
 sr.reveal('.reveal');
 
+// Typed.js
 new Typed('#typing-me', {
     strings: ["Schüler", "Webentwickler", "Student", "Webdeveloper"],
     typeSpeed: 90,
@@ -25,6 +27,7 @@ new Typed('#typing', {
     shuffle: true,
 });
 
+// Age calculator
 function calculateAge(birthday) {
     var ageDifMs = Date.now() - birthday.getTime();
     var ageDate = new Date(ageDifMs);
