@@ -1,16 +1,67 @@
-$black: #1d1d1d
+$black: #222222
 $grey: #9f9f9f
 $white: #f3f3f3
-$green: #00bf03
-$blue: #007bdd
-$yellow: #fff227
+$green: #57f555
+$blue: #3f98ec
+$yellow: #fff34c
 $red: #d93b49
 $orange: #d8862d
 
 html
   font-family: sans-serif
-  margin: 0
-  padding: 0
+  background-color: $yellow
 
 a
   text-decoration: none
+  color: $grey
+  transition: all .3s ease-in-out
+
+a:hover
+  color: $black
+
+h1
+  font-size: 2.2em
+
+h3
+  font-size: 1.7em
+
+p
+  font-size: 1.15em
+
+.inner
+  background-color: $white
+  height: 90vh
+  padding-top: 20vh
+  padding-left: 25vw
+  margin: 1em
+
+#content
+  background-color: $black
+  margin-top: -30vh
+  margin-left: 0
+  margin-right: 0
+  color: $white
+  padding: 0.6em 4.5em 4.5em
+
+#content h3
+  display: inline-block
+  border-bottom: $white solid 2px
+  margin-bottom: 0.1em
+
+#content p
+  margin-bottom: 0.1em
+
+#footer
+  margin: 1em
+
+#footer #year
+  border-right: $black solid 1px
+  padding-right: 0.5em
+
+#footer a:nth-child(2)
+  border-right: $black solid 1px
+  padding-right: 0.5em
+  padding-left: 0.5em
+
+#footer a:nth-child(3)
+  padding-left: 0.5em
