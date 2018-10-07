@@ -1,15 +1,22 @@
 <!--TODO: content -->
 <!--TODO: structure -->
-<!--TODO: link all content -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>ben. | Datenschutz</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+<div id="footer">
+    <span id="year"></span>
+</div>
 
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="./assets/js/index.js"></script>
+<script>
+    document.getElementById('year').innerHTML = new Date().getFullYear()
+</script>
 </body>
 </html>
