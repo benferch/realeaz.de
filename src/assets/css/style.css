@@ -57,4 +57,10 @@ p {
 #footer a:nth-child(3) {
   padding-left: 0.5em; }
 
+#footer a {
+  color: #222222; }
+
+#footer a:hover {
+  color: #9f9f9f; }
+
 /*# sourceMappingURL=style.css.map */
