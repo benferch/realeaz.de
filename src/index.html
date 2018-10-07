@@ -1,7 +1,5 @@
-<!--TODO: content -->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <title>ben.</title>
@@ -9,14 +7,26 @@
 </head>
 <body style="margin: 0">
 <div id="main">
+    <div id="nav" style="transform: translateY(-100vh)">
+        <img src="./assets/img/closenav.svg" onclick="closeNav()">
+        <ul>
+            <li><a href="#about" onclick="closeNav()">Über mich</a></li>
+            <li><a href="#skill" onclick="closeNav()">Skills</a></li>
+            <li><a href="#portfolio" onclick="closeNav()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closeNav()">Kontakt</a></li>
+            <li><a href="#social-media" onclick="closeNav()">Social Media</a></li>
+            <li><a href="https://status.realeaz.de" onclick="closeNav()">Status</a></li>
+        </ul>
+    </div>
     <div id="landing">
         <div class="inner">
             <nav role="navigation">
-
+                <img src="./assets/img/opennav.svg" onclick="openNav()">
             </nav>
             <h1>
                 Ben F.
             </h1>
+            <img class="randomImg" src="./assets/img/image1.jpg">
         </div>
     </div>
     <div id="content">
@@ -49,6 +59,7 @@
 
 <script src="./assets/js/jquery-3.3.1.min.js"></script>
 <script src="./assets/js/index.js"></script>
+<script src="./assets/js/smooth-scroll.js"></script>
 <script>
     // year
     document.getElementById('year').innerHTML = new Date().getFullYear()
