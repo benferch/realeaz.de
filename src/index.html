@@ -1,12 +1,11 @@
 <!--TODO: content -->
-<!--TODO: link all content -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>ben.</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
 <div id="main">
@@ -27,12 +26,26 @@
 
         </div>
         <div id="social-media">
-
         </div>
     </div>
     <div id="footer">
-
+        <span id="year"></span>
     </div>
 </div>
+
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="./assets/js/index.js"></script>
+<script>
+    // age
+    function calculateAge(birthday) {
+        var ageDif = Date.now() - birthday.getTime();
+        var ageDate = new Date(ageDif);
+        return Math.abs(ageDate.getUTCFullYear() - 1970)
+    }
+    document.getElementById('age').innerHTML = calculateAge(new Date('8/10/2002'))
+
+    // year
+    document.getElementById('year').innerHTML = new Date().getFullYear()
+</script>
 </body>
 </html>
