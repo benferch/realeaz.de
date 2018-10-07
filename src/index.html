@@ -7,29 +7,43 @@
     <title>ben.</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body style="margin: 0">
 <div id="main">
     <div id="landing">
+        <div class="inner">
+            <nav role="navigation">
 
+            </nav>
+            <h1>
+                Ben F.
+            </h1>
+        </div>
     </div>
     <div id="content">
         <div id="about">
-
+            <h3>Über mich</h3>
+            <p>Hey! <br>
+            Ich bin Ben, <span id="age"></span> Jahre alt</p>
         </div>
         <div id="skill">
-
+            <h3>Skills</h3>
+            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.</p>
         </div>
         <div id="portfolio">
-
+            <h3>Portfolio</h3>
+            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.</p>
         </div>
         <div id="contact">
-
+            <h3>Kontakt</h3>
+            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.</p>
         </div>
         <div id="social-media">
+            <h3>Social Media</h3>
+            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.</p>
         </div>
     </div>
     <div id="footer">
-        <p>2017 - <span id="year"></span></p>
+        <p>2017 - <span id="year"></span> <a href="./data.html">Datenschutz</a> <a href="./imprint.html">Impressum</a></p>
     </div>
 </div>
 
@@ -46,7 +60,6 @@
         return Math.abs(ageDate.getUTCFullYear() - 1970)
     }
     document.getElementById('age').innerHTML = calculateAge(new Date('8/10/2002'))
-
 </script>
 </body>
 </html>
