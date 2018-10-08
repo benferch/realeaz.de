@@ -76,18 +76,31 @@ p {
 
 #nav {
   background-color: #fff34c;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  transition: all 1.5s ease-in-out; }
 
 #nav ul {
   align-content: center;
   justify-content: center;
-  display: flex; }
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: left; }
+
+#nav ul li {
+  transition: all 0.2s ease-in-out;
+  font-size: 1.5em; }
+
+#nav ul li:hover {
+  transform: translateX(10px); }
 
 #nav img {
   height: 64px;
-  cursor: pointer; }
+  cursor: pointer;
+  margin-left: 1em; }
 
 .inner nav img {
   height: 64px;
