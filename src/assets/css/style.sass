@@ -1,5 +1,5 @@
 $black: #222222
-$grey: #9f9f9f
+$grey: #7d7d7d
 $white: #f3f3f3
 $green: #57f555
 $blue: #3f98ec
@@ -17,7 +17,7 @@ a
   transition: all .3s ease-in-out
 
 a:hover
-  color: $black
+  color: #999999
 
 h1
   font-size: 2.2em
@@ -44,6 +44,10 @@ p
   width: 27vw
   height: auto
   box-shadow: 10px 10px 0 0 rgba(0,0,0,0.75)
+  transition: all .2s ease
+
+.inner .randomImg:hover
+  box-shadow: 20px 20px 0 0 $yellow
 
 #content
   position: sticky
@@ -88,7 +92,7 @@ p
   height: 100%
   width: 100%
   position: fixed
-  transition: all 1.5s ease-in-out
+  transition: all 1.5s
 
 #nav ul
   align-content: center
@@ -114,3 +118,27 @@ p
 .inner nav img
   height: 64px
   cursor: pointer
+
+.circle
+  content: ''
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  line-height: 0
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  color: $grey
+  flex-direction: column
+  margin: 1em
+
+#skills
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.html
+  border-color: $red
+  width: 80px

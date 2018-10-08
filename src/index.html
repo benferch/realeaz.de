@@ -8,7 +8,7 @@
 <body style="margin: 0">
 <div id="main">
     <div id="nav" style="transform: translateY(-100vh)">
-        <img src="./assets/img/closenav.svg" onclick="closeNav()">
+        <img src="./assets/img/closenav.svg" onclick="closeNav()" draggable="false">
         <ul>
             <li><a href="#about" onclick="closeNav()">Über mich</a></li>
             <li><a href="#skill" onclick="closeNav()">Skills</a></li>
@@ -21,23 +21,64 @@
     <div id="landing">
         <div class="inner">
             <nav role="navigation">
-                <img src="./assets/img/opennav.svg" onclick="openNav()">
+                <img src="./assets/img/opennav.svg" onclick="openNav()" draggable="false">
             </nav>
             <h1>
                 Ben F.
             </h1>
-            <img class="randomImg" src="./assets/img/image1.jpg">
+            <img class="randomImg" src="./assets/img/image1.jpg" draggable="false">
         </div>
     </div>
     <div id="content">
         <div id="about">
             <h3>Über mich</h3>
-            <p>Hey! <br>
-            Ich bin Ben, <span id="age"></span> Jahre alt</p>
+            <p><b>Moin!</b><br>
+            Ich bin Ben, <span id="age"></span> Jahre alt und wohne auf der Insel Rügen.</p>
+            <p>In meiner Freizeit entwickle ich gerne Webseiten, wo ich nun seit etwa einem Jahr aktiv dabei bin. <br>
+            In dieser Zeit habe ich ein paar eigene Projekte gemacht, aber auch an ein paar mitgewirkt</p>
+            <p>Falls Sie mich kontaktieren wollen, können Sie dies gerne in dem <a href="#contact">Kontaktformular</a> tun, oder mir eine <a href="mailto:ben@realeaz.de">E-Mail</a> schreiben.</p>
         </div>
         <div id="skill">
             <h3>Skills</h3>
-            <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.</p>
+            <p>Dies sind Sprachen und Betriebssysteme, wo ich Erfahrungen habe.</p>
+            <div id="skills">
+                <div class="circle html">
+                    <p>HTML</p>
+                    <p>80%</p>
+                </div>
+                <div class="circle css">
+                    <p>CSS</p>
+                    <p>80%</p>
+                </div>
+                <div class="circle js">
+                    <p>JavaScript</p>
+                    <p>80%</p>
+                </div>
+                <div class="circle php">
+                    <p>PHP</p>
+                    <p>80%</p>
+                </div>
+                <div class="circle wordpress">
+                    <p>WordPress</p>
+                    <p>80%</p>
+                </div>
+                <div class="circle drupal">
+                    <p>Drupal</p>
+                    <p>80%</p>
+                </div>
+                <div class="circle macOS">
+                    <p>macOS</p>
+                    <p>80%</p>
+                </div>
+                <div class="circle linux">
+                    <p>Linux</p>
+                    <p>80%</p>
+                </div>
+                <div class="circle Windows">
+                    <p>Windows</p>
+                    <p>80%</p>
+                </div>
+            </div>
         </div>
         <div id="portfolio">
             <h3>Portfolio</h3>
