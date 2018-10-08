@@ -5,7 +5,7 @@ $green: #57f555
 $blue: #3f98ec
 $yellow: #fff34c
 $red: #d93b49
-$orange: #d8862d
+$orange: #ffba3d
 
 html
   font-family: sans-serif
@@ -47,7 +47,7 @@ p
   transition: all .2s ease
 
 .inner .randomImg:hover
-  box-shadow: 20px 20px 0 0 $yellow
+  box-shadow: 20px 20px 0 0 $orange
 
 #content
   position: sticky
@@ -57,6 +57,8 @@ p
   margin-right: 0
   color: $white
   padding: 0.6em 4.5em 4.5em
+  border-left: $grey solid 1em
+  border-right: $grey solid 1em
 
 #content h3
   display: inline-block
@@ -119,3 +121,44 @@ p
   height: 64px
   cursor: pointer
 
+.skill
+  margin-top: -0.7em
+  margin-bottom: 0.7em
+  margin-left: 1em
+  position: relative
+  overflow-x: hidden
+  width: 100%
+
+.skill:before
+  height: 1em
+  display: block
+  position: absolute
+  bottom: 0
+  content: ""
+  background-color: $grey
+  width: 100%
+
+.skillbar
+  width: 100%
+  background-color: $orange
+  position: relative
+  display: block
+  height: 1em
+
+.html
+  width: 80%
+
+.css
+  width: 75%
+
+.js
+  width: 40%
+
+.git
+  width: 60%
+
+.win
+  width: 85%
+
+.macOS
+  width: 60%

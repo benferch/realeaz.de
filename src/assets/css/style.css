@@ -38,7 +38,7 @@ p {
   transition: all 0.2s ease; }
 
 .inner .randomImg:hover {
-  box-shadow: 20px 20px 0 0 #fff34c; }
+  box-shadow: 20px 20px 0 0 #ffba3d; }
 
 #content {
   position: sticky;
@@ -47,7 +47,9 @@ p {
   margin-left: 0;
   margin-right: 0;
   color: #f3f3f3;
-  padding: 0.6em 4.5em 4.5em; }
+  padding: 0.6em 4.5em 4.5em;
+  border-left: #7d7d7d solid 1em;
+  border-right: #7d7d7d solid 1em; }
 
 #content h3 {
   display: inline-block;
@@ -109,5 +111,47 @@ p {
 .inner nav img {
   height: 64px;
   cursor: pointer; }
+
+.skill {
+  margin-top: -0.7em;
+  margin-bottom: 0.7em;
+  margin-left: 1em;
+  position: relative;
+  overflow-x: hidden;
+  width: 100%; }
+
+.skill:before {
+  height: 1em;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  content: "";
+  background-color: #7d7d7d;
+  width: 100%; }
+
+.skillbar {
+  width: 100%;
+  background-color: #ffba3d;
+  position: relative;
+  display: block;
+  height: 1em; }
+
+.html {
+  width: 80%; }
+
+.css {
+  width: 75%; }
+
+.js {
+  width: 40%; }
+
+.git {
+  width: 60%; }
+
+.win {
+  width: 85%; }
+
+.macOS {
+  width: 60%; }
 
 /*# sourceMappingURL=style.css.map */
