@@ -209,6 +209,9 @@ p {
   right: 0;
   bottom: 0; }
 
+form {
+  width: 100%; }
+
 .form input, .form textarea {
   margin: 0.5em;
   padding: 0.4em;
@@ -217,27 +220,31 @@ p {
   font-size: 0.75em; }
 
 .form textarea {
-  max-width: 80%;
-  min-width: 80%;
+  max-width: 80vw;
+  min-width: 80vw;
   max-height: 40vh;
   min-height: 20vh;
   width: 40vw;
   height: 20vh; }
 
-.form .row {
+.row {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between; }
 
 .form input#name, input#email {
   height: 2em;
-  width: 40%; }
+  width: 45%; }
 
-.form button {
+form button {
   background-color: transparent;
   text-transform: uppercase;
   border: none;
-  border-bottom: #7d7d7d solid 0.3em;
+  border-bottom: #7d7d7d solid 0.15em;
+  font-size: 1.2em;
+  color: #7d7d7d;
+  cursor: pointer;
   display: inline; }
 
 /*# sourceMappingURL=style.css.map */
