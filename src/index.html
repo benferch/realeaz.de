@@ -35,7 +35,7 @@
             Ich bin Ben, <span id="age"></span> Jahre alt und wohne auf der Insel Rügen.</p>
             <p>In meiner Freizeit entwickle ich gerne Webseiten, wo ich nun seit etwa einem Jahr aktiv dabei bin. <br>
             In dieser Zeit habe ich ein paar eigene Projekte gemacht, aber auch an ein paar mitgewirkt</p>
-            <p>Falls Sie mich kontaktieren wollen, können Sie dies gerne in dem <a href="#contact">Kontaktformular</a> tun, oder mir eine <a href="mailto:ben@realeaz.de">E-Mail</a> schreiben.</p>
+            <p>Falls Du mich kontaktieren möchtest, kannst Du dies gerne mit Hilfe vom <a href="#contact">Kontaktformular</a> tun, oder mir eine <a href="mailto:ben@realeaz.de">E-Mail</a> schreiben.</p>
         </div>
         <div id="skill">
             <h3>Skills</h3>
@@ -99,7 +99,25 @@
         </div>
         <div id="contact">
             <h3>Kontakt</h3>
-            <p></p>
+            <p>Hier kannst Du mich per Kontaktformular kontaktieren, Du kannst mir aber auch gerne eine <a href="mailto:ben@realeaz.de">E-Mail</a> schreiben.</p>
+            <form accept-charset="UTF-8" action="https://usebasin.com/f/09871bf8a5ff" enctype="multipart/form-data" method="POST">
+                <div class="form">
+                    <div class="row">
+                        <input id="name" name="name" placeholder="Name" type="text" required>
+                        <input id="email" name="email" placeholder="E-Mail" type="email" required>
+                    </div>
+                    <textarea id="message" name="message" placeholder="Nachricht" required></textarea>
+                </div>
+                <div class="row">
+                    <div class="approval">
+                        <input type="checkbox" name="approval" id="approval" value="approval" required>
+                        <label for="approval">
+                            Ich akzeptiere die <a href='./data.html'>Datenschutzerklärung</a>.
+                        </label>
+                    </div>
+                    <button name="send" type="submit" id="send">Senden</button>
+                </div>
+            </form>
         </div>
         <div id="social-media">
             <h3>Social Media</h3>
