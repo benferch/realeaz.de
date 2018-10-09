@@ -34,7 +34,7 @@ p {
   margin-left: 55vw;
   width: 27vw;
   height: auto;
-  box-shadow: 10px 10px 0 0 rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 0 0 #222222;
   transition: all 0.2s ease; }
 
 .inner .randomImg:hover {
@@ -60,7 +60,10 @@ p {
   margin-bottom: 0.1em; }
 
 #footer {
-  margin: 1em; }
+  padding: 0.5em;
+  border-right: #f3f3f3 solid 1em;
+  border-left: #f3f3f3 solid 1em;
+  border-bottom: #f3f3f3 solid 1em; }
 
 #footer #year {
   border-right: #222222 solid 1px;
@@ -131,7 +134,7 @@ p {
 
 .skillbar {
   width: 100%;
-  background-color: #ffba3d;
+  background-color: #fff34c;
   position: relative;
   display: block;
   height: 1em; }
@@ -205,5 +208,36 @@ p {
   left: 0;
   right: 0;
   bottom: 0; }
+
+.form input, .form textarea {
+  margin: 0.5em;
+  padding: 0.4em;
+  background-color: #fff34c;
+  border: #f3f3f3 solid 0.3em;
+  font-size: 0.75em; }
+
+.form textarea {
+  max-width: 80%;
+  min-width: 80%;
+  max-height: 40vh;
+  min-height: 20vh;
+  width: 40vw;
+  height: 20vh; }
+
+.form .row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.form input#name, input#email {
+  height: 2em;
+  width: 40%; }
+
+.form button {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  border-bottom: #7d7d7d solid 0.3em;
+  display: inline; }
 
 /*# sourceMappingURL=style.css.map */
