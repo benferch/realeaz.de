@@ -32,6 +32,8 @@ p
   background-color: $white
   height: 90vh
   margin: 1em
+  overflow: hidden
+  position: relative
 
 .inner h1
   margin-top: 20vh
@@ -45,6 +47,7 @@ p
   height: auto
   box-shadow: 10px 10px 0 0 $black
   transition: all .2s ease
+  position: absolute
 
 .inner .randomImg:hover
   box-shadow: 20px 20px 0 0 $orange
@@ -62,7 +65,7 @@ p
 
 #content h3
   display: inline-block
-  border-bottom: $white solid 2px
+  border-bottom: $white solid 0.01em
   margin-bottom: 0.1em
 
 #content p
@@ -260,3 +263,21 @@ form button
 .approval input#approval
   margin-right: 2em
   transform: scale(1.2)
+
+.approval label
+  font-size: 1.2em
+
+#accounts
+  display: flex
+  flex-direction: row
+  align-items: center
+
+#accounts img
+  height: 10vh
+  width: auto
+  margin: 0.5em
+  filter: grayscale(100)
+  transition: all .4s ease
+
+#accounts img:hover
+  filter: grayscale(0)
