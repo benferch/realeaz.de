@@ -128,12 +128,13 @@ p
   cursor: pointer
 
 .skill
-  margin-top: -0.7em
-  margin-bottom: 0.7em
   margin-left: 1em
   position: relative
   overflow-x: hidden
   width: 100%
+
+.skill h4
+  margin-bottom: 0.1em
 
 .skill:before
   height: 1em
@@ -281,3 +282,21 @@ form button
 
 ::-webkit-scrollbar
   display: none
+
+@media screen and (max-device-width: 600px)
+  .inner nav img
+    height: 128px
+    width: auto
+
+  .inner h1
+    font-size: 3em
+    margin-left: 20vw
+    margin-top: 15vh
+
+  .inner .randomImg
+    width: 36vw
+    height: auto
+    margin-left: 45vw
+    margin-top: -7vh
+
+  #content
