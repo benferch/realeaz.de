@@ -63,7 +63,7 @@ p {
   margin-bottom: 0.1em; }
 
 #footer {
-  padding: 0.5em;
+  padding: 0.1em 0.5em;
   border-right: #f3f3f3 solid 1em;
   border-left: #f3f3f3 solid 1em;
   border-bottom: #f3f3f3 solid 1em; }
@@ -223,12 +223,9 @@ form {
   font-size: 0.75em; }
 
 .form textarea {
-  max-width: 80vw;
-  min-width: 80vw;
-  max-height: 40vh;
-  min-height: 20vh;
-  width: 40vw;
-  height: 20vh; }
+  height: 40vh;
+  width: 100%;
+  resize: none; }
 
 .row {
   display: flex;
@@ -264,7 +261,7 @@ form button {
   align-items: center; }
 
 #accounts img {
-  height: 10vh;
+  height: 7vh;
   width: auto;
   margin: 0.5em;
   filter: grayscale(100);
