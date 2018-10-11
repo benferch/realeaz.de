@@ -270,4 +270,7 @@ form button {
 #accounts img:hover {
   filter: grayscale(0); }
 
+::-webkit-scrollbar {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
