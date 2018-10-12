@@ -29,6 +29,12 @@ p {
 ::-webkit-scrollbar {
   display: none; }
 
+::-moz-selection {
+  background-color: #fff34c; }
+
+::selection {
+  background-color: #fff34c; }
+
 .inner {
   background-color: #f3f3f3;
   height: 90vh;
