@@ -321,6 +321,9 @@ form button {
     width: auto; }
 
   #projects h2 {
+    font-size: 2em; }
+
+  .inner a {
     font-size: 2em; } }
 
 /*# sourceMappingURL=style.css.map */
