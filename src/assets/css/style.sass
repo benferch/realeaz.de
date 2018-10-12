@@ -1,3 +1,4 @@
+// Colors
 $black: #222222
 $grey: #7d7d7d
 $white: #f3f3f3
@@ -7,6 +8,7 @@ $yellow: #fff34c
 $red: #d93b49
 $orange: #ffba3d
 
+// General stuff
 html
   font-family: sans-serif
   background-color: $yellow
@@ -28,6 +30,17 @@ h3
 p
   font-size: 1.15em
 
+.row
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+::-webkit-scrollbar
+  display: none
+
+// landing section
 .inner
   background-color: $white
   height: 90vh
@@ -52,49 +65,7 @@ p
 .inner .randomImg:hover
   box-shadow: 20px 20px 0 0 $orange
 
-#content
-  position: sticky
-  background-color: $black
-  margin-top: -12vh
-  margin-left: 0
-  margin-right: 0
-  color: $white
-  padding: 0.6em 4.5em 4.5em
-  border-left: $grey solid 1em
-  border-right: $grey solid 1em
-
-#content h3
-  display: inline-block
-  border-bottom: $white solid 0.01em
-  margin-bottom: 0.1em
-
-#content p
-  margin-bottom: 0.1em
-
-#footer
-  padding: 0.1em 0.5em
-  border-right: $white solid 1em
-  border-left: $white solid 1em
-  border-bottom: $white solid 1em
-
-#footer #year
-  border-right: $black solid 1px
-  padding-right: 0.5em
-
-#footer a:nth-child(2)
-  border-right: $black solid 1px
-  padding-right: 0.5em
-  padding-left: 0.5em
-
-#footer a:nth-child(3)
-  padding-left: 0.5em
-
-#footer a
-  color: $black
-
-#footer a:hover
-  color: $grey
-
+// Navigation
 #nav
   background-color: $yellow
   height: 100%
@@ -127,6 +98,27 @@ p
   height: 64px
   cursor: pointer
 
+// Content section
+#content
+  position: sticky
+  background-color: $black
+  margin-top: -12vh
+  margin-left: 0
+  margin-right: 0
+  color: $white
+  padding: 0.6em 4.5em 4.5em
+  border-left: $grey solid 1em
+  border-right: $grey solid 1em
+
+#content h3
+  display: inline-block
+  border-bottom: $white solid 0.01em
+  margin-bottom: 0.1em
+
+#content p
+  margin-bottom: 0.1em
+
+// Skill section
 .skill
   margin-left: 1em
   position: relative
@@ -170,10 +162,14 @@ p
 .macOS
   width: 60%
 
+// Portfolio section
 #projects
   display: flex
   flex-direction: row
   flex-wrap: wrap
+
+.preview h1
+  position: relative
 
 .thumbnail-container
   width: calc(1440px * 0.25)
@@ -222,6 +218,7 @@ p
   right: 0
   bottom: 0
 
+// Contact section
 form
   width: 100%
 
@@ -236,13 +233,6 @@ form
   height: 40vh
   width: 100%
   resize: none
-
-.row
-  display: flex
-  flex-wrap: wrap
-  flex-direction: row
-  justify-content: space-between
-  align-items: center
 
 .form input#name, input#email
   height: 2em
@@ -265,6 +255,7 @@ form button
 .approval label
   font-size: 1.2em
 
+// Social Media section
 #accounts
   display: flex
   flex-direction: row
@@ -280,10 +271,34 @@ form button
 #accounts img:hover
   filter: grayscale(0)
 
-::-webkit-scrollbar
-  display: none
+// footer
+#footer
+  padding: 0.1em 0.5em
+  border-right: $white solid 1em
+  border-left: $white solid 1em
+  border-bottom: $white solid 1em
 
+#footer #year
+  border-right: $black solid 1px
+  padding-right: 0.5em
+
+#footer a:nth-child(2)
+  border-right: $black solid 1px
+  padding-right: 0.5em
+  padding-left: 0.5em
+
+#footer a:nth-child(3)
+  padding-left: 0.5em
+
+#footer a
+  color: $black
+
+#footer a:hover
+  color: $grey
+
+// Responsive
 @media screen and (max-device-width: 600px)
+  // Landing section
   .inner nav img
     height: 128px
     width: auto
@@ -299,6 +314,10 @@ form button
     margin-left: 45vw
     margin-top: -7vh
 
+  .inner a, .inner p
+    font-size: 2em
+
+  // Navigation section
   #nav
     font-size: 2em
 
@@ -307,9 +326,15 @@ form button
     width: auto
     margin-left: 0.5em
 
+  // Content section
   #content h3
     font-size: 3em
 
+  // Portfolio section
+  #projects h2
+    font-size: 2em
+
+  // Contact section
   .form input, .form textarea
     font-size: 1.6em
 
@@ -325,12 +350,7 @@ form button
   form button
     font-size: 1.6em
 
+  // Social Media section
   #accounts img
     height: 5vh
     width: auto
-
-  #projects h2
-    font-size: 2em
-
-  .inner a
-    font-size: 2em
