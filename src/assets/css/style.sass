@@ -46,31 +46,6 @@ p
 ::selection
   background-color: $yellow
 
-// landing section
-.inner
-  background-color: $white
-  height: 90vh
-  margin: 1em
-  overflow: hidden
-  position: relative
-
-.inner h1
-  margin-top: 20vh
-  margin-left: 25vw
-
-.inner .randomImg
-  display: inline-block
-  margin-top: -5vh
-  margin-left: 55vw
-  width: 27vw
-  height: auto
-  box-shadow: 10px 10px 0 0 $black
-  transition: all .2s ease
-  position: absolute
-
-.inner .randomImg:hover
-  box-shadow: 20px 20px 0 0 $orange
-
 // Navigation
 #nav
   background-color: $yellow
@@ -104,9 +79,35 @@ p
   height: 64px
   cursor: pointer
 
+// landing section
+.inner
+  background-color: $white
+  height: 90vh
+  margin: 1em
+  overflow: hidden
+  position: relative
+
+.inner h1
+  margin-top: 20vh
+  margin-left: 25vw
+
+.inner .randomImg
+  display: inline-block
+  margin-top: -5vh
+  margin-left: 55vw
+  width: 27vw
+  height: auto
+  box-shadow: 10px 10px 0 0 $black
+  transition: all .2s ease
+  position: absolute
+
+.inner .randomImg:hover
+  box-shadow: 20px 20px 0 0 $orange
+
 // Content section
 #content
   position: sticky
+  position: -webkit-sticky
   background-color: $black
   margin-top: -12vh
   margin-left: 0
@@ -230,7 +231,10 @@ form
   padding: 0.4em
   background-color: $yellow
   border: $white solid 0.3em
-  font-size: 0.75em
+  font-size: 1em
+
+.form input::placeholder, .form textarea::placeholder
+  text-transform: uppercase
 
 .form textarea
   height: 40vh
