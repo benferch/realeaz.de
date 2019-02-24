@@ -1,6 +1,5 @@
 # Personal Website
 
-This is my personal website which you can find [here](https://realeaz.de/).
+This is the repository of my personal website.
 
-## Live
-This repository is currently viewable at [realeaz.de](https://realeaz.de)
+It's currently work in progress.
