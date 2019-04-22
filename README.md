@@ -1,6 +1,6 @@
 # Personal Website
 
-This is my personal Website, which you can find [here](https://realeaz.de/).
+This is the repository of my personal Website, which you can find [here](https://realeaz.de/).
 
 ## Live
-This repository is currently viewable at [realeaz.de](https://realeaz.de)
+This branch showing the files of my old website
