@@ -56,4 +56,9 @@ a:hover {
   font-weight: 500;
   font-size: 1.3em;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+}
 /*# sourceMappingURL=style.css.map */
