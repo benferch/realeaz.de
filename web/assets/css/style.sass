@@ -10,6 +10,19 @@
   font-family: 'San Francisco Light'
   src: url('../font/SFProText-Light.ttf') format('truetype')
 
+@font-face
+  font-family: 'Rund Grotesk Medium'
+  src: url('../font/Rund-Grotesk_Medium.ttf') format('truetype')
+
+@font-face
+  font-family: 'Rund Grotesk Medium Italic'
+  src: url('../font/Rund-Grotesk_Medium-italic.ttf') format('truetype')
+
+@font-face
+  font-family: 'Rund Grotesk Medium Bold'
+  font-weight: bold
+  src: url('../font/Rund-Grotesk_Medium.ttf') format('truetype')
+
 // General
 *
   margin: 0
@@ -18,3 +31,25 @@
     family: "San Francisco Regular"
   background:
     color: #fcfbf8
+  color: #404040
+
+#landing
+  display: flex
+  flex-direction: column
+  justify-content: center
+  height: 100vh
+  align-items: center
+
+  h1
+    font:
+      family: "Rund Grotesk Medium Italic"
+
+  .waves
+    float: right
+
+.pronunciation
+  font:
+    size: 17pt
+    family: "Rund Grotesk Medium Italic"
+  padding-left: 5vh
+  opacity: 0.1
