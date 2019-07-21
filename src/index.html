@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Normal Tags -->
+    <meta charset="UTF-8">
+    <title>ben.</title>
+    <link rel="icon" type="image/png" href="./assets/img/logo.png">
+    <meta name="description" content="Moin! Ich bin Ben, wohne auf Rügen. Ich mag es Webseiten zu entwickeln und bin bei der freiwilligen Feuerwehr tätig.">
+    <meta name="keywords" content="ben, realeaz, unrealeaz, eaz, portfolio, personal site, german, web, developer, twiiter, simple, flat">
+
+    <meta name="application-name" content="ben.">
+    <meta name="theme-color" content="#fff34c">
+    <meta name="apple-mobile-web-app-title" content="ben.">
+
+    <link rel="canonical" href="https://realeaz.de">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://realeaz.de">
+    <meta property="og:site_name" content="realeaz.de">
+    <meta property="og:title" content="ben.">
+    <meta property="og:image" content="https://realeaz.de/assets/img/logo.png">
+    <meta property="og:description" content="Moin! Ich bin Ben, wohne auf Rügen. Ich mag es Webseiten zu entwickeln und bin bei der freiwilligen Feuerwehr tätig.">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@unrealeaz">
+    <meta name="twitter:creator" content="@unrealeaz">
+    <meta name="twitter:title" content="ben.">
+    <meta name="twitter:image" content="https://realeaz.de/assets/img/logo.png">
+    <meta name="twitter:description" content="Moin! Ich bin Ben, wohne auf Rügen. Ich mag es Webseiten zu entwickeln und bin bei der freiwilligen Feuerwehr tätig.">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body style="margin: 0">
+<div id="main">
+    <div id="nav" style="transform: translateY(-100vh)">
+        <img src="./assets/img/closenav.svg" onclick="closeNav()" draggable="false">
+        <ul>
+            <li><a href="#about" onclick="closeNav()">Über mich</a></li>
+            <li><a href="#portfolio" onclick="closeNav()">Portfolio</a></li>
+            <li><a href="#contact" onclick="closeNav()">Kontakt</a></li>
+            <li><a href="#social-media" onclick="closeNav()">Social Media</a></li>
+            <li><a href="https://status.realeaz.de" onclick="closeNav()" target="_blank">Status</a></li>
+        </ul>
+    </div>
+    <div id="landing">
+        <div class="inner">
+            <nav role="navigation">
+                <img src="./assets/img/opennav.svg" onclick="openNav()" draggable="false">
+            </nav>
+            <h1>
+                Ben F.
+            </h1>
+            <img class="randomImg" src="./assets/img/image1.jpg" draggable="false">
+        </div>
+    </div>
+    <div id="content">
+        <div id="about">
+            <h3>Über mich</h3>
+            <p><b>Moin!</b><br>
+            Ich bin Ben, <span id="age"></span> Jahre alt und wohne auf der Insel Rügen.</p>
+            <p>In meiner Freizeit entwickle ich gerne Webseiten, wo ich nun seit etwa einem Jahr aktiv dabei bin. <br>
+            In dieser Zeit habe ich ein paar eigene Projekte gemacht, aber auch an ein paar mitgewirkt</p>
+            <p>Falls Du mich kontaktieren möchtest, kannst Du dies gerne mit Hilfe vom <a href="#contact">Kontaktformular</a> tun, oder mir eine <a href="mailto:ben@realeaz.de">E-Mail</a> schreiben.</p>
+        </div>
+        <div id="skill">
+            <h3>Skills</h3>
+            <p>Hier sind die Sprachen und Betriebssysteme dargestellt, wo ich Erfahrungen habe.</p>
+            <div id="skills">
+                <div class="skill">
+                    <h4>HTML</h4>
+                    <div class="skillbar html"></div>
+                </div>
+                <div class="skill">
+                    <h4>CSS</h4>
+                    <div class="skillbar css"></div>
+                </div>
+                <div class="skill">
+                    <h4>Javascript</h4>
+                    <div class="skillbar js"></div>
+                </div>
+                <div class="skill">
+                    <h4>Git</h4>
+                    <div class="skillbar git"></div>
+                </div>
+                <div class="skill">
+                    <h4>Windows</h4>
+                    <div class="skillbar win"></div>
+                </div>
+                <div class="skill">
+                    <h4>macOS</h4>
+                    <div class="skillbar macOS"></div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <h3>Portfolio</h3>
+            <p>Hier sind einige Projekte, an denen ich gearbeitet bzw. mitgewirkt habe. Mehr auf findest du auf <a href="https://realeaz.de/go/github" target="_blank">GitHub</a>.</p>
+            <div id="projects">
+                <div class="preview">
+                    <h2>Meine Webseite</h2>
+                    <div class="thumbnail-container" onclick="window.open('https://realeaz.de')">
+                        <div class="thumbnail">
+                            <iframe src="https://realeaz.de" frameborder="0" onload="this.style.opacity = 1" style="zoom: 1; opacity: 1;"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview">
+                    <h2>RGB-Generator</h2>
+                    <div class="thumbnail-container" onclick="window.open('https://rgb.realeaz.de')">
+                        <div class="thumbnail">
+                            <iframe src="https://rgb.realeaz.de" frameborder="0" onload="this.style.opacity = 1" style="zoom: 1; opacity: 1;"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="preview">
+                    <h2>MetaPeta</h2>
+                    <div class="thumbnail-container" onclick="window.open('https://jugendhackt.github.io/MetaPeta/')">
+                        <div class="thumbnail">
+                            <iframe src="https://jugendhackt.github.io/MetaPeta/" frameborder="0" onload="this.style.opacity = 1" style="zoom: 1; opacity: 1;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contact">
+            <h3>Kontakt</h3>
+            <p>Hier kannst Du mich per Kontaktformular kontaktieren, Du kannst mir aber auch gerne eine <a href="mailto:ben@realeaz.de">E-Mail</a> schreiben.</p>
+            <form accept-charset="UTF-8" action="https://usebasin.com/f/09871bf8a5ff" enctype="multipart/form-data" method="POST">
+                <div class="form">
+                    <div class="row">
+                        <input id="name" name="name" placeholder="Name" type="text" required>
+                        <input id="email" name="email" placeholder="E-Mail" type="email" required>
+                    </div>
+                    <div class="row">
+                        <textarea id="message" name="message" placeholder="Nachricht" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="approval">
+                        <input type="checkbox" name="approval" id="approval" value="approval" required>
+                        <label for="approval">
+                            Ich akzeptiere die <a href='./data.html'>Datenschutzerklärung</a>.
+                        </label>
+                    </div>
+                    <button name="send" type="submit" id="send">Senden</button>
+                </div>
+            </form>
+        </div>
+        <div id="social-media">
+            <h3>Social Media</h3>
+            <p>Hier kann man mich verfolgen.</p>
+            <div id="accounts">
+                <a href="https://realeaz.de/go/twitter"><img src="./assets/img/twitter.svg"></a>
+                <a href="https://realeaz.de/go/instagram"><img src="./assets/img/instagram.svg"></a>
+                <a href="https://realeaz.de/go/github"><img src="./assets/img/github.svg"></a>
+                <a href="https://realeaz.de/go/gitlab"><img src="./assets/img/gitlab.svg"></a>
+                <a href="https://realeaz.de/go/bitbucket"><img src="./assets/img/bitbucket.svg"></a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; 2017 - <span id="year"></span> <a href="./imprint.html">Impressum</a> <a href="./data.html">Datenschutz</a></p>
+    </div>
+</div>
+
+<script src="./assets/js/jquery-3.3.1.min.js"></script>
+<script src="./assets/js/index.js"></script>
+<script src="./assets/js/smooth-scroll.js"></script>
+<script>
+    // year
+    document.getElementById('year').innerHTML = new Date().getFullYear();
+
+    // age
+    function calculateAge(birthday) {
+        var ageDif = Date.now() - birthday.getTime();
+        var ageDate = new Date(ageDif);
+        return Math.abs(ageDate.getUTCFullYear() - 1970)
+    }
+    document.getElementById('age').innerHTML = calculateAge(new Date('8/10/2002'))
+</script>
+</body>
+</html>

@@ -1,13 +1,13 @@
-ErrorDocument 404 /error.php
-ErrorDocument 403 /error.php
-ErrorDocument 401 /error.php
+ErrorDocument 404 /error.html
+ErrorDocument 403 /error.html
+ErrorDocument 401 /error.html
 
 Redirect /go/twitter https://twitter.com/unrealeaz
 Redirect /go/youtube https://www.youtube.com/channel/UCJJGxAWoIqsPmf3ieNa20hA
 Redirect /go/twitch https://www.twitch.tv/unrealeaz
 Redirect /go/instagram https://www.instagram.com/_realeaz/
 Redirect /go/github https://github.com/realeaz
-Redirect /go/tellonym https://tellonym.me/realeaz
+Redirect /go/tellonym https://tellonym.me/unrealeaz
 Redirect /go/gitlab https://gitlab.com/realeaz
 Redirect /go/bitbucket https://bitbucket.org/unrealeaz/
 
@@ -19,12 +19,12 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
 
-RewriteRule ^(.*)$ $1.php
+RewriteRule ^(.*)$ $1.html
 
 <filesMatch ".(jpg|jpeg|png|gif|ico|woff)$">
 Header set Cache-Control "max-age=2628000, public"
 </filesMatch>
 
 <filesMatch ".(css|js)$">
-Header set Cache-Control "max-age=604800, public"
+Header set Cache-Control "max-age=86400, public"
 </filesMatch>
