@@ -1,23 +1,20 @@
 @font-face {
-  font-family: 'San Francisco Regular';
+  font-family: "San Francisco Regular";
   src: url("../font/SFProText-Regular.ttf") format("truetype");
 }
-
 @font-face {
-  font-family: 'San Francisco Bold';
+  font-family: "San Francisco Bold";
   src: url("../font/SFProText-Bold.ttf") format("truetype");
-  font-weight: bold;
 }
-
 @font-face {
-  font-family: 'San Francisco Light';
+  font-family: "San Francisco Light";
   src: url("../font/SFProText-Light.ttf") format("truetype");
-  font-weight: light;
 }
-
 * {
   margin: 0;
   padding: 0;
-  font-family: San Francisco Regular;
+  font-family: "San Francisco Regular";
+  background-color: #fcfbf8;
 }
+
 /*# sourceMappingURL=style.css.map */
