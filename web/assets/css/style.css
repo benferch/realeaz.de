@@ -50,7 +50,7 @@ a:hover {
     font-family: "Rund Grotesk Medium Italic"; }
   #landing .waves-right {
     align-self: flex-end;
-    transform: translateX(10em); }
+    transform: translate(10em, 7em); }
   #landing .waves-left {
     align-self: flex-start;
     transform: translate(-5em, -10em); }
