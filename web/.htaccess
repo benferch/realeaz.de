@@ -22,7 +22,7 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html
 
 <filesMatch ".(jpg|jpeg|png|gif|ico|woff|ttf)$">
-Header set Cache-Control "max-age=2628000, public"
+Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
 <filesMatch ".(css|js)$">
