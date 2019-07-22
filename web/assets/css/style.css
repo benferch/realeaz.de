@@ -24,6 +24,14 @@
   background-color: #fcfbf8;
   color: #404040; }
 
+a {
+  text-decoration: none;
+  transition: all 0.2s linear;
+  color: #141414; }
+
+a:hover {
+  color: #9b9b9b; }
+
 #landing {
   display: flex;
   flex-direction: column;
@@ -33,7 +41,8 @@
   #landing h1 {
     font-family: "Rund Grotesk Medium Italic"; }
   #landing .waves {
-    float: right; }
+    height: 20em;
+    width: 20em; }
 
 .pronunciation {
   font-size: 17pt;
