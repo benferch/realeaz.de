@@ -28,7 +28,9 @@
   padding: 0;
   font-family: "San Francisco Regular";
   background-color: #fcfbf8;
-  color: #404040; }
+  color: #404040;
+  overflow-y: auto;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
@@ -39,7 +41,8 @@ a:hover {
   color: #9b9b9b; }
 
 .bold {
-  font-family: "Rund Grotesk Medium Bold"; }
+  font-family: "Rund Grotesk Medium Bold";
+  font-size: 22pt; }
 
 #landing {
   display: flex;
@@ -60,6 +63,6 @@ a:hover {
   opacity: 0.2; }
 
 #content {
-  margin: 0 10em; }
+  margin: 0 15em; }
 
 /*# sourceMappingURL=style.css.map */
