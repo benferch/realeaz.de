@@ -54,12 +54,26 @@ a:hover {
   #landing .waves-left {
     align-self: flex-start;
     transform: translate(-5em, -10em); }
-
-.pronunciation {
-  font-size: 17pt;
-  font-family: "Rund Grotesk Medium Italic";
-  padding-left: 5vh;
-  opacity: 0.2; }
+  #landing .pronunciation {
+    font-size: 17pt;
+    font-family: "Rund Grotesk Medium Italic";
+    padding-left: 5vh;
+    opacity: 0.2; }
+  #landing #scroll-down {
+    position: absolute;
+    left: 50%;
+    bottom: 3em;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 3em;
+    height: 3em;
+    border-bottom: 1em solid #404040;
+    border-right: 1em solid #404040;
+    transform: translate(-50%, 0%) rotate(45deg);
+    border-radius: 5em;
+    overflow-y: hidden;
+    cursor: pointer; }
 
 #content {
   margin: 0 15em; }

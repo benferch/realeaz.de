@@ -10,3 +10,8 @@ document.getElementById("age").innerHTML = calcAge("08/10/2002");
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
+
+// Smooth scroll
+function scrollDown() {
+    document.getElementById("about").scrollIntoView({behavior: "smooth"});
+}
