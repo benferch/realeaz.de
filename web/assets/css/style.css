@@ -43,7 +43,7 @@ a:hover {
   align-items: center; }
   #landing h1 {
     font-family: "Rund Grotesk Medium Italic"; }
-  #landing .waves-right {
+  #landing .waves {
     align-self: flex-end;
     margin-right: -10em; }
 
