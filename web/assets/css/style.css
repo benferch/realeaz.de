@@ -40,10 +40,6 @@ a {
 a:hover {
   color: #9b9b9b; }
 
-.bold {
-  font-family: "Rund Grotesk Medium Bold";
-  font-size: 22pt; }
-
 #landing {
   display: flex;
   flex-direction: column;
@@ -52,9 +48,12 @@ a:hover {
   align-items: center; }
   #landing h1 {
     font-family: "Rund Grotesk Medium Italic"; }
-  #landing .waves {
+  #landing .waves-right {
     align-self: flex-end;
-    margin-right: -10em; }
+    transform: translateX(10em); }
+  #landing .waves-left {
+    align-self: flex-start;
+    transform: translate(-5em, -10em); }
 
 .pronunciation {
   font-size: 17pt;
