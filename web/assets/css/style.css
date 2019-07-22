@@ -1,19 +1,25 @@
 @font-face {
+  font-display: auto;
   font-family: "San Francisco Regular";
   src: url("../font/SFProText-Regular.ttf") format("truetype"); }
 @font-face {
+  font-display: auto;
   font-family: "San Francisco Bold";
   src: url("../font/SFProText-Bold.ttf") format("truetype"); }
 @font-face {
+  font-display: auto;
   font-family: "San Francisco Light";
   src: url("../font/SFProText-Light.ttf") format("truetype"); }
 @font-face {
+  font-display: auto;
   font-family: "Rund Grotesk Medium";
   src: url("../font/Rund-Grotesk_Medium.ttf") format("truetype"); }
 @font-face {
+  font-display: auto;
   font-family: "Rund Grotesk Medium Italic";
   src: url("../font/Rund-Grotesk_Medium-italic.ttf") format("truetype"); }
 @font-face {
+  font-display: auto;
   font-family: "Rund Grotesk Medium Bold";
   font-weight: bold;
   src: url("../font/Rund-Grotesk_Medium.ttf") format("truetype"); }
