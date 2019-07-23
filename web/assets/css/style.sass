@@ -36,6 +36,16 @@
     weight: bold
   src: url('../font/Rund-Grotesk_medium.ttf') format('truetype')
 
+// Animations
+
+@keyframes hover
+  0%
+    transform: translate(-50%, 0%) rotate(45deg)
+  50%
+    transform: translate(-50%, 2em) rotate(45deg)
+  100%
+    transform: translate(-50%, 0%) rotate(45deg)
+
 // General
 *
   margin: 0
@@ -86,19 +96,22 @@ a:hover
 
   #scroll-down
     position: absolute
-    left: 50%
     bottom: 3em
     display: block
     text-align: center
     text-decoration: none
     width: 3em
     height: 3em
-    border-bottom: 1em solid #404040
-    border-right: 1em solid #404040
+    border-bottom: 0.5em solid #404040
+    border-right: 0.5em solid #404040
     transform: translate(-50%, 0%) rotate(45deg)
     border-radius: 5em
     overflow-y: hidden
     cursor: pointer
+    animation: hover
+    animation-duration: 5s
+    animation-delay: 3s
+    animation-iteration-count: infinite
 
 // Content
 #content
