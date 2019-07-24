@@ -46,7 +46,10 @@ a {
   transition: all 0.2s linear;
   color: #141414; }
   a:hover {
-    color: #9b9b9b; }
+    color: #26ffcd; }
+
+p {
+  font-size: 110%; }
 
 .btn {
   border: 0.1em solid #404040;
@@ -143,6 +146,9 @@ a {
 
 #links {
   margin-bottom: 1em; }
+
+ul {
+  padding-inline-start: 1em; }
 
 #contact {
   margin-bottom: 1em; }
