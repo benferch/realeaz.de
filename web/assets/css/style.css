@@ -102,7 +102,11 @@ a {
   margin: 0 15em; }
 
 #about {
-  padding-top: 3em; }
+  padding-top: 3em;
+  margin-bottom: 1em; }
+
+#skills {
+  margin-bottom: 1em; }
 
 .skills {
   display: flex;
@@ -117,6 +121,9 @@ a {
   margin: 1em;
   box-shadow: 0 0 15px 0 #404040;
   text-align: center; }
+
+#projects {
+  margin-bottom: 1em; }
 
 .projects {
   display: flex;
@@ -133,5 +140,11 @@ a {
     margin-bottom: 1em; }
   .project-showcase h4 {
     font-family: "San Francisco Bold"; }
+
+#links {
+  margin-bottom: 1em; }
+
+#contact {
+  margin-bottom: 1em; }
 
 /*# sourceMappingURL=style.css.map */
