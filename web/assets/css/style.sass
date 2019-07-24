@@ -37,7 +37,6 @@
   src: url('../font/Rund-Grotesk_medium.ttf') format('truetype')
 
 // Animations
-
 @keyframes hover
   0%
     transform: translate(-50%, 0%) rotate(45deg)
@@ -66,6 +65,25 @@ a
 
 a:hover
   color: #9b9b9b
+
+// Button
+.btn
+  border: 0.1em solid #404040
+  border-radius: 1em
+  padding: 0.5em
+  background: transparent
+  transition: all .2s ease-in-out
+
+.btn:hover
+  border-color: #26ffcd
+  box-shadow: 0 0 15px 0 #26ffcd
+  text-shadow: 0 0 15px 0 #26ffcd
+  color: #26ffcd
+  background: transparentize(#26ffcd, 0.9)
+
+  span:hover
+    text-shadow: 0 0 15px 0 #26ffcd
+    color: #26ffcd
 
 // Landing
 #landing
@@ -135,3 +153,23 @@ a:hover
   margin: 1em
   box-shadow: 0 0 15px 0 #404040
   text-align: center
+
+// Projects
+.projects
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.project-showcase
+  height: 7.5em
+  margin: 1em
+  padding: 1em
+  border-radius: 1em
+  box-shadow: 0 0 15px 0 #404040
+
+  .description
+    margin-bottom: 1em
+
+  h4
+    font:
+      family: "San Francisco Bold"

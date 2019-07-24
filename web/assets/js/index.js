@@ -26,3 +26,31 @@ $(document).ready(function () {
         }
     })
 });
+
+// Get Github Project description
+// MetaPeta
+fetch("https://api.github.com/repos/jugendhackt/MetaPeta")
+    .then(function (response) {
+        return response.json();
+    }).then(function (json) {
+    var metapetaDescription = json.description;
+    document.getElementById("metapetaDescription").innerHTML = metapetaDescription;
+});
+
+// PacTrac
+fetch("https://api.github.com/repos/jugendhackt/PacTrac")
+    .then(function (response) {
+        return response.json();
+    }).then(function (json) {
+    var pactracDescription = json.description;
+    document.getElementById("pactracDescription").innerHTML = pactracDescription;
+});
+
+// benferch.de
+fetch("https://api.github.com/repos/benferch/benferch.de")
+    .then(function (response) {
+        return response.json();
+    }).then(function (json) {
+    var benferchDescription = json.description;
+    document.getElementById("benferchDescription").innerHTML = benferchDescription;
+});

@@ -47,6 +47,23 @@ a {
 a:hover {
   color: #9b9b9b; }
 
+.btn {
+  border: 0.1em solid #404040;
+  border-radius: 1em;
+  padding: 0.5em;
+  background: transparent;
+  transition: all 0.2s ease-in-out; }
+
+.btn:hover {
+  border-color: #26ffcd;
+  box-shadow: 0 0 15px 0 #26ffcd;
+  text-shadow: 0 0 15px 0 #26ffcd;
+  color: #26ffcd;
+  background: rgba(38, 255, 205, 0.1); }
+  .btn:hover span:hover {
+    text-shadow: 0 0 15px 0 #26ffcd;
+    color: #26ffcd; }
+
 #landing {
   display: flex;
   flex-direction: column;
@@ -101,5 +118,21 @@ a:hover {
   margin: 1em;
   box-shadow: 0 0 15px 0 #404040;
   text-align: center; }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.project-showcase {
+  height: 7.5em;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 15px 0 #404040; }
+  .project-showcase .description {
+    margin-bottom: 1em; }
+  .project-showcase h4 {
+    font-family: "San Francisco Bold"; }
 
 /*# sourceMappingURL=style.css.map */
