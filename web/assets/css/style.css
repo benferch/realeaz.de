@@ -88,4 +88,18 @@ a:hover {
 #content {
   margin: 0 15em; }
 
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .skills h3 {
+    text-align: center; }
+
+.skill-showcase {
+  border-radius: 1em;
+  padding: 0.5em;
+  margin: 1em;
+  box-shadow: 0 0 15px 0 #404040;
+  text-align: center; }
+
 /*# sourceMappingURL=style.css.map */
