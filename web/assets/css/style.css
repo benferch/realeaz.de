@@ -101,6 +101,9 @@ a {
 #content {
   margin: 0 15em; }
 
+#about {
+  padding-top: 3em; }
+
 .skills {
   display: flex;
   flex-direction: row;
