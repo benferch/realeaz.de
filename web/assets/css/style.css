@@ -43,26 +43,20 @@ a {
   text-decoration: none;
   transition: all 0.2s linear;
   color: #141414; }
-
-a:hover {
-  color: #9b9b9b; }
+  a:hover {
+    color: #9b9b9b; }
 
 .btn {
   border: 0.1em solid #404040;
   border-radius: 1em;
   padding: 0.5em;
-  background: transparent;
-  transition: all 0.2s ease-in-out; }
-
-.btn:hover {
-  border-color: #26ffcd;
-  box-shadow: 0 0 15px 0 #26ffcd;
-  text-shadow: 0 0 15px 0 #26ffcd;
-  color: #26ffcd;
-  background: rgba(38, 255, 205, 0.1); }
-  .btn:hover span:hover {
+  background: transparent; }
+  .btn:hover {
+    border-color: #26ffcd;
+    box-shadow: 0 0 15px 0 #26ffcd;
     text-shadow: 0 0 15px 0 #26ffcd;
-    color: #26ffcd; }
+    color: #26ffcd;
+    background: rgba(38, 255, 205, 0.1); }
 
 #landing {
   display: flex;
@@ -125,7 +119,7 @@ a:hover {
   justify-content: center; }
 
 .project-showcase {
-  height: 7.5em;
+  height: 10em;
   margin: 1em;
   padding: 1em;
   border-radius: 1em;

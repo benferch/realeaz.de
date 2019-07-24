@@ -58,13 +58,12 @@
   overflow-x: hidden
 
 a
-  text:
-    decoration: none
+  text-decoration: none
   transition: all .2s linear
   color: #141414
 
-a:hover
-  color: #9b9b9b
+  &:hover
+    color: #9b9b9b
 
 // Button
 .btn
@@ -72,18 +71,13 @@ a:hover
   border-radius: 1em
   padding: 0.5em
   background: transparent
-  transition: all .2s ease-in-out
 
-.btn:hover
-  border-color: #26ffcd
-  box-shadow: 0 0 15px 0 #26ffcd
-  text-shadow: 0 0 15px 0 #26ffcd
-  color: #26ffcd
-  background: transparentize(#26ffcd, 0.9)
-
-  span:hover
+  &:hover
+    border-color: #26ffcd
+    box-shadow: 0 0 15px 0 #26ffcd
     text-shadow: 0 0 15px 0 #26ffcd
     color: #26ffcd
+    background: transparentize(#26ffcd, 0.9)
 
 // Landing
 #landing
@@ -161,7 +155,7 @@ a:hover
   justify-content: center
 
 .project-showcase
-  height: 7.5em
+  height: 10em
   margin: 1em
   padding: 1em
   border-radius: 1em
