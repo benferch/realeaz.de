@@ -38,7 +38,8 @@
   color: #404040;
   overflow-y: auto;
   overflow-x: hidden;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 a {
   text-decoration: none;
