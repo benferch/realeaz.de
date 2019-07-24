@@ -44,9 +44,9 @@
 a {
   text-decoration: none;
   transition: all 0.2s linear;
-  color: #141414; }
+  color: #151515; }
   a:hover {
-    color: #26ffcd; }
+    color: #00bb90; }
 
 p {
   font-size: 110%; }
@@ -55,13 +55,14 @@ p {
   border: 0.1em solid #404040;
   border-radius: 1em;
   padding: 0.5em;
-  background: transparent; }
+  background: transparent;
+  color: #404040; }
   .btn:hover {
-    border-color: #26ffcd;
-    box-shadow: 0 0 15px 0 #26ffcd;
-    text-shadow: 0 0 15px 0 #26ffcd;
-    color: #26ffcd;
-    background: rgba(38, 255, 205, 0.1); }
+    border-color: #00bb90;
+    box-shadow: 0 0 15px 0 #00bb90;
+    text-shadow: 0 0 15px 0 #00bb90;
+    color: #00bb90;
+    background: rgba(0, 187, 144, 0.1); }
 
 #landing {
   display: flex;
@@ -151,6 +152,6 @@ ul {
   padding-inline-start: 1em; }
 
 #contact {
-  margin-bottom: 1em; }
+  margin-bottom: 1emx; }
 
 /*# sourceMappingURL=style.css.map */
