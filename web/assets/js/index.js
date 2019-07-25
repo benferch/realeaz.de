@@ -11,9 +11,17 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 };
 
-// Smooth scroll
-function scrollDown() {
+// Smooth scroll for
+function scrollDownIndex() {
     document.getElementById("about").scrollIntoView({behavior: "smooth"});
+}
+
+function scrollDownImprint() {
+    document.getElementById("imprint").scrollIntoView({behavior: "smooth"});
+}
+
+function scrollDownPrivacy() {
+    document.getElementById("privacy").scrollIntoView({behavior: "smooth"});
 }
 
 // Fade out when scroll down

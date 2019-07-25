@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <title>ben. &VerticalLine; Impressum</title>
-    <link rel="favicon" type="image/png" href="./assets/img/icon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#262626">
+
+    <title>ben. &verbar; Impressum</title>
+    <link rel="favicon" type="image/png" href="./assets/img/logo.png">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/normalize.min.css">
+    <script src="./assets/js/jquery-3.4.1.min.js" async></script>
+    <script src="./assets/js/jquery.waypoint.min.js" async></script>
+    <script src="./assets/js/index.js" async></script>
 </head>
 <body>
-<h1>Impressum</h1>
-<h2 id="m46">Diensteanbieter</h2>
-<p> Ben-Jannik Ferch</p>
-<p> Poggenstraße 4a</p>
-<p> 18574 Garz</p>
-<ul class="m-elements"></ul>
-<h2 id="m56">Kontaktmöglichkeiten</h2>
-<p><strong>E-Mail-Adresse</strong>: <a href="mailto:ben@benferch.de">ben@benferch.de</a></p>
-<p><strong>Telefon</strong>: 015234223262</p>
-<h2 id="m172">Social Media und andere Onlinepräsenzen</h2>
-<p><strong>Dieses Impressum gilt auch für die folgenden Social-Media-Präsenzen und Onlineprofile</strong>:</p>
-<p><a href="https://twitter.com/_benferch" target="_blank">https://twitter.com/_benferch</a></p>
-<h2 id="m65">Haftungs- und Urheberrechtshinweise</h2></p>
-<p class="seal"><a href="https://datenschutz-generator.de/?l=de"
-                   title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank">Erstellt
-    mit Datenschutz-Generator.de von Dr. jur. Thomas Schwenke</a></p>
+<div id="landing">
+    <span class="back"><a href="index.html">Start</a></span>
+    <div class="waves-left">
+        <svg>
+            <path d="M10 80 Q 52.5 40, 95 80 T 180 80 " stroke="black" fill="transparent" stroke-width="5"
+                  stroke-linecap="round" transform="translate(0, -40)"></path>
+            <path d="M10 80 Q 52.5 40, 95 80 T 180 80 " stroke="black" fill="transparent" stroke-width="5"
+                  stroke-linecap="round" transform="translate(0, -20)"></path>
+            <path d="M10 80 Q 52.5 40, 95 80 T 180 80 " stroke="black" fill="transparent" stroke-width="5"
+                  stroke-linecap="round" transform="translate(0, 0)"></path>
+            <path d="M10 80 Q 52.5 40, 95 80 T 180 80 " stroke="black" fill="transparent" stroke-width="5"
+                  stroke-linecap="round" transform="translate(0, 20)"></path>
+            <path d="M10 80 Q 52.5 40, 95 80 T 180 80 " stroke="black" fill="transparent" stroke-width="5"
+                  stroke-linecap="round" transform="translate(0, 40)"></path>
+        </svg>
+    </div>
+    <h1>
+        Impressum
+        <br>
+        <span class="pronunciation">[ɪmˈpʁɛsʊm]</span>
+    </h1>
+    <div class="waves-right">
+        <svg>
+            <path d="M10 80 Q 52.5 40, 95 80 T 180 80 " stroke="black" fill="transparent" stroke-width="5"
+                  stroke-linecap="round" transform="translate(0, -40)"></path>
+            <path d="M10 80 Q 52.5 40, 95 80 T 180 80 " stroke="black" fill="transparent" stroke-width="5"
+                  stroke-linecap="round" transform="translate(0, -20)"></path>
+            <path d="M10 80 Q 52.5 40, 95 80 T 180 80 " stroke="black" fill="transparent" stroke-width="5"
+                  stroke-linecap="round" transform="translate(0, 0)"></path>
+            <path d="M10 80 Q 52.5 40, 95 80 T 180 80 " stroke="black" fill="transparent" stroke-width="5"
+                  stroke-linecap="round" transform="translate(0, 20)"></path>
+            <path d="M10 80 Q 52.5 40, 95 80 T 180 80 " stroke="black" fill="transparent" stroke-width="5"
+                  stroke-linecap="round" transform="translate(0, 40)"></path>
+        </svg>
+    </div>
+    <div id="scroll-down-div">
+        <a id="scroll-down-a" onclick="scrollDownImprint()"><span id="scroll-down"></span></a>
+    </div>
+</div>
+<div id="imprint">
+    <h1>Impressum</h1>
+    <h2 id="m46">Diensteanbieter</h2>
+    <p> Ben-Jannik Ferch</p>
+    <p> Poggenstraße 4a</p>
+    <p> 18574 Garz</p>
+    <ul class="m-elements"></ul>
+    <h2 id="m56">Kontaktmöglichkeiten</h2>
+    <p><strong>E-Mail-Adresse</strong>: <a href="mailto:ben@benferch.de">ben@benferch.de</a></p>
+    <p><strong>Telefon</strong>: 015234223262</p>
+    <h2 id="m172">Social Media und andere Onlinepräsenzen</h2>
+    <p><strong>Dieses Impressum gilt auch für die folgenden Social-Media-Präsenzen und Onlineprofile</strong>:</p>
+    <p><a href="https://twitter.com/_benferch" target="_blank" rel="noreferrer">https://twitter.com/_benferch</a></p>
+    <h2 id="m65">Haftungs- und Urheberrechtshinweise</h2></p>
+    <p class="seal"><a href="https://datenschutz-generator.de/?l=de"
+                       title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank"
+                       rel="noreferrer">Erstellt
+        mit Datenschutz-Generator.de von Dr. jur. Thomas Schwenke</a></p>
+</div>
+<div id="footer">
+    <a href="imprint.html">Impressum </a>
+    <a href="privacy.html">Datenschutz</a>
+</div>
 </body>
 </html>
