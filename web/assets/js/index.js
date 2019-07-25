@@ -1,37 +1,40 @@
+// Scroll to top on refresh / page load
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+
+// Shorthands
+var byId = function (id) {
+    return document.getElementById(id);
+};
+
 // Age calculator
 function calcAge(dob) {
     var birthday = new Date(dob);
     return ~~((Date.now() - birthday) / (31557600000));
 }
 
-document.getElementById("age").innerHTML = calcAge("08/10/2002");
+byId("age").innerHTML = calcAge("08/10/2002");
 
 // get Current Year
-
 function getYear(){
     var today = new Date();
     return today.getFullYear()
 }
 
-document.getElementById("currentYear").innerHTML = getYear();
-
-
-// Scroll to top on refresh / page load
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-};
+byId("currentYear").innerHTML = getYear();
 
 // Smooth scroll for
 function scrollDownIndex() {
-    document.getElementById("about").scrollIntoView({behavior: "smooth"});
+    byId("about").scrollIntoView({behavior: "smooth"});
 }
 
 function scrollDownImprint() {
-    document.getElementById("imprint").scrollIntoView({behavior: "smooth"});
+    byId("imprint").scrollIntoView({behavior: "smooth"});
 }
 
 function scrollDownPrivacy() {
-    document.getElementById("privacy").scrollIntoView({behavior: "smooth"});
+    byId("privacy").scrollIntoView({behavior: "smooth"});
 }
 
 // Fade out when scroll down
@@ -52,7 +55,7 @@ fetch("https://api.github.com/repos/jugendhackt/MetaPeta")
         return response.json();
     }).then(function (json) {
     var metapetaDescription = json.description;
-    document.getElementById("metapetaDescription").innerHTML = metapetaDescription;
+    byId("metapetaDescription").innerHTML = metapetaDescription;
 });
 
 // PacTrac
@@ -61,7 +64,7 @@ fetch("https://api.github.com/repos/jugendhackt/PacTrac")
         return response.json();
     }).then(function (json) {
     var pactracDescription = json.description;
-    document.getElementById("pactracDescription").innerHTML = pactracDescription;
+    byId("pactracDescription").innerHTML = pactracDescription;
 });
 
 // benferch.de
@@ -70,5 +73,5 @@ fetch("https://api.github.com/repos/benferch/benferch.de")
         return response.json();
     }).then(function (json) {
     var benferchDescription = json.description;
-    document.getElementById("benferchDescription").innerHTML = benferchDescription;
+    byId("benferchDescription").innerHTML = benferchDescription;
 });
