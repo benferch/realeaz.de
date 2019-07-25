@@ -8,7 +8,12 @@ document.getElementById("age").innerHTML = calcAge("08/10/2002");
 
 // get Current Year
 
-document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+function getYear(){
+    var today = new Date();
+    return today.getFullYear()
+}
+
+document.getElementById("currentYear").innerHTML = getYear();
 
 
 // Scroll to top on refresh / page load
