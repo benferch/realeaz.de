@@ -17,7 +17,7 @@ function calcAge(dob) {
 byId("age").innerHTML = calcAge("08/10/2002");
 
 // get Current Year
-function getYear(){
+function getYear() {
     var today = new Date();
     return today.getFullYear()
 }
