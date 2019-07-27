@@ -36,6 +36,12 @@
     weight: bold
   src: url('../font/Rund-Grotesk_medium.ttf') format('truetype')
 
+// Colors
+$white: #fcfbf8
+$grey: #404040
+$black: #151515
+$turquoise: #00bb90
+
 // Animations
 @keyframes hover
   0%
@@ -52,8 +58,8 @@
   font:
     family: "San Francisco Regular", -apple-system, system-ui, 'Segeo UI', Ubuntu, sans-serif
   background:
-    color: #fcfbf8
-  color: #404040
+    color: $white
+  color: $grey
   overflow-y: auto
   overflow-x: hidden
   -webkit-font-smoothing: antialiased
@@ -62,27 +68,27 @@
 a
   text-decoration: none
   transition: all .2s linear
-  color: #151515
+  color: $black
 
   &:hover
-    color: #00bb90
+    color: $turquoise
 
 p
   font-size: 110%
 // Button
 .btn
-  border: 0.1em solid #404040
+  border: 0.1em solid $grey
   border-radius: 1em
   padding: 0.5em
   background: transparent
-  color: #404040
+  color: $grey
 
   &:hover
-    border-color: #00bb90
-    box-shadow: 0 0 15px 0 #00bb90
-    text-shadow: 0 0 15px 0 #00bb90
-    color: #00bb90
-    background: transparentize(#00bb90, 0.9)
+    border-color: $turquoise
+    box-shadow: 0 0 15px 0 $turquoise
+    text-shadow: 0 0 15px 0 $turquoise
+    color: $turquoise
+    background: transparentize($turquoise, 0.9)
 
 // Landing
 #landing
@@ -124,8 +130,8 @@ p
     text-decoration: none
     width: 3em
     height: 3em
-    border-bottom: 0.5em solid #404040
-    border-right: 0.5em solid #404040
+    border-bottom: 0.5em solid $grey
+    border-right: 0.5em solid $grey
     transform: translate(-50%, 0%) rotate(45deg)
     border-radius: 5em
     overflow-y: hidden
@@ -163,7 +169,7 @@ p
   border-radius: 1em
   padding: 0.5em
   margin: 1em
-  box-shadow: 0 0 15px 0 #404040
+  box-shadow: 0 0 15px 0 $grey
   text-align: center
 
 // Projects
@@ -180,7 +186,7 @@ p
   margin: 1em
   padding: 1em
   border-radius: 1em
-  box-shadow: 0 0 15px 0 #404040
+  box-shadow: 0 0 15px 0 $grey
 
   .description
     margin-bottom: 1em
