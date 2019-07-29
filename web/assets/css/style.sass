@@ -162,6 +162,7 @@ p
   flex-direction: row
   justify-content: center
   padding-inline-start: 1em
+  flex-wrap: wrap
 
   h3
     text-align: center
@@ -230,3 +231,18 @@ ul
   margin-bottom: 2em
   margin-left: 10em
   margin-right: 10em
+
+// Responsive
+@media screen and (max-device-width: 600px)
+  // Content
+  #content
+    margin: 0 1em
+
+  // Landing waves right
+  #landing
+    .waves-right
+      transform: translate(10em, 5em)
+
+  // Projects
+  .project-showcase
+    font-size: 85%

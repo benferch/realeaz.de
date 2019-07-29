@@ -122,7 +122,8 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-inline-start: 1em; }
+  padding-inline-start: 1em;
+  flex-wrap: wrap; }
   .skills h3 {
     text-align: center; }
 
@@ -179,5 +180,15 @@ ul {
   margin-bottom: 2em;
   margin-left: 10em;
   margin-right: 10em; }
+
+@media screen and (max-device-width: 600px) {
+  #content {
+    margin: 0 1em; }
+
+  #landing .waves-right {
+    transform: translate(10em, 5em); }
+
+  .project-showcase {
+    font-size: 85%; } }
 
 /*# sourceMappingURL=style.css.map */
