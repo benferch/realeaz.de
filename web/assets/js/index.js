@@ -79,3 +79,5 @@ $(document).ready(function () {
         }
     })
 });
+
+// Theme switch
