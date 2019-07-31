@@ -8,9 +8,23 @@ var byId = function (id) {
     return document.getElementById(id);
 };
 
-// Age calculator
+// Theme switch
+
+function themeSwitch() {
+    localStorage.setItem("mode", (localStorage.getItem("mode") || "dark") === "dark" ? "light" : "dark");
+    localStorage.getItem("mode") === "dark" ? document.querySelector("body").classList.add("dark") : document.querySelector("body").classList.remove("dark");
+}
+
+// Detect which theme is selected
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark');
+})
+
+// Scripts for index page
 $(function () {
     if ($("body").is("#index-page")) {
+        // Age calculator
         function calcAge(dob) {
             var birthday = new Date(dob);
             return ~~((Date.now() - birthday) / (31557600000));
@@ -79,16 +93,3 @@ $(document).ready(function () {
         }
     })
 });
-
-// Theme switch
-
-function themeSwitch() {
-    localStorage.setItem("mode", (localStorage.getItem("mode") || "dark") === "dark" ? "light" : "dark");
-    localStorage.getItem("mode") === "dark" ? document.querySelector("body").classList.add("dark") : document.querySelector("body").classList.remove("dark");
-}
-
-// Detect which theme is selected
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark');
-})

@@ -41,6 +41,10 @@ $white: #fcfbf8
 $grey: #404040
 $black: #151515
 $turquoise: #00bb90
+$dark-theme-black: #3e3e3e
+$dark-theme-white: #e0dfdd
+$dark-theme-grey: #6c6c6c
+$dark-theme-light-grey: #9b9b9b
 
 // Animations
 @keyframes hover
@@ -75,6 +79,33 @@ a
 
 p
   font-size: 110%
+
+// Dark theme
+.dark
+  *
+    background-color: $dark-theme-black
+    color: $dark-theme-white
+
+  a
+    color: $dark-theme-light-grey
+
+    &:hover
+      color: $turquoise
+
+  #scroll-down
+    border-color: $dark-theme-grey !important
+
+  .project-showcase
+    box-shadow: 0 0 15px 0 $dark-theme-grey
+
+  .skill-showcase
+    box-shadow: 0 0 15px 0 $dark-theme-grey
+
+  .btn
+    color: $dark-theme-light-grey
+    border: 0.1em solid $dark-theme-light-grey
+
+
 // Button
 .btn
   border: 0.1em solid $grey

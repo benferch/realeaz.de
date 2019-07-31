@@ -51,6 +51,23 @@ a {
 p {
   font-size: 110%; }
 
+.dark * {
+  background-color: #3e3e3e;
+  color: #e0dfdd; }
+.dark a {
+  color: #9b9b9b; }
+  .dark a:hover {
+    color: #00bb90; }
+.dark #scroll-down {
+  border-color: #6c6c6c !important; }
+.dark .project-showcase {
+  box-shadow: 0 0 15px 0 #6c6c6c; }
+.dark .skill-showcase {
+  box-shadow: 0 0 15px 0 #6c6c6c; }
+.dark .btn {
+  color: #9b9b9b;
+  border: 0.1em solid #9b9b9b; }
+
 .btn {
   border: 0.1em solid #404040;
   border-radius: 0.5em;
