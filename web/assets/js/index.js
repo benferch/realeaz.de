@@ -9,14 +9,22 @@ var byId = function (id) {
 };
 
 // Theme switch
-function themeSwitch() {
-    localStorage.setItem("mode", (localStorage.getItem("mode") || "dark") === "dark" ? "light" : "dark");
-    localStorage.getItem("mode") === "dark" ? document.querySelector("body").classList.add("dark") : document.querySelector("body").classList.remove("dark");
+let toggle = byId("themeSwitch")
+
+if (localStorage.getItem('dark')) {
+  document.body.classList.add('dark');
 }
 
-// Detect which theme is selected
-document.addEventListener('DOMContentLoaded', (event) => {
-    ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark');
+toggle.addEventListener('click', function(e) {
+  e.preventDefault();
+
+  if (document.body.classList.contains('dark')) {
+    document.body.classList.remove('dark');
+    localStorage.removeItem('dark');
+  } else {
+    document.body.classList.add('dark');
+    localStorage.setItem('dark', true);
+  }
 });
 
 // Scripts for index page
