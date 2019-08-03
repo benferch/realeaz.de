@@ -2,39 +2,20 @@
 @font-face
   font:
     display: auto
-    family: 'San Francisco Regular'
+    family: "San Francisco Regular"
   src: url('../font/SFProText-Regular.ttf') format('truetype')
 
 @font-face
   font:
     display: auto
-    family: 'San Francisco Bold'
+    family: "San Francisco Bold"
   src: url('../font/SFProText-Bold.ttf') format('truetype')
 
 @font-face
   font:
     display: auto
-    family: 'San Francisco Light'
-  src: url('../font/SFProText-Light.ttf') format('truetype')
-
-@font-face
-  font:
-    display: auto
-    family: 'Rund Grotesk Medium'
-  src: url('../font/Rund-Grotesk_medium.ttf') format('truetype')
-
-@font-face
-  font:
-    display: auto
-    family: 'Rund Grotesk Medium Italic'
-  src: url('../font/Rund-Grotesk_medium-italic.ttf') format('truetype')
-
-@font-face
-  font:
-    display: auto
-    family: 'Rund Grotesk Medium Bold'
-    weight: bold
-  src: url('../font/Rund-Grotesk_medium.ttf') format('truetype')
+    family: "Poppins Regular"
+  src: url('../font/Poppins-Regular.ttf') format('truetype')
 
 // Colors
 $white: #fcfbf8
@@ -131,8 +112,8 @@ p
   align-items: center
 
   h1
-    font:
-      family: "Rund Grotesk Medium Italic"
+    font-family: "Poppins Regular"
+    line-height: initial
 
   .back
     align-self: flex-end
@@ -150,8 +131,10 @@ p
   .pronunciation
     font:
       size: 17pt
-      family: "Rund Grotesk Medium Italic"
+      family: "Poppins Regular"
+      style: italic
     padding-left: 5vh
+    padding-right: 0.3em 
     opacity: 0.2
 
   #scroll-down
