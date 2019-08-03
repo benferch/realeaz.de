@@ -344,4 +344,8 @@ ul {
     margin: 0 5em;
   }
 }
+
+#themeSwitch {
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
