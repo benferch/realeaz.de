@@ -46,7 +46,7 @@
   }
 }
 
-* {
+html {
   margin: 0;
   padding: 0;
   font-family: "San Francisco Regular", -apple-system, system-ui, 'Segeo UI', Ubuntu, sans-serif;
@@ -74,8 +74,8 @@ p {
   font-size: 110%;
 }
 
-.dark * {
-  background-color: #3e3e3e;
+.dark body {
+  background-color: #131619;
   color: #e0dfdd;
 }
 
@@ -121,84 +121,6 @@ p {
   text-shadow: 0 0 15px 0 #00bb90;
   color: #00bb90;
   background: rgba(0, 187, 144, 0.1);
-}
-
-#landing {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#landing h1 {
-  font-family: "Poppins Regular";
-  line-height: initial;
-}
-
-#landing .back {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  -webkit-transform: translate(-1em, -8em);
-          transform: translate(-1em, -8em);
-  font-size: 130%;
-}
-
-#landing .waves-right {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  -webkit-transform: translate(10em, 7em);
-          transform: translate(10em, 7em);
-}
-
-#landing .waves-left {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  -webkit-transform: translate(-5em, -10em);
-          transform: translate(-5em, -10em);
-}
-
-#landing .pronunciation {
-  font-size: 17pt;
-  font-family: "Poppins Regular";
-  font-style: italic;
-  padding-left: 5vh;
-  padding-right: 0.3em;
-  opacity: 0.2;
-}
-
-#landing #scroll-down {
-  position: absolute;
-  bottom: 3em;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  width: 3em;
-  height: 3em;
-  border-bottom: 0.5em solid #404040;
-  border-right: 0.5em solid #404040;
-  -webkit-transform: translate(-50%, 0%) rotate(45deg);
-          transform: translate(-50%, 0%) rotate(45deg);
-  border-radius: 5em;
-  overflow-y: hidden;
-  cursor: pointer;
-  -webkit-animation: hover;
-          animation: hover;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
 }
 
 #content {
@@ -305,7 +227,7 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1em;
+  padding: 1em;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

@@ -22,7 +22,7 @@ $white: #fcfbf8
 $grey: #404040
 $black: #151515
 $turquoise: #00bb90
-$dark-theme-black: #3e3e3e
+$dark-theme-black: #131619
 $dark-theme-white: #e0dfdd
 $dark-theme-grey: #6c6c6c
 $dark-theme-light-grey: #9b9b9b
@@ -37,7 +37,7 @@ $dark-theme-light-grey: #9b9b9b
     transform: translate(-50%, 0%) rotate(45deg)
 
 // General
-*
+html
   margin: 0
   padding: 0
   font:
@@ -64,7 +64,7 @@ p
 
 // Dark theme
 .dark
-  *
+  body
     background-color: $dark-theme-black
     color: $dark-theme-white
 
@@ -102,59 +102,6 @@ p
     text-shadow: 0 0 15px 0 $turquoise
     color: $turquoise
     background: transparentize($turquoise, 0.9)
-
-// Landing
-#landing
-  display: flex
-  flex-direction: column
-  justify-content: center
-  height: 100vh
-  align-items: center
-
-  h1
-    font-family: "Poppins Regular"
-    line-height: initial
-
-  .back
-    align-self: flex-end
-    transform: translate(-1em, -8em)
-    font-size: 130%
-
-  .waves-right
-    align-self: flex-end
-    transform: translate(10em, 7em)
-
-  .waves-left
-    align-self: flex-start
-    transform: translate(-5em, -10em)
-
-  .pronunciation
-    font:
-      size: 17pt
-      family: "Poppins Regular"
-      style: italic
-    padding-left: 5vh
-    padding-right: 0.3em 
-    opacity: 0.2
-
-  #scroll-down
-    position: absolute
-    bottom: 3em
-    display: block
-    text-align: center
-    text-decoration: none
-    width: 3em
-    height: 3em
-    border-bottom: 0.5em solid $grey
-    border-right: 0.5em solid $grey
-    transform: translate(-50%, 0%) rotate(45deg)
-    border-radius: 5em
-    overflow-y: hidden
-    cursor: pointer
-    animation: hover
-    animation-duration: 5s
-    animation-delay: 3s
-    animation-iteration-count: infinite
 
 // Content
 #content
@@ -229,7 +176,7 @@ ul
 // Footer
 #footer
   display: flex
-  margin: 1em
+  padding: 1em
   justify-content: space-between
   flex-direction: row
   align-items: center

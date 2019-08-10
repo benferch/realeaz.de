@@ -12,18 +12,18 @@ var byId = function (id) {
 let toggle = byId("themeSwitch")
 
 if (localStorage.getItem('dark')) {
-  document.body.classList.add('dark');
+    byId("html").classList.add('dark');
 }
 
 toggle.addEventListener('click', function(e) {
   e.preventDefault();
 
-  if (document.body.classList.contains('dark')) {
-    document.body.classList.remove('dark');
-    localStorage.removeItem('dark');
+  if (byId("html").classList.contains('dark')) {
+    byId("html").classList.remove('dark');
+    byId("html").removeItem('dark');
   } else {
-    document.body.classList.add('dark');
-    localStorage.setItem('dark', true);
+    byId("html").classList.add('dark');
+    byId("html").setItem('dark', true);
   }
 });
 
