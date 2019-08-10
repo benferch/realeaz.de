@@ -40,8 +40,7 @@ $(function () {
 
         // Get Github Project description
         // MetaPeta
-        fetch("https://api.github.com/repos/jugendhackt/MetaPeta",
-            { headers: new Headers({ "username": "benferch" }) })
+        fetch("https://api.github.com/repos/jugendhackt/MetaPeta")
             .then(function (response) {
                 return response.json();
             }).then(function (json) {
