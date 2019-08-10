@@ -20,10 +20,10 @@ toggle.addEventListener('click', function (e) {
 
     if (byId("html").classList.contains('dark')) {
         byId("html").classList.remove('dark');
-        byId("html").removeItem('dark');
+        localStorage.removeItem('dark');
     } else {
         byId("html").classList.add('dark');
-        byId("html").setItem('dark', true);
+        localStorage.setItem('dark', true);
     }
 });
 
