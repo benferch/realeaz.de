@@ -83,7 +83,7 @@ p {
 }
 
 .dark a {
-  color: #9b9b9b;
+  color: #b8c2cc;
 }
 
 .dark a:hover {
@@ -105,8 +105,8 @@ p {
 }
 
 .dark .btn {
-  color: #9b9b9b;
-  border: 0.1em solid #9b9b9b;
+  color: #b8c2cc;
+  border: 0.1em solid #b8c2cc;
 }
 
 .btn {
