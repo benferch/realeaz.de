@@ -172,7 +172,7 @@ p {
 }
 
 .skill-showcase {
-  border-radius: 1em;
+  border-radius: 0.5em;
   padding: 0.5em;
   margin: 1em;
   -webkit-box-shadow: 0 0 15px 0 #404040;
@@ -200,7 +200,7 @@ p {
 .project-showcase {
   margin: 1em;
   padding: 1em;
-  border-radius: 1em;
+  border-radius: 0.5em;
   -webkit-box-shadow: 0 0 15px 0 #404040;
           box-shadow: 0 0 15px 0 #404040;
 }
