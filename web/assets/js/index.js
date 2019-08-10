@@ -15,16 +15,16 @@ if (localStorage.getItem('dark')) {
     byId("html").classList.add('dark');
 }
 
-toggle.addEventListener('click', function(e) {
-  e.preventDefault();
+toggle.addEventListener('click', function (e) {
+    e.preventDefault();
 
-  if (byId("html").classList.contains('dark')) {
-    byId("html").classList.remove('dark');
-    byId("html").removeItem('dark');
-  } else {
-    byId("html").classList.add('dark');
-    byId("html").setItem('dark', true);
-  }
+    if (byId("html").classList.contains('dark')) {
+        byId("html").classList.remove('dark');
+        byId("html").removeItem('dark');
+    } else {
+        byId("html").classList.add('dark');
+        byId("html").setItem('dark', true);
+    }
 });
 
 // Scripts for index page
@@ -40,31 +40,32 @@ $(function () {
 
         // Get Github Project description
         // MetaPeta
-        fetch("https://api.github.com/repos/jugendhackt/MetaPeta")
+        fetch("https://api.github.com/repos/jugendhackt/MetaPeta",
+            { headers: new Headers({ "username": "benferch" }) })
             .then(function (response) {
                 return response.json();
             }).then(function (json) {
-            var metapetaDescription = json.description;
-            byId("metapetaDescription").innerHTML = metapetaDescription;
-        });
+                var metapetaDescription = json.description;
+                byId("metapetaDescription").innerHTML = metapetaDescription;
+            });
 
         // PacTrac
         fetch("https://api.github.com/repos/jugendhackt/PacTrac")
             .then(function (response) {
                 return response.json();
             }).then(function (json) {
-            var pactracDescription = json.description;
-            byId("pactracDescription").innerHTML = pactracDescription;
-        });
+                var pactracDescription = json.description;
+                byId("pactracDescription").innerHTML = pactracDescription;
+            });
 
         // benferch.de
         fetch("https://api.github.com/repos/benferch/benferch.de")
             .then(function (response) {
                 return response.json();
             }).then(function (json) {
-            var benferchDescription = json.description;
-            byId("benferchDescription").innerHTML = benferchDescription;
-        });
+                var benferchDescription = json.description;
+                byId("benferchDescription").innerHTML = benferchDescription;
+            });
     }
 });
 
@@ -78,15 +79,15 @@ byId("currentYear").innerHTML = getYear();
 
 // Smooth scroll
 function scrollDownIndex() {
-    byId("about").scrollIntoView({behavior: "smooth"});
+    byId("about").scrollIntoView({ behavior: "smooth" });
 }
 
 function scrollDownImprint() {
-    byId("imprint").scrollIntoView({behavior: "smooth"});
+    byId("imprint").scrollIntoView({ behavior: "smooth" });
 }
 
 function scrollDownPrivacy() {
-    byId("privacy").scrollIntoView({behavior: "smooth"});
+    byId("privacy").scrollIntoView({ behavior: "smooth" });
 }
 
 // Fade out when scroll down

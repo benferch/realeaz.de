@@ -37,9 +37,11 @@ $dark-theme-light-grey: #9b9b9b
     transform: translate(-50%, 0%) rotate(45deg)
 
 // General
-html
+*
   margin: 0
   padding: 0
+
+html
   font:
     family: "San Francisco Regular", -apple-system, system-ui, 'Segeo UI', Ubuntu, sans-serif
   background:
@@ -112,6 +114,11 @@ p
   padding-top: 3em
   margin-bottom: 1em
 
+  .heading
+    font-weight: 800
+    font-size: 3em
+    margin: 0
+
   p
     padding-inline-start: 1em
 
@@ -146,7 +153,6 @@ p
   justify-content: center
 
 .project-showcase
-  height: 8em
   margin: 1em
   padding: 1em
   border-radius: 1em
@@ -156,15 +162,15 @@ p
     margin-bottom: 1em
 
   h4
-    font:
-      family: "San Francisco Bold"
+    font-family: "San Francisco Bold"
 
 //  Links
 #links
   margin-bottom: 1em
 
-ul
-  padding-inline-start: 1em
+  ul
+    padding-inline-start: 1em
+    list-style: none
 
 // Contact
 #contact
@@ -227,7 +233,7 @@ ul
 // Language switch
 #languageSwitch
   cursor: pointer
-  margin-right: 0.2em
+  margin-right: 1em
 
   img
     height: 22px

@@ -46,9 +46,12 @@
   }
 }
 
-html {
+* {
   margin: 0;
   padding: 0;
+}
+
+html {
   font-family: "San Francisco Regular", -apple-system, system-ui, 'Segeo UI', Ubuntu, sans-serif;
   background-color: #fcfbf8;
   color: #404040;
@@ -132,6 +135,12 @@ p {
   margin-bottom: 1em;
 }
 
+#about .heading {
+  font-weight: 800;
+  font-size: 3em;
+  margin: 0;
+}
+
 #about p {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
@@ -189,7 +198,6 @@ p {
 }
 
 .project-showcase {
-  height: 8em;
   margin: 1em;
   padding: 1em;
   border-radius: 1em;
@@ -209,9 +217,10 @@ p {
   margin-bottom: 1em;
 }
 
-ul {
+#links ul {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
+  list-style: none;
 }
 
 #contact {
@@ -286,7 +295,7 @@ ul {
 
 #languageSwitch {
   cursor: pointer;
-  margin-right: 0.2em;
+  margin-right: 1em;
 }
 
 #languageSwitch img {
