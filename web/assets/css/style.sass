@@ -1,21 +1,21 @@
 // Font
 @font-face
+  src: url('../font/Inter-Medium.ttf') format('truetype')
   font:
     display: auto
-    family: "San Francisco Regular"
-  src: url('../font/SFProText-Regular.ttf') format('truetype')
+    family: "Inter Regular"
 
 @font-face
+  src: url('../font/Inter-Bold.ttf') format('truetype')
   font:
     display: auto
-    family: "San Francisco Bold"
-  src: url('../font/SFProText-Bold.ttf') format('truetype')
+    family: "Inter Bold"
 
 @font-face
+  src: url('../font/Inter-Black.ttf') format('truetype')
   font:
     display: auto
-    family: "Poppins Regular"
-  src: url('../font/Poppins-Regular.ttf') format('truetype')
+    family: "Inter Black"
 
 // Colors
 $white: #fcfbf8
@@ -42,10 +42,8 @@ $dark-theme-light-grey: #9b9b9b
   padding: 0
 
 html
-  font:
-    family: "San Francisco Regular", -apple-system, system-ui, 'Segeo UI', Ubuntu, sans-serif
-  background:
-    color: $white
+  font-family: "Inter Regular"
+  background-color: $white
   color: $grey
   overflow-y: auto
   overflow-x: hidden
@@ -115,7 +113,7 @@ p
   margin-bottom: 1em
 
   .heading
-    font-weight: 800
+    font-family: "Inter Black"
     font-size: 3em
     margin: 0
 
@@ -162,7 +160,7 @@ p
     margin-bottom: 1em
 
   h4
-    font-family: "San Francisco Bold"
+    font-family: "Inter Bold"
 
 //  Links
 #links
