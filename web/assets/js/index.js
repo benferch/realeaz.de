@@ -75,27 +75,3 @@ function getYear() {
 }
 
 byId("currentYear").innerHTML = getYear();
-
-// Smooth scroll
-function scrollDownIndex() {
-    byId("about").scrollIntoView({ behavior: "smooth" });
-}
-
-function scrollDownImprint() {
-    byId("imprint").scrollIntoView({ behavior: "smooth" });
-}
-
-function scrollDownPrivacy() {
-    byId("privacy").scrollIntoView({ behavior: "smooth" });
-}
-
-// Fade out when scroll down
-$(document).ready(function () {
-    $("#scroll-down").waypoint(function (direction) {
-        if (direction === 'down') {
-            $("#scroll-down").fadeOut();
-        } else if (direction === 'up') {
-            $("#scroll-down").fadeIn();
-        }
-    })
-});
