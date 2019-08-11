@@ -36,20 +36,52 @@
     <div id="wrapper">
         <div id="content">
             <div id="about">
-                <h1 class="heading">Moin</h1>
+                <h1 class="heading">Hey.</h1>
                 <p>
-                    Ich bin Ben, <span id="age"></span> Jahre alt, wohne auf Rügen und befasse mich, seitdem ich 13 bin
-                    mit
-                    Webtechnologien, wenn ich mal nichts mache, was damit zu tun hat, fahre ich wahrscheinlich
-                    Motorrad.<br>
-                    Angefangen hatte es bei mir in der Projektwoche in der Schule, wo ich an einem Projekt teilgenommen
-                    habe, dort wurden wir an HTML herangeführt. Dies hatte mein Interesse geweckt und ich begann in
-                    meiner
-                    Freizeit mich mehr damit zu beschäftigen. <br>
-                    Seit August 2018 arbeite ich in einer kleineren Firma, dort beschäftige ich mich hauptsächlich
-                    mit
-                    Drupal.
+                    My name is Ben, I am currently <span id="age"></span> years old and I live on Rügen, Germany. I'm
+                    interested in Webtechnologies since I'm 13 years old.<br>
+                    Since August 2018 I am working in a smaller company, where I mainly work with Drupal.
                 </p>
+            </div>
+            <div id="projects">
+                <h2>
+                    Projects
+                </h2>
+                <div class="projects">
+                    <div class="project-showcase">
+                        <h4>
+                            MetaPeta
+                        </h4>
+                        <p id="metapetaDescription" class="description">MetaPeta was created at <a
+                                href="https://jugendhackt.org/" target="_blank" rel="noreferrer">Jugendhackt</a> 2018.
+                            <br>
+                            MetaPeta is a tool to remove meta data from images.
+                            <br>
+                            I was responsible for the HTML and CSS.
+                        </p>
+                        <a href="https://github.com/Jugendhackt/MetaPeta" target="_blank" rel="noreferrer" class="btn">
+                            Code</a>
+                        <a href="https://jugendhackt.github.io/MetaPeta/" target="_blank" rel="noreferrer" class="btn">
+                            Demo</a>
+                    </div>
+                    <div class="project-showcase">
+                        <h4>
+                            PacTrac
+                        </h4>
+                        <p id="pactracDescription" class="description">
+                            PacTrac was created at <a href="https://jugendhackt.org/" target="_blank"
+                                rel="noreferrer">Jugendhackt</a> 2019.
+                            <br>
+                            PacTrac is a tool to track parcels from different delivery services.
+                            <br>
+                            I was responsible for the JavaScript.
+                        </p>
+                        <a href="https://github.com/Jugendhackt/PacTrac" target="_blank" rel="noreferrer" class="btn">
+                            Code</a>
+                        <a href="https://jugendhackt.github.io/PacTrac/" target="_blank" rel="noreferrer" class="btn">
+                            Demo</a>
+                    </div>
+                </div>
             </div>
             <div id="skills">
                 <h2>
@@ -59,7 +91,7 @@
                     <div id="frontend">
                         <div class="showcase">
                             <h3>
-                                Websprachen
+                                Front-End
                             </h3>
                             <div class="skill-showcase">
                                 <h4>
@@ -130,7 +162,7 @@
                     <div id="frameworks-libraries">
                         <div class="showcase">
                             <h3>
-                                Frameworks und Libraries
+                                Frameworks and Libraries
                             </h3>
                             <div class="skill-showcase">
                                 <h4>
@@ -143,42 +175,6 @@
                                 </h4>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div id="projects">
-                <h2>
-                    Projekte
-                </h2>
-                <div class="projects">
-                    <div class="project-showcase">
-                        <h4>
-                            MetaPeta
-                        </h4>
-                        <p id="metapetaDescription" class="description"></p>
-                        <a href="https://github.com/Jugendhackt/MetaPeta" target="_blank" rel="noreferrer" class="btn">
-                            Code</a>
-                        <a href="https://jugendhackt.github.io/MetaPeta/" target="_blank" rel="noreferrer" class="btn">
-                            Demo</a>
-                    </div>
-                    <div class="project-showcase">
-                        <h4>
-                            PacTrac
-                        </h4>
-                        <p id="pactracDescription" class="description"></p>
-                        <a href="https://github.com/Jugendhackt/PacTrac" target="_blank" rel="noreferrer" class="btn">
-                            Code</a>
-                        <a href="https://jugendhackt.github.io/PacTrac/" target="_blank" rel="noreferrer" class="btn">
-                            Demo</a>
-                    </div>
-                    <div class="project-showcase">
-                        <h4>
-                            benferch.de
-                        </h4>
-                        <p id="benferchDescription" class="description"></p>
-                        <a href="https://github.com/benferch/benferch.de" target="_blank" rel="noreferrer" class="btn">
-                            Code</a>
-                        <a href="https://benferch.de" target="_blank" rel="noreferrer" class="btn"> Demo</a>
                     </div>
                 </div>
             </div>
@@ -196,23 +192,22 @@
             </div>
             <div id="contact">
                 <h2>
-                    Kontakt
+                    Contact
                 </h2>
-                <p>Wenn Du mich kontaktieren möchtest, kannst Du mir gerne eine <a
-                        href="mailto:ben@benferch.de?subject=Hey">E-Mail</a>
-                    schreiben.</p>
+                <p>If you want to contact me, feel free to send me an <a
+                        href="mailto:ben@benferch.de?subject=Hey">e-mail</a>.</p>
             </div>
         </div>
         <div id="footer">
             <span class="left">2017 - <span id="currentYear"></span></span>
-            <div class="options">
-                <a onclick="languageSwitch()" id="languageSwitch" style="display: none"><img
-                        src="./assets/img/us.png"></a>
-                <a id="themeSwitch" class="btn">Theme wechseln</a>
-            </div>
+            <div class="options" style="display: none">
+                    <a onclick="languageSwitch()" id="languageSwitch"><img
+                            src="./assets/img/us.png"></a>
+                    <a id="themeSwitch" class="btn">Theme wechseln</a>
+                </div>
             <div class="legal">
-                <a href="imprint.html">Impressum </a>
-                <a href="privacy.html">Datenschutz</a>
+                <a href="imprint.html" title="This is in German">Imprint</a>
+                <a href="privacy.html" title="This is in German">Privacy Policy</a>
             </div>
         </div>
     </div>

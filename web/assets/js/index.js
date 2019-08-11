@@ -9,6 +9,7 @@ var byId = function (id) {
 };
 
 // Theme switch
+/*
 let toggle = byId("themeSwitch")
 
 if (localStorage.getItem('dark')) {
@@ -26,6 +27,7 @@ toggle.addEventListener('click', function (e) {
         localStorage.setItem('dark', true);
     }
 });
+*/
 
 // Scripts for index page
 $(function () {
@@ -40,7 +42,7 @@ $(function () {
 
         // Get Github Project description
         // MetaPeta
-        fetch("https://api.github.com/repos/jugendhackt/MetaPeta")
+        /* fetch("https://api.github.com/repos/jugendhackt/MetaPeta")
             .then(function (response) {
                 return response.json();
             }).then(function (json) {
@@ -56,15 +58,7 @@ $(function () {
                 var pactracDescription = json.description;
                 byId("pactracDescription").innerHTML = pactracDescription;
             });
-
-        // benferch.de
-        fetch("https://api.github.com/repos/benferch/benferch.de")
-            .then(function (response) {
-                return response.json();
-            }).then(function (json) {
-                var benferchDescription = json.description;
-                byId("benferchDescription").innerHTML = benferchDescription;
-            });
+            */
     }
 });
 
