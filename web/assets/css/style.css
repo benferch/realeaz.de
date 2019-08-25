@@ -96,6 +96,7 @@ p {
 
 #content {
   margin: 0 15em;
+  font-size: 1.1em;
 }
 
 #content h2 {
@@ -183,6 +184,7 @@ p {
 
 .project-showcase h4 {
   font-family: "Inter Bold";
+  font-size: 1.3em;
 }
 
 #links {
@@ -239,15 +241,13 @@ p {
 
 @media screen and (max-device-width: 700px) {
   #content {
-    margin: 0 1em;
-  }
-  #landing .waves-right {
-    -webkit-transform: translate(10em, 5em);
-            transform: translate(10em, 5em);
+    margin: 0 1.5em;
   }
   .project-showcase {
     font-size: 85%;
-    height: 10em;
+  }
+  #about {
+    padding-top: 2em;
   }
 }
 
