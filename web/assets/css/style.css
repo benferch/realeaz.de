@@ -98,6 +98,10 @@ p {
   margin: 0 15em;
 }
 
+#content h2 {
+  font-size: 2em;
+}
+
 #about {
   padding-top: 10em;
   margin-bottom: 1em;
