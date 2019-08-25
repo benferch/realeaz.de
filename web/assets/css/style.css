@@ -242,8 +242,8 @@ p {
 #imprint {
   padding-top: 3em;
   margin-bottom: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
 #imprint-page #footer {
@@ -255,8 +255,8 @@ p {
 #privacy {
   padding-top: 3em;
   margin-bottom: 2em;
-  margin-left: 2em;
-  margin-right: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
 @media screen and (max-device-width: 700px) {
@@ -269,8 +269,16 @@ p {
   #about {
     padding-top: 2em;
   }
+  #imprint-page #imprint {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
   #imprint-page #footer {
     position: unset;
+  }
+  #privacy {
+    margin-left: 2em;
+    margin-right: 2em;
   }
 }
 
