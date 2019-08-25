@@ -249,8 +249,8 @@ p {
 #privacy {
   padding-top: 3em;
   margin-bottom: 2em;
-  margin-left: 10em;
-  margin-right: 10em;
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 @media screen and (max-device-width: 700px) {
