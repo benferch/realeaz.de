@@ -193,9 +193,7 @@ p
   flex-direction: row
   align-items: center
   justify-content: space-between
-  width: -webkit-fill-available
-  position: absolute
-  bottom: 0
+
 
 // Imprint
 #imprint
@@ -203,6 +201,12 @@ p
   margin-bottom: 2em
   margin-left: 2em
   margin-right: 2em
+
+#imprint-page
+  #footer
+    width: -webkit-fill-available
+    position: absolute
+    bottom: 0
 
 // Privacy Policy
 #privacy
@@ -230,8 +234,10 @@ p
   #about
     padding-top: 2em
 
-  #footer
-    position: unset
+  // Imprint
+  #imprint-page
+    #footer
+      position: unset
 
 @media screen and (min-device-width: 700px) and (max-device-width: 1000px)
   // Content

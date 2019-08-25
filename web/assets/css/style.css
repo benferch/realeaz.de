@@ -237,9 +237,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: -webkit-fill-available;
-  position: absolute;
-  bottom: 0;
 }
 
 #imprint {
@@ -247,6 +244,12 @@ p {
   margin-bottom: 2em;
   margin-left: 2em;
   margin-right: 2em;
+}
+
+#imprint-page #footer {
+  width: -webkit-fill-available;
+  position: absolute;
+  bottom: 0;
 }
 
 #privacy {
@@ -266,7 +269,7 @@ p {
   #about {
     padding-top: 2em;
   }
-  #footer {
+  #imprint-page #footer {
     position: unset;
   }
 }
