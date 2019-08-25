@@ -77,6 +77,18 @@ p {
   font-size: 110%;
 }
 
+::-moz-selection {
+  background-color: #00bb90;
+}
+
+::selection {
+  background-color: #00bb90;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 .btn {
   border: 0.1em solid #b8c2cc;
   border-radius: 0.5em;
