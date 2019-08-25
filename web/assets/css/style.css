@@ -239,24 +239,26 @@ p {
           justify-content: space-between;
 }
 
-#imprint {
+#imprint-page #imprint {
   padding-top: 3em;
   margin-bottom: 2em;
   margin-left: 5em;
   margin-right: 5em;
 }
 
-#imprint-page #footer {
-  width: -webkit-fill-available;
-  position: absolute;
-  bottom: 0;
+#imprint-page #imprint h1 {
+  font-size: 4em;
 }
 
-#privacy {
+#privacy-page #privacy {
   padding-top: 3em;
   margin-bottom: 2em;
   margin-left: 5em;
   margin-right: 5em;
+}
+
+#privacy-page #privacy h1 {
+  font-size: 4em;
 }
 
 @media screen and (max-device-width: 700px) {
@@ -273,12 +275,15 @@ p {
     margin-left: 2em;
     margin-right: 2em;
   }
-  #imprint-page #footer {
-    position: unset;
+  #imprint-page #imprint h1 {
+    font-size: 2em;
   }
-  #privacy {
+  #privacy-page #privacy {
     margin-left: 2em;
     margin-right: 2em;
+  }
+  #privacy-page #privacy h1 {
+    font-size: 2em;
   }
 }
 

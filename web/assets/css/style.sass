@@ -196,24 +196,24 @@ p
 
 
 // Imprint
-#imprint
-  padding-top: 3em
-  margin-bottom: 2em
-  margin-left: 5em
-  margin-right: 5em
-
 #imprint-page
-  #footer
-    width: -webkit-fill-available
-    position: absolute
-    bottom: 0
+  #imprint
+    padding-top: 3em
+    margin-bottom: 2em
+    margin-left: 5em
+    margin-right: 5em
+    h1
+      font-size: 4em
 
 // Privacy Policy
-#privacy
-  padding-top: 3em
-  margin-bottom: 2em
-  margin-left: 5em
-  margin-right: 5em
+#privacy-page
+  #privacy
+    padding-top: 3em
+    margin-bottom: 2em
+    margin-left: 5em
+    margin-right: 5em
+    h1
+      font-size: 4em
 
 // Responsive
 @media screen and (max-device-width: 700px)
@@ -239,14 +239,16 @@ p
     #imprint
       margin-left: 2em
       margin-right: 2em
-
-    #footer
-      position: unset
+      h1 
+        font-size: 2em
 
   // Privacy Policy
-  #privacy
-    margin-left: 2em
-    margin-right: 2em
+  #privacy-page
+    #privacy
+      margin-left: 2em
+      margin-right: 2em
+      h1
+        font-size: 2em
 
 @media screen and (min-device-width: 700px) and (max-device-width: 1000px)
   // Content
