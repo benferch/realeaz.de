@@ -237,6 +237,9 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: -webkit-fill-available;
+  position: absolute;
+  bottom: 0;
 }
 
 #imprint {
@@ -262,6 +265,9 @@ p {
   }
   #about {
     padding-top: 2em;
+  }
+  #footer {
+    position: unset;
   }
 }
 
