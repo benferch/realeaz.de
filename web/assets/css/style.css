@@ -207,15 +207,10 @@ p {
 }
 
 #footer {
-  position: relative;
-  bottom: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1em;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -223,6 +218,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 #imprint {
