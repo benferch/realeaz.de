@@ -290,4 +290,32 @@ p {
   height: 22px;
   width: 22px;
 }
+
+#error-page {
+  height: 100vh;
+}
+
+#error-page #footer {
+  position: absolute;
+  bottom: 0;
+  width: -webkit-fill-available;
+}
+
+#error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+#error h1 {
+  font-size: 5em;
+}
 /*# sourceMappingURL=style.css.map */
