@@ -195,6 +195,22 @@ p {
   -webkit-padding-start: 1em;
           padding-inline-start: 1em;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#links ul li {
+  padding: 1em;
+}
+
+#links ul li svg {
+  height: 2em;
+  width: auto;
 }
 
 #contact {
