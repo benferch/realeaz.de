@@ -86,7 +86,12 @@ p {
 }
 
 ::-webkit-scrollbar {
-  display: none;
+  width: 0.5em;
+  background-color: #191d1f;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b8c2cc;
 }
 
 .btn {
