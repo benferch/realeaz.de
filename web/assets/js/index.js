@@ -29,39 +29,6 @@ toggle.addEventListener('click', function (e) {
 });
 */
 
-// Scripts for index page
-$(function () {
-    if ($("body").is("#index-page")) {
-        // Age calculator
-        function calcAge(dob) {
-            var birthday = new Date(dob);
-            return ~~((Date.now() - birthday) / (31557600000));
-        }
-
-        byId("age").innerHTML = calcAge("08/10/2002");
-
-        // Get Github Project description
-        // MetaPeta
-        /* fetch("https://api.github.com/repos/jugendhackt/MetaPeta")
-            .then(function (response) {
-                return response.json();
-            }).then(function (json) {
-                var metapetaDescription = json.description;
-                byId("metapetaDescription").innerHTML = metapetaDescription;
-            });
-
-        // PacTrac
-        fetch("https://api.github.com/repos/jugendhackt/PacTrac")
-            .then(function (response) {
-                return response.json();
-            }).then(function (json) {
-                var pactracDescription = json.description;
-                byId("pactracDescription").innerHTML = pactracDescription;
-            });
-            */
-    }
-});
-
 // get Current Year
 function getYear() {
     var today = new Date();

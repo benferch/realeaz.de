@@ -332,15 +332,6 @@ p {
 
 #error-page {
   height: 100vh;
-}
-
-#error-page #footer {
-  position: absolute;
-  bottom: 0;
-  width: -webkit-fill-available;
-}
-
-#error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -352,6 +343,12 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+#error-page #footer {
+  position: absolute;
+  bottom: 0;
+  width: -webkit-fill-available;
 }
 
 #error h1 {
