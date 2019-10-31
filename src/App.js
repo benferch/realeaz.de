@@ -1,25 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Route, Switch} from 'react-dom';
+import './assets/css/style.sass'
+
+import HomePage from './components/pages/HomePage';
+import ImprintPage from './components/pages/ImprintPage';
+import PrivacyPage from './components/pages/PrivacyPage';
+import ErrorPage from './components/pages/ErrorPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" component={HomePage}/>
+        <Route path="/imprint" component={ImprintPage}/>
+        <Route path="/privacy" component={PrivacyPage}/>
+        <Route component={ErrorPage}/>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
