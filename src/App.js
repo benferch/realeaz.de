@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './assets/css/style.sass'
 
 import HomePage from './components/pages/HomePage';
