@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.sass'
+import './Footer.sass';
 
 function Footer() {
     return (
