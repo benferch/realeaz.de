@@ -3,7 +3,7 @@ import './About.sass';
 
 function About() {
     function calcAge(dob) {
-        var birthday = new Date(dob);
+        const birthday = new Date(dob);
         return ~~((Date.now() - birthday) / (31557600000));
     }
 
