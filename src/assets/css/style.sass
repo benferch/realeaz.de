@@ -72,6 +72,43 @@ p
 ::-webkit-scrollbar-thumb
   background-color: $dark-theme-light-grey
 
+// Dark theme
+// .dark
+//   body
+//     background-color: $dark-theme-black
+//     color: $dark-theme-white
+
+//   a
+//     color: $dark-theme-light-grey
+
+//     &:hover
+//       color: $turquoise
+
+//   .project-showcase
+//     box-shadow: 0 0 15px 0 $dark-theme-grey
+
+//   .skill-showcase
+//     box-shadow: 0 0 15px 0 $dark-theme-grey
+
+//   .btn
+//     color: $dark-theme-light-grey
+//     border: 0.1em solid $dark-theme-light-grey
+
+// Button
+.btn
+  border: 0.1em solid $dark-theme-light-grey
+  border-radius: 0.5em
+  padding: 0.5em
+  background: transparent
+  color: $dark-theme-light-grey
+
+  &:hover
+    border-color: $turquoise
+    box-shadow: 0 0 15px 0 $turquoise
+    text-shadow: 0 0 15px 0 $turquoise
+    color: $turquoise
+    background: transparentize($turquoise, 0.9)
+
 // Content
 #content
   margin: 0 15em
@@ -79,3 +116,11 @@ p
 
   h2
     font-size: 2em
+
+@media screen and (max-device-width: 700px)
+  #content
+    margin: 0 1.5em
+
+@media screen and (min-device-width: 700px) and (max-device-width: 1000px)
+  #content
+    margin: 0 5em
