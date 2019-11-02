@@ -1,11 +1,13 @@
 import React from 'react';
+import About from '../About/About';
+import Projects from '../Projects/Projects'
 import Footer from '../Footer/Footer';
-import About from '../About/About'
 
 function HomePage() {
     return (
-        <div id="HomePage">
+        <div id="content">
             <About />
+            <Projects />
             <Footer />
         </div>
     );
