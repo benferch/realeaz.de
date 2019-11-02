@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './assets/css/style.sass'
+import './assets/css/style.sass';
+import './assets/js/index';
 
 import HomePage from './components/pages/HomePage';
 import ImprintPage from './components/pages/ImprintPage';
