@@ -1,48 +1,21 @@
-<!DOCTYPE html>
-<html lang="de" id="html">
+import React from 'react';
+import Footer from '../Footer/Footer';
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#fcfbf8">
-    <meta name="description" content="Web development">
-    <meta name="keywords" content="Ben, Ferch, Rügen, Germany, Deutschland, Webentwicklung, Web development">
-    <meta name="author" content="Ben Ferch">
-    <meta name=”robots” content=”none”>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="ben. &verbar; Impressum">
-    <meta property="og:site_name" content="ben. &verbar; Impressum">
-    <meta property="og:description" content="Web development">
-    <meta property="og:url" content="https://benferch.de/imprint.html">
-    <meta property="og:image" content="">
-    <meta name=”twitter:title” content="ben. &verbar; Impressum">
-    <meta name=”twitter:description” content="Web development">
-    <meta name=”twitter:image” content="">
-    <meta name=”twitter:site” content="@_benferch">
-    <meta name=”twitter:creator” content="@_benferch">
-    <meta name="twitter:card" content="summary">
-    <title>ben. &verbar; Impressum</title>
-
-    <link rel="canonical" href="https://benferch.de/imprint.html">
-    <link rel="icon" type="image/png" href="./assets/img/logo.png">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/normalize.min.css">
-</head>
-
-<body id="imprint-page">
-    <div id="imprint">
-        <a href="/">
-            << back</a>
+function ImprintPage() {
+    return (
+        <div id="imprint-page">
+            <div id="imprint">
+            <a href="/"> &lsaquo;&lsaquo; back </a>
              <h1>Impressum</h1>
 
                 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
                 <p>Ben-Jannik Ferch<br />
                     Poggenstra&szlig;e 4a<br />
-                    18574 Garz</p> <br>
+                    18574 Garz</p> <br />
 
                 <h2>Kontakt</h2>
                 <p>Telefon: 015234223262<br />
-                    E-Mail: ben@benferch.de</p> <br>
+                    E-Mail: ben@benferch.de</p> <br />
 
                 <h3>Haftung f&uuml;r Inhalte</h3>
                 <p>Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen
@@ -61,7 +34,7 @@
                     Kenntnis einer
                     konkreten Rechtsverletzung m&ouml;glich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen
                     werden wir
-                    diese Inhalte umgehend entfernen.</p> <br>
+                    diese Inhalte umgehend entfernen.</p> <br />
                 <h3>Haftung f&uuml;r Links</h3>
                 <p>Unser Angebot enth&auml;lt Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss
                     haben.
@@ -76,7 +49,7 @@
                     einer
                     Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links
                     umgehend
-                    entfernen.</p> <br>
+                    entfernen.</p> <br />
                 <h3>Urheberrecht</h3>
                 <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem
                     deutschen
@@ -93,26 +66,12 @@
                     eine
                     Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei
                     Bekanntwerden von
-                    Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p> <br>
-
+                    Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p> <br />
                 <p>Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a></p>
-    </div>
-    <div id="footer">
-        <span class="left">2017 - <span id="currentYear"></span></span>
-        <!-- <div class="options">
-            <a onclick="languageSwitch()" id="languageSwitch"><img src="./assets/img/us.png"></a>
-            <a id="themeSwitch" class="btn">Theme wechseln</a>
-        </div> -->
-        <div class="legal">
-            <a href="imprint" title="This page is in German">Imprint</a>
-            <a href="privacy" title="This page is in German">Privacy Policy</a>
-        </div>
-    </div>
+                <Footer />
+            </div>
+        </div>  
+    );
+}
 
-    <!-- Scripts -->
-    <script src="./assets/js/jquery-3.4.1.min.js"></script>
-    <!-- <script src="./assets/js/jquery.waypoint.min.js"></script> -->
-    <script src="./assets/js/index.js"></script>
-</body>
-
-</html>
+export default ImprintPage;

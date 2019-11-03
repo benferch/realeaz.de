@@ -1,40 +1,12 @@
-<!DOCTYPE html>
-<html lang="de" id="html">
+import React from 'react';
+import Footer from '../Footer/Footer';
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#fcfbf8">
-    <meta name="description" content="Web development">
-    <meta name="keywords" content="Ben, Ferch, Rügen, Germany, Deutschland, Webentwicklung, Web development">
-    <meta name="author" content="Ben Ferch">
-    <meta name=”robots” content=”none”>
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="ben. &verbar; Datenschutz">
-    <meta property="og:site_name" content="ben. &verbar; Datenschutz">
-    <meta property="og:description" content="Web development">
-    <meta property="og:url" content="https://benferch.de/privacy.html">
-    <meta property="og:image" content="">
-    <meta name=”twitter:title” content="ben. &verbar; Datenschutz">
-    <meta name=”twitter:description” content="Web development">
-    <meta name=”twitter:image” content="">
-    <meta name=”twitter:site” content="@_benferch">
-    <meta name=”twitter:creator” content="@_benferch">
-    <meta name="twitter:card" content="summary">
-    <title>ben. &verbar; Datenschutz</title>
-
-    <link rel="canonical" href="https://benferch.de/privacy.html">
-    <link rel="icon" type="image/png" href="./assets/img/logo.png">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/normalize.min.css">
-</head>
-
-<body id="privacy-page">
-    <div id="privacy">
-        <a href="/">
-            << back</a>
+function PrivacyPage() {
+    return (
+        <div id="privacy-page">
+            <div id="privacy">
+            <a href="/"> &lsaquo;&lsaquo; back </a>
              <h1>Datenschutzerklärung</h1>
-                <h3 id="dsg-general-intro"></h3>
                 <p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von
                     personenbezogenen
                     Daten (nachfolgend kurz „Daten“) im Rahmen der Erbringung unserer Leistungen sowie innerhalb unseres
@@ -45,36 +17,36 @@
                     auf
                     die verwendeten Begrifflichkeiten, wie z.B. „Verarbeitung“ oder „Verantwortlicher“ verweisen wir auf
                     die
-                    Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO). <br>
-                    <br>
+                    Definitionen im Art. 4 der Datenschutzgrundverordnung (DSGVO). <br />
+                    <br />
                 </p>
                 <h3 id="dsg-general-controller">Verantwortlicher</h3>
-                <p><span class="tsmcontroller">Ben-Jannik Ferch<br>
-                        Poggenstraße 4a<br>
-                        18574 Garz<br>
-                        Deutschland<br>
-                        <br>
-                        E-Mail: ben@benferch.de<br>
+                <p><span className="tsmcontroller">Ben-Jannik Ferch<br />
+                        Poggenstraße 4a<br />
+                        18574 Garz<br />
+                        Deutschland<br />
+                        <br />
+                        E-Mail: ben@benferch.de<br />
                         https://benferch.de/imprint.html</span>
                 </p>
                 <h3 id="dsg-general-datatype">Arten der verarbeiteten Daten</h3>
-                <p>- Bestandsdaten (z.B., Personen-Stammdaten, Namen oder Adressen).<br>
-                    - Kontaktdaten (z.B., E-Mail, Telefonnummern).<br>
-                    - Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos).<br>
-                    - Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).<br>
+                <p>- Bestandsdaten (z.B., Personen-Stammdaten, Namen oder Adressen).<br />
+                    - Kontaktdaten (z.B., E-Mail, Telefonnummern).<br />
+                    - Inhaltsdaten (z.B., Texteingaben, Fotografien, Videos).<br />
+                    - Nutzungsdaten (z.B., besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).<br />
                     - Meta-/Kommunikationsdaten (z.B., Geräte-Informationen, IP-Adressen).</p>
                 <h3 id="dsg-general-datasubjects">Kategorien betroffener Personen</h3>
                 <p>Besucher und Nutzer des Onlineangebotes (Nachfolgend bezeichnen wir die betroffenen Personen
                     zusammenfassend
                     auch
-                    als „Nutzer“).<br>
+                    als „Nutzer“).<br />
                 </p>
                 <h3 id="dsg-general-purpose">Zweck der Verarbeitung</h3>
-                <p>- Zurverfügungstellung des Onlineangebotes, seiner Funktionen und Inhalte.<br>
-                    - Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern.<br>
-                    - Sicherheitsmaßnahmen.<br>
-                    - Reichweitenmessung/Marketing<br>
-                    <span class="tsmcom"></span></p>
+                <p>- Zurverfügungstellung des Onlineangebotes, seiner Funktionen und Inhalte.<br />
+                    - Beantwortung von Kontaktanfragen und Kommunikation mit Nutzern.<br />
+                    - Sicherheitsmaßnahmen.<br />
+                    - Reichweitenmessung/Marketing<br />
+                    <span className="tsmcom"></span></p>
                 <h3 id="dsg-general-terms">Verwendete Begrifflichkeiten </h3>
                 <p>„Personenbezogene Daten“ sind alle Informationen, die sich auf eine identifizierte oder
                     identifizierbare
@@ -88,15 +60,15 @@
                     besonderen
                     Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen,
                     psychischen,
-                    wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.<br>
-                    <br>
+                    wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind.<br />
+                    <br />
                     „Verarbeitung“ ist jeder mit oder ohne Hilfe automatisierter Verfahren ausgeführte Vorgang oder jede
                     solche
                     Vorgangsreihe im Zusammenhang mit personenbezogenen Daten. Der Begriff reicht weit und umfasst
                     praktisch
                     jeden
-                    Umgang mit Daten.<br>
-                    <br>
+                    Umgang mit Daten.<br />
+                    <br />
                     „Pseudonymisierung“ die Verarbeitung personenbezogener Daten in einer Weise, dass die
                     personenbezogenen
                     Daten
@@ -106,8 +78,8 @@
                     können, sofern diese zusätzlichen Informationen gesondert aufbewahrt werden und technischen und
                     organisatorischen Maßnahmen unterliegen, die gewährleisten, dass die personenbezogenen Daten nicht
                     einer
-                    identifizierten oder identifizierbaren natürlichen Person zugewiesen werden.<br>
-                    <br>
+                    identifizierten oder identifizierbaren natürlichen Person zugewiesen werden.<br />
+                    <br />
                     „Profiling“ jede Art der automatisierten Verarbeitung personenbezogener Daten, die darin besteht,
                     dass diese
                     personenbezogenen Daten verwendet werden, um bestimmte persönliche Aspekte, die sich auf eine
@@ -117,18 +89,18 @@
                     Gesundheit,
                     persönliche Vorlieben, Interessen, Zuverlässigkeit, Verhalten, Aufenthaltsort oder Ortswechsel
                     dieser
-                    natürlichen Person zu analysieren oder vorherzusagen.<br>
-                    <br>
+                    natürlichen Person zu analysieren oder vorherzusagen.<br />
+                    <br />
                     Als „Verantwortlicher“ wird die natürliche oder juristische Person, Behörde, Einrichtung oder andere
                     Stelle,
                     die
                     allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen
                     Daten
-                    entscheidet, bezeichnet.<br>
-                    <br>
+                    entscheidet, bezeichnet.<br />
+                    <br />
                     „Auftragsverarbeiter“ eine natürliche oder juristische Person, Behörde, Einrichtung oder andere
                     Stelle, die
-                    personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.<br>
+                    personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet.<br />
                 </p>
                 <h3 id="dsg-general-legalbasis">Maßgebliche Rechtsgrundlagen</h3>
                 <p>Nach Maßgabe des Art. 13 DSGVO teilen wir Ihnen die Rechtsgrundlagen unserer Datenverarbeitungen mit.
@@ -136,37 +108,37 @@
                     Nutzer
                     aus dem Geltungsbereich der Datenschutzgrundverordnung (DSGVO), d.h. der EU und des EWG gilt, sofern
                     die
-                    Rechtsgrundlage in der Datenschutzerklärung nicht genannt wird, Folgendes: <br>
+                    Rechtsgrundlage in der Datenschutzerklärung nicht genannt wird, Folgendes: <br />
                     Die Rechtsgrundlage für die Einholung von Einwilligungen ist Art. 6 Abs. 1 lit. a und Art. 7
-                    DSGVO;<br>
+                    DSGVO;<br />
                     Die Rechtsgrundlage für die Verarbeitung zur Erfüllung unserer Leistungen und Durchführung
                     vertraglicher
-                    Maßnahmen sowie Beantwortung von Anfragen ist Art. 6 Abs. 1 lit. b DSGVO;<br>
+                    Maßnahmen sowie Beantwortung von Anfragen ist Art. 6 Abs. 1 lit. b DSGVO;<br />
                     Die Rechtsgrundlage für die Verarbeitung zur Erfüllung unserer rechtlichen Verpflichtungen ist Art.
                     6 Abs. 1
-                    lit. c DSGVO;<br>
+                    lit. c DSGVO;<br />
                     Für den Fall, dass lebenswichtige Interessen der betroffenen Person oder einer anderen natürlichen
                     Person
                     eine
                     Verarbeitung personenbezogener Daten erforderlich machen, dient Art. 6 Abs. 1 lit. d DSGVO als
-                    Rechtsgrundlage.<br>
+                    Rechtsgrundlage.<br />
                     Die Rechtsgrundlage für die erforderliche Verarbeitung zur Wahrnehmung einer Aufgabe, die im
                     öffentlichen
                     Interesse liegt oder in Ausübung öffentlicher Gewalt erfolgt, die dem Verantwortlichen übertragen
                     wurde ist
                     Art.
-                    6 Abs. 1 lit. e DSGVO. <br>
+                    6 Abs. 1 lit. e DSGVO. <br />
                     Die Rechtsgrundlage für die Verarbeitung zur Wahrung unserer berechtigten Interessen ist Art. 6 Abs.
                     1 lit.
                     f
-                    DSGVO. <br>
+                    DSGVO. <br />
                     Die Verarbeitung von Daten zu anderen Zwecken als denen, zu denen sie ehoben wurden, bestimmt sich
                     nach den
-                    Vorgaben des Art 6 Abs. 4 DSGVO. <br>
+                    Vorgaben des Art 6 Abs. 4 DSGVO. <br />
                     Die Verarbeitung von besonderen Kategorien von Daten (entsprechend Art. 9 Abs. 1 DSGVO) bestimmt
                     sich nach
                     den
-                    Vorgaben des Art. 9 Abs. 2 DSGVO. <br>
+                    Vorgaben des Art. 9 Abs. 2 DSGVO. <br />
                 </p>
                 <h3 id="dsg-general-securitymeasures">Sicherheitsmaßnahmen</h3>
                 <p>Wir treffen nach Maßgabe der gesetzlichen Vorgabenunter Berücksichtigung des Stands der Technik, der
@@ -177,8 +149,8 @@
                     Personen, geeignete technische und organisatorische Maßnahmen, um ein dem Risiko angemessenes
                     Schutzniveau
                     zu
-                    gewährleisten.<br>
-                    <br>
+                    gewährleisten.<br />
+                    <br />
                     Zu den Maßnahmen gehören insbesondere die Sicherung der Vertraulichkeit, Integrität und
                     Verfügbarkeit von
                     Daten
@@ -192,7 +164,7 @@
                     Entwicklung,
                     bzw.
                     Auswahl von Hardware, Software sowie Verfahren, entsprechend dem Prinzip des Datenschutzes durch
-                    Technikgestaltung und durch datenschutzfreundliche Voreinstellungen.<br>
+                    Technikgestaltung und durch datenschutzfreundliche Voreinstellungen.<br />
                 </p>
                 <h3 id="dsg-general-coprocessing">Zusammenarbeit mit Auftragsverarbeitern, gemeinsam Verantwortlichen
                     und
@@ -209,13 +181,13 @@
                     haben, eine rechtliche Verpflichtung dies vorsieht oder auf Grundlage unserer berechtigten
                     Interessen (z.B.
                     beim
-                    Einsatz von Beauftragten, Webhostern, etc.). <br>
-                    <br>
+                    Einsatz von Beauftragten, Webhostern, etc.). <br />
+                    <br />
                     Sofern wir Daten anderen Unternehmen unserer Unternehmensgruppe offenbaren, übermitteln oder ihnen
                     sonst den
                     Zugriff gewähren, erfolgt dies insbesondere zu administrativen Zwecken als berechtigtes Interesse
                     und
-                    darüberhinausgehend auf einer den gesetzlichen Vorgaben entsprechenden Grundlage. <br>
+                    darüberhinausgehend auf einer den gesetzlichen Vorgaben entsprechenden Grundlage. <br />
                 </p>
                 <h3 id="dsg-general-thirdparty">Übermittlungen in Drittländer</h3>
                 <p>Sofern wir Daten in einem Drittland (d.h. außerhalb der Europäischen Union (EU), des Europäischen
@@ -243,29 +215,29 @@
                     und auf
                     Auskunft über diese Daten sowie auf weitere Informationen und Kopie der Daten entsprechend den
                     gesetzlichen
-                    Vorgaben.<br>
-                    <br>
+                    Vorgaben.<br />
+                    <br />
                     Sie haben entsprechend. den gesetzlichen Vorgaben das Recht, die Vervollständigung der Sie
                     betreffenden
                     Daten
-                    oder die Berichtigung der Sie betreffenden unrichtigen Daten zu verlangen.<br>
-                    <br>
+                    oder die Berichtigung der Sie betreffenden unrichtigen Daten zu verlangen.<br />
+                    <br />
                     Sie haben nach Maßgabe der gesetzlichen Vorgaben das Recht zu verlangen, dass betreffende Daten
                     unverzüglich
                     gelöscht werden, bzw. alternativ nach Maßgabe der gesetzlichen Vorgaben eine Einschränkung der
                     Verarbeitung
                     der
-                    Daten zu verlangen.<br>
-                    <br>
+                    Daten zu verlangen.<br />
+                    <br />
                     Sie haben das Recht zu verlangen, dass die Sie betreffenden Daten, die Sie uns bereitgestellt haben
                     nach
                     Maßgabe
                     der gesetzlichen Vorgaben zu erhalten und deren Übermittlung an andere Verantwortliche zu fordern.
-                    <br>
-                    <br>
+                    <br />
+                    <br />
                     Sie haben ferner nach Maßgabe der gesetzlichen Vorgaben das Recht, eine Beschwerde bei der
                     zuständigen
-                    Aufsichtsbehörde einzureichen.<br>
+                    Aufsichtsbehörde einzureichen.<br />
                 </p>
                 <h3 id="dsg-general-revokeconsent">Widerrufsrecht</h3>
                 <p>Sie haben das Recht, erteilte Einwilligungen mit Wirkung für die Zukunft zu widerrufen.</p>
@@ -304,20 +276,20 @@
                     Cookies bezeichnet, die von anderen Anbietern als dem Verantwortlichen, der das Onlineangebot
                     betreibt,
                     angeboten werden (andernfalls, wenn es nur dessen Cookies sind spricht man von „First-Party
-                    Cookies“).<br>
-                    <br>
+                    Cookies“).<br />
+                    <br />
                     Wir können temporäre und permanente Cookies einsetzen und klären hierüber im Rahmen unserer
                     Datenschutzerklärung
-                    auf.<br>
-                    <br>
+                    auf.<br />
+                    <br />
                     Falls die Nutzer nicht möchten, dass Cookies auf ihrem Rechner gespeichert werden, werden sie
                     gebeten die
                     entsprechende Option in den Systemeinstellungen ihres Browsers zu deaktivieren. Gespeicherte Cookies
                     können
                     in
                     den Systemeinstellungen des Browsers gelöscht werden. Der Ausschluss von Cookies kann zu
-                    Funktionseinschränkungen dieses Onlineangebotes führen.<br>
-                    <br>
+                    Funktionseinschränkungen dieses Onlineangebotes führen.<br />
+                    <br />
                     Ein genereller Widerspruch gegen den Einsatz der zu Zwecken des Onlinemarketing eingesetzten Cookies
                     kann
                     bei
@@ -340,8 +312,8 @@
                     gespeicherten Daten gelöscht, sobald sie für ihre Zweckbestimmung nicht mehr erforderlich sind und
                     der
                     Löschung
-                    keine gesetzlichen Aufbewahrungspflichten entgegenstehen. <br>
-                    <br>
+                    keine gesetzlichen Aufbewahrungspflichten entgegenstehen. <br />
+                    <br />
                     Sofern die Daten nicht gelöscht werden, weil sie für andere und gesetzlich zulässige Zwecke
                     erforderlich
                     sind,
@@ -360,7 +332,7 @@
                 <p></p>
                 <h3 id="dsg-contact">Kontaktaufnahme</h3>
                 <p></p>
-                <p><span class="ts-muster-content">Bei der Kontaktaufnahme mit uns (z.B. per Kontaktformular, E-Mail,
+                <p><span className="ts-muster-content">Bei der Kontaktaufnahme mit uns (z.B. per Kontaktformular, E-Mail,
                         Telefon
                         oder via sozialer Medien) werden die Angaben des Nutzers zur Bearbeitung der Kontaktanfrage und
                         deren
@@ -368,8 +340,8 @@
                         Art. 6
                         Abs. 1 lit. f. (andere Anfragen) DSGVO verarbeitet.. Die Angaben der Nutzer können in einem
                         Customer-Relationship-Management System ("CRM System") oder vergleichbarer Anfragenorganisation
-                        gespeichert werden.<br>
-                        <br>
+                        gespeichert werden.<br />
+                        <br />
                         Wir löschen die Anfragen, sofern diese nicht mehr erforderlich sind. Wir überprüfen die
                         Erforderlichkeit
                         alle zwei Jahre; Ferner gelten die gesetzlichen Archivierungspflichten.</span>
@@ -377,12 +349,12 @@
                 <p></p>
                 <h3 id="dsg-hostingprovider">Hosting und E-Mail-Versand</h3>
                 <p></p>
-                <p><span class="ts-muster-content">Die von uns in Anspruch genommenen Hosting-Leistungen dienen der
+                <p><span className="ts-muster-content">Die von uns in Anspruch genommenen Hosting-Leistungen dienen der
                         Zurverfügungstellung der folgenden Leistungen: Infrastruktur- und Plattformdienstleistungen,
                         Rechenkapazität, Speicherplatz und Datenbankdienste, E-Mail-Versand, Sicherheitsleistungen sowie
                         technische Wartungsleistungen, die wir zum Zwecke des Betriebs dieses Onlineangebotes einsetzen.
-                        <br>
-                        <br>
+                        <br />
+                        <br />
                         Hierbei verarbeiten wir, bzw. unser Hostinganbieter Bestandsdaten, Kontaktdaten, Inhaltsdaten,
                         Vertragsdaten, Nutzungsdaten, Meta- und Kommunikationsdaten von Kunden, Interessenten und
                         Besuchern
@@ -394,7 +366,7 @@
                 <p></p>
                 <h3 id="dsg-logfiles">Erhebung von Zugriffsdaten und Logfiles</h3>
                 <p></p>
-                <p><span class="ts-muster-content">Wir, bzw. unser Hostinganbieter, erhebt auf Grundlage unserer
+                <p><span className="ts-muster-content">Wir, bzw. unser Hostinganbieter, erhebt auf Grundlage unserer
                         berechtigten
                         Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO Daten über jeden Zugriff auf den Server, auf
                         dem
@@ -402,34 +374,21 @@
                         abgerufenen Webseite, Datei, Datum und Uhrzeit des Abrufs, übertragene Datenmenge, Meldung über
                         erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL (die
                         zuvor
-                        besuchte Seite), IP-Adresse und der anfragende Provider.<br>
-                        <br>
+                        besuchte Seite), IP-Adresse und der anfragende Provider.<br />
+                        <br />
                         Logfile-Informationen werden aus Sicherheitsgründen (z.B. zur Aufklärung von Missbrauchs- oder
                         Betrugshandlungen) für die Dauer von maximal 7 Tagen gespeichert und danach gelöscht. Daten,
                         deren
                         weitere Aufbewahrung zu Beweiszwecken erforderlich ist, sind bis zur endgültigen Klärung des
                         jeweiligen
                         Vorfalls von der Löschung ausgenommen.</span>
-                </p><a href="https://datenschutz-generator.de" class="dsg1-6" rel="nofollow" target="_blank">Erstellt
+                </p><a href="https://datenschutz-generator.de" className="dsg1-6" rel="nofollow noopener noreferrer" target="_blank">Erstellt
                     mit
                     Datenschutz-Generator.de von RA Dr. Thomas Schwenke</a>
-    </div>
-    <div id="footer">
-        <span class="left">2017 - <span id="currentYear"></span></span>
-        <!-- <div class="options">
-            <a onclick="languageSwitch()" id="languageSwitch"><img src="./assets/img/us.png"></a>
-            <a id="themeSwitch" class="btn">Theme wechseln</a>
-        </div> -->
-        <div class="legal">
-            <a href="imprint" title="This page is in German">Imprint</a>
-            <a href="privacy" title="This page is in German">Privacy Policy</a>
+                <Footer />
+            </div>
         </div>
-    </div>
+    );
+}
 
-    <!-- Scripts -->
-    <script src="./assets/js/jquery-3.4.1.min.js"></script>
-    <!-- <script src="./assets/js/jquery.waypoint.min.js"></script> -->
-    <script src="./assets/js/index.js"></script>
-</body>
-
-</html>
+export default PrivacyPage;

@@ -3,11 +3,6 @@ window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 };
 
-// Shorthands
-var byId = function (id) {
-    return document.getElementById(id);
-};
-
 // Theme switch
 /*
 let toggle = byId("themeSwitch")
@@ -28,11 +23,3 @@ toggle.addEventListener('click', function (e) {
     }
 });
 */
-
-// get Current Year
-function getYear() {
-    var today = new Date();
-    return today.getFullYear()
-}
-
-byId("currentYear").innerHTML = getYear();
