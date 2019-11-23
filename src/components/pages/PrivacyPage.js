@@ -1,12 +1,13 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
+import { Link } from "react-router-dom";
 
 function PrivacyPage() {
     return (
         <div id="privacy-page">
             <div id="privacy">
-            <a href="/"> &lsaquo;&lsaquo; back </a>
-             <h1>Datenschutzerklärung</h1>
+            <Link to="/"> &lsaquo;&lsaquo; back </Link>
+            <h1>Datenschutzerklärung</h1>
                 <p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von
                     personenbezogenen
                     Daten (nachfolgend kurz „Daten“) im Rahmen der Erbringung unserer Leistungen sowie innerhalb unseres

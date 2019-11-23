@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.sass';
+import { Link } from "react-router-dom";
 
 function Footer() {
     const currentYear = new Date().getFullYear();
@@ -11,8 +12,8 @@ function Footer() {
                 <a id="themeSwitch" class="btn">Change theme</a>
             </div> */}
             <div className="right legal">
-                <a href="/imprint" title="This page is in German">Imprint</a>
-                <a href="/privacy" title="This page is in German">Privacy Policy</a>
+                <Link to="/imprint" title="This page is in German">Imprint</Link>
+                <Link to="/privacy" title="This page is in German">Privacy Policy</Link>
             </div>
         </div>
     );

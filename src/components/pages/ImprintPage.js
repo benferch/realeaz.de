@@ -1,22 +1,20 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
+import { Link } from "react-router-dom";
 
 function ImprintPage() {
     return (
         <div id="imprint-page">
             <div id="imprint">
-            <a href="/"> &lsaquo;&lsaquo; back </a>
-             <h1>Impressum</h1>
-
+                <Link to="/"> &lsaquo;&lsaquo; back </Link>
+                <h1>Impressum</h1>
                 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
                 <p>Ben-Jannik Ferch<br />
                     Poggenstra&szlig;e 4a<br />
                     18574 Garz</p> <br />
-
                 <h2>Kontakt</h2>
                 <p>Telefon: 015234223262<br />
                     E-Mail: ben@benferch.de</p> <br />
-
                 <h3>Haftung f&uuml;r Inhalte</h3>
                 <p>Als Diensteanbieter sind wir gem&auml;&szlig; &sect; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen
                     Seiten

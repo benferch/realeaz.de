@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 function ErrorPage() {
     return (
@@ -6,7 +7,7 @@ function ErrorPage() {
             <div id="error">
                 <h1>Error!</h1>
                 <p>There was an error!</p> <br />
-                <a href="/"> &lsaquo;&lsaquo; back </a>
+                <Link to="/"> &lsaquo;&lsaquo; back </Link>
             </div>
         </div>
     );
