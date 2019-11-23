@@ -13,8 +13,8 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={HomePage}/>
-        <Route path="/imprint" component={ImprintPage}/>
-        <Route path="/privacy" component={PrivacyPage}/>
+        <Route exact path="/imprint" component={ImprintPage}/>
+        <Route exact path="/privacy" component={PrivacyPage}/>
         <Route component={ErrorPage}/>
       </Switch>
     </BrowserRouter>
