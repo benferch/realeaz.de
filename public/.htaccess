@@ -1,7 +1,3 @@
-ErrorDocument 404 /error.html
-ErrorDocument 403 /error.html
-ErrorDocument 401 /error.html
-
 Redirect /twitter https://twitter.com/_benferch
 Redirect /youtube https://www.youtube.com/channel/UCJJGxAWoIqsPmf3ieNa20hA
 Redirect /twitch https://www.twitch.tv/eaziii
