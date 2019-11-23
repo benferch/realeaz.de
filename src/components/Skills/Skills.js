@@ -30,24 +30,12 @@ function Skills() {
                         </div>
                         <div className="skill-showcase">
                             <h4>
-                                    SASS / SCSS
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div id="cms">
-                    <div className="showcase">
-                        <h3>
-                            CMS
-                        </h3>
-                        <div className="skill-showcase">
-                            <h4>
-                                Drupal
+                                SASS | SCSS
                             </h4>
                         </div>
                         <div className="skill-showcase">
                             <h4>
-                                Wordpress
+                                React
                             </h4>
                         </div>
                     </div>
@@ -64,40 +52,40 @@ function Skills() {
                         </div>
                         <div className="skill-showcase">
                             <h4>
-                                Gitlab / Github / Bitbucket
+                                Gitlab | Github | Bitbucket
                             </h4>
                         </div>
                         <div className="skill-showcase">
                             <h4>
-                                PhpStorm / Visual Studio
+                                PhpStorm | Visual Studio Code
                             </h4>
                         </div>
                         <div className="skill-showcase">
                             <h4>
                                 Terminal
                             </h4>
-                            </div>
                         </div>
                     </div>
-                    <div id="frameworks-libraries">
-                        <div className="showcase">
-                            <h3>
-                                Frameworks and Libraries
-                            </h3>
-                            <div className="skill-showcase">
-                                <h4>
-                                    Bootstrap
-                                </h4>
-                            </div>
-                            <div className="skill-showcase">
-                                <h4>
-                                    jQuery
-                                </h4>
-                            </div>
+                </div>
+                <div id="frameworks-libraries">
+                    <div className="showcase">
+                        <h3>
+                            Frameworks and Libraries
+                        </h3>
+                        <div className="skill-showcase">
+                            <h4>
+                                Bootstrap
+                            </h4>
+                        </div>
+                        <div className="skill-showcase">
+                            <h4>
+                                jQuery
+                            </h4>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     );
 }
 
