@@ -15,7 +15,7 @@ function App() {
         <Route exact path="/" component={HomePage}/>
         <Route path="/imprint" component={ImprintPage}/>
         <Route path="/privacy" component={PrivacyPage}/>
-        <Route component={ErrorPage}/>
+        <Route path="*" component={ErrorPage}/>
       </Switch>
     </BrowserRouter>
   );

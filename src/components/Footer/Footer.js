@@ -11,8 +11,8 @@ function Footer() {
                 <a id="themeSwitch" class="btn">Change theme</a>
             </div> */}
             <div className="right legal">
-                <a href="imprint" title="This page is in German">Imprint</a>
-                <a href="privacy" title="This page is in German">Privacy Policy</a>
+                <a href="/imprint" title="This page is in German">Imprint</a>
+                <a href="/privacy" title="This page is in German">Privacy Policy</a>
             </div>
         </div>
     );
