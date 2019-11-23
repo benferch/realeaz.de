@@ -7,7 +7,7 @@ function ErrorPage() {
             <div id="error">
                 <h1>Error!</h1>
                 <p>There was an error!</p> <br />
-                <Link to="/"> &lsaquo;&lsaquo; back </Link>
+                <Link to="/" onClick={window.scrollTo(0, 0)}> &lsaquo;&lsaquo; back </Link>
             </div>
         </div>
     );

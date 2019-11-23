@@ -6,7 +6,7 @@ function PrivacyPage() {
     return (
         <div id="privacy-page">
             <div id="privacy">
-            <Link to="/"> &lsaquo;&lsaquo; back </Link>
+            <Link to="/" onClick={window.scrollTo(0, 0)}> &lsaquo;&lsaquo; back </Link>
             <h1>Datenschutzerklärung</h1>
                 <p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von
                     personenbezogenen

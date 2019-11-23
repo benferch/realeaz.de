@@ -12,8 +12,8 @@ function Footer() {
                 <a id="themeSwitch" class="btn">Change theme</a>
             </div> */}
             <div className="right legal">
-                <Link to="/imprint" title="This page is in German">Imprint</Link>
-                <Link to="/privacy" title="This page is in German">Privacy Policy</Link>
+                <Link to="/imprint" title="This page is in German" onClick={window.scrollTo(0, 0)}>Imprint</Link>
+                <Link to="/privacy" title="This page is in German" onClick={window.scrollTo(0, 0)}>Privacy Policy</Link>
             </div>
         </div>
     );

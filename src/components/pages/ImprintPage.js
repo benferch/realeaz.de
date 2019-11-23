@@ -6,7 +6,7 @@ function ImprintPage() {
     return (
         <div id="imprint-page">
             <div id="imprint">
-                <Link to="/"> &lsaquo;&lsaquo; back </Link>
+                <Link to="/" onClick={window.scrollTo(0, 0)}> &lsaquo;&lsaquo; back </Link>
                 <h1>Impressum</h1>
                 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
                 <p>Ben-Jannik Ferch<br />
