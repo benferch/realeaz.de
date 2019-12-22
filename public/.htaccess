@@ -6,11 +6,10 @@ Redirect /gitlab https://gitlab.com/benferch
 Redirect /bitbucket https://bitbucket.org/benferch/
 Redirect /linkedin https://www.linkedin.com/in/benferch/
 
-RewriteBase /
-RewriteRule ^index\.html$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+Options -MultiViews
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.html [QSA,L]
 
 <filesMatch ".(jpg|jpeg|png|gif|ico|woff|ttf)$">
 Header set Cache-Control "max-age=2592000, public"
