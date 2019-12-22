@@ -1,21 +1,10 @@
 Redirect /twitter https://twitter.com/_benferch
-Redirect /youtube https://www.youtube.com/channel/UCJJGxAWoIqsPmf3ieNa20hA
 Redirect /twitch https://www.twitch.tv/eaziii
 Redirect /instagram https://www.instagram.com/_benferch/
 Redirect /github https://github.com/benferch
 Redirect /gitlab https://gitlab.com/benferch
 Redirect /bitbucket https://bitbucket.org/benferch/
 Redirect /linkedin https://www.linkedin.com/in/benferch/
-
-RewriteEngine On
-RewriteCond %{SERVER_PORT} !^443$
-RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301]
-
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-
-RewriteRule ^(.*)$ $1.html
 
 <filesMatch ".(jpg|jpeg|png|gif|ico|woff|ttf)$">
 Header set Cache-Control "max-age=2592000, public"
