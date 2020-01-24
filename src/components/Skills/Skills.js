@@ -8,16 +8,23 @@ function Skills() {
                 Skills
             </h2>
             <div className="skills">
-                <div id="frontend">
+                <div id="html">
                     <div className="showcase">
                         <h3>
-                            Front-End
+                            HTML
                         </h3>
                         <div className="skill-showcase">
                             <h4>
                                 HTML
                             </h4>
                         </div>
+                    </div>
+                </div>
+                <div id="css">
+                    <div className="showcase">
+                        <h3>
+                            CSS
+                        </h3>
                         <div className="skill-showcase">
                             <h4>
                                 CSS
@@ -25,17 +32,61 @@ function Skills() {
                         </div>
                         <div className="skill-showcase">
                             <h4>
-                                JS
+                                SASS
                             </h4>
                         </div>
                         <div className="skill-showcase">
                             <h4>
-                                SASS | SCSS
+                                Scss
+                            </h4>
+                        </div>
+                        <div className="skill-showcase">
+                            <h4>
+                                Bootstrap
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="js">
+                    <div className="showcase">
+                        <h3>
+                            JavaScript
+                        </h3>
+                        <div className="skill-showcase">
+                            <h4>
+                                JavaScript
                             </h4>
                         </div>
                         <div className="skill-showcase">
                             <h4>
                                 React
+                            </h4>
+                        </div>
+                        <div className="skill-showcase">
+                            <h4>
+                                Node
+                            </h4>
+                        </div>
+                        <div className="skill-showcase">
+                            <h4>
+                                jQuery
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div id="cms">
+                    <div className="showcase">
+                        <h3>
+                            CMS
+                        </h3>
+                        <div className="skill-showcase">
+                            <h4>
+                                Drupal
+                            </h4>
+                        </div>
+                        <div className="skill-showcase">
+                            <h4>
+                                Wordpress
                             </h4>
                         </div>
                     </div>
@@ -49,11 +100,9 @@ function Skills() {
                             <h4>
                                 Git
                             </h4>
-                        </div>
-                        <div className="skill-showcase">
-                            <h4>
+                            <h5>
                                 Gitlab | Github | Bitbucket
-                            </h4>
+                            </h5>
                         </div>
                         <div className="skill-showcase">
                             <h4>
@@ -62,24 +111,7 @@ function Skills() {
                         </div>
                         <div className="skill-showcase">
                             <h4>
-                                Terminal
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div id="frameworks-libraries">
-                    <div className="showcase">
-                        <h3>
-                            Frameworks and Libraries
-                        </h3>
-                        <div className="skill-showcase">
-                            <h4>
-                                Bootstrap
-                            </h4>
-                        </div>
-                        <div className="skill-showcase">
-                            <h4>
-                                jQuery
+                                Command Line
                             </h4>
                         </div>
                     </div>
