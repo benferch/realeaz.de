@@ -9,15 +9,16 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
-      - name: Install, Build and publish
-        uses: actions/checkout@v2
+      - name: Install and Build
+      - uses: actions/checkout@v2
         with:
           ref: build
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: 12
       - run: npm install
-        run: npm build
-        uses: mikeal/publish-to-github-action@master
+      - run: npm build
+      - name: Publish
+      - uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
