@@ -6,7 +6,7 @@ on:
       - build
 
 jobs:
-  install:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Branch
@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 12
       - run: npm install
-      - run: npm build
+      - run: npm run-script build
       - name: Publish
         uses: mikeal/publish-to-github-action@master
         env:
