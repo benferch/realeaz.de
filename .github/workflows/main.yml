@@ -1,4 +1,5 @@
 # This workflow is triggered on pushes to the repository.
+name: npm build
 on:
   push:
     branches:
@@ -8,22 +9,23 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Install
+        uses: actions/checkout@v2
         with:
           ref: build
-      - name: Install
-      - uses: Adzz/jest_test_action@v1.0.0
+        uses: Adzz/jest_test_action@v1.0.0
         with:
           package-manager: npm
           command: install
+
   build:
     runs-on: ubunti-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Build
+        uses: actions/checkout@v2
         with:
           ref: build
-      - name: Build
-      - uses: Adzz/jest_test_action@v1.0.0
+        uses: Adzz/jest_test_action@v1.0.0
         with:
           package-manager: npm
           command: build
