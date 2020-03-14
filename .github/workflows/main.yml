@@ -19,7 +19,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '12.x'
 
     - name: Install dependencies
       run: npm install
@@ -32,7 +32,7 @@ jobs:
       with: 
         author_name: benferch
         author_email: ben@benferch.de
-        message: "Build"
+        message: "[AUTO] Build"
         force: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
