@@ -3,7 +3,7 @@ name: npm build
 on:
   push:
     branches:
-      - master
+      - build
 
 jobs:
   install:
@@ -12,11 +12,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           ref: build
-
-      - name: Build
-        uses: elstudio/actions-js-build/build@v2
-
-      - name: Commit
-        uses: elstudio/actions-js-build/commit@v3
+      - name: Install, Build and publish
+      - uses: actions/setup-node@v1
         with:
-          commitMessage: Build
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: npm install
+      - run: npm build
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
