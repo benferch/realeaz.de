@@ -1,3 +1,4 @@
+#TODO: own workflow for npm build and push to branch
 name: npm build
 # This workflow is triggered on pushes to the repository.
 on:
