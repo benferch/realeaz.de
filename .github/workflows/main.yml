@@ -27,3 +27,4 @@ jobs:
           ref: build
           package-manager: npm
           command: build
+      - run: git push
