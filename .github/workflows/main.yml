@@ -34,6 +34,3 @@ jobs:
         commit_user_email: ben@benferch.de
         commit_message: "[AUTO] Build"
         branch: build
-
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
