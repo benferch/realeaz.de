@@ -26,4 +26,4 @@ jobs:
         with:
           ref: build
           package-manager: npm
-          command: run-script build
+          command: build
