@@ -11,10 +11,9 @@ jobs:
     steps:
       - name: Install and Build
       - uses: actions/checkout@v2
-        with:
-          ref: build
         uses: actions/setup-node@v1
         with:
+          ref: build
           node-version: 12
       - run: npm install
       - run: npm build
