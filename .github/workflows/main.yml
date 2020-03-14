@@ -1,35 +1,19 @@
-# This workflow is triggered on pushes to the repository.
 name: npm build
+# This workflow is triggered on pushes to the repository.
 on:
   push:
     branches:
-      - build
+      - master
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
-
-    steps: 
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        ref: build
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Compile build
-      run: npm run build 
-
-    - name: Commit changes
-      uses: stefanzweifel/git-auto-commit-action@v4.1.1
-      with: 
-        commit_user_name: benferch
-        commit_user_email: ben@benferch.de
-        commit_message: "[AUTO] Build"
+    steps:
+      - uses: actions/checkout@v1
+      - name: Build and Deploy
+        uses: JamesIves/github-pages-deploy-action@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
+          BUILD_SCRIPT: npm install && npm run-script build
