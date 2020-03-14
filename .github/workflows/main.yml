@@ -14,7 +14,7 @@ jobs:
           ref: build
 
       - name: Build
-      - uses: elstudio/actions-js-build/build@v2
+        uses: elstudio/actions-js-build/build@v2
 
       - name: Commit
         uses: elstudio/actions-js-build/commit@v3
