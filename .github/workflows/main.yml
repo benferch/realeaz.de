@@ -9,16 +9,18 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
+      - name: Install, Build and publish
       - uses: actions/checkout@v2
         with:
           ref: build
-      - name: Install, Build and publish
-      - uses: actions/setup-node@v1
+
+        uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm install
       - run: npm build
+      
         uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
