@@ -7,19 +7,30 @@ on:
 
 jobs:
   build:
+    name: Build
     runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Branch
-        uses: actions/checkout@v2
-        with:
-          ref: build
-      - name: Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: npm install
-      - run: npm run-script build
-      - name: Publish
-        uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+    steps: 
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Compile build
+      run: npm run build 
+
+    - name: Commit changes
+      uses: EndBug/add-and-commit@v4
+      with: 
+        author_name: benferch
+        author_email: ben@benferch.de
+        message: "Build"
+        force: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
