@@ -28,11 +28,12 @@ jobs:
       run: npm run build 
 
     - name: Commit changes
-      uses: EndBug/add-and-commit@v4
+      uses: stefanzweifel/git-auto-commit-action@v4.1.1
       with: 
-        author_name: benferch
-        author_email: ben@benferch.de
-        message: "[AUTO] Build"
-        force: true
+        commit_user_name: benferch
+        commit_user_email: ben@benferch.de
+        commit_message: "[AUTO] Build"
+        branch: build
+
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
