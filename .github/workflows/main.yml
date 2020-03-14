@@ -3,17 +3,28 @@ name: npm build
 on:
   push:
     branches:
-      - master
+      - build
 
 jobs:
-  build:
+  install:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@master
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
-          BUILD_SCRIPT: npm install && npm run-script build
+      - uses: actions/checkout@v2
+        with:
+          ref: build
+      - name: Install
+      - uses: Adzz/jest_test_action@v1.0.0
+        with:
+          package-manager: npm
+          command: install
+  build:
+    runs-on: ubunti-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: build
+      - name: Build
+      - uses: Adzz/jest_test_action@v1.0.0
+        with:
+          package-manager: npm
+          command: build
