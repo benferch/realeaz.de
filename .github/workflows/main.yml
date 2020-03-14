@@ -9,22 +9,14 @@ jobs:
   install:
     runs-on: ubuntu-latest
     steps:
-      - name: Install
-        uses: actions/checkout@v2
-      - uses: Adzz/yarn_command_action@v1.0.0
+      - uses: actions/checkout@v2
         with:
           ref: build
-          package-manager: npm
-          command: install
 
-  build:
-    runs-on: ubuntu-latest
-    steps:
       - name: Build
-        uses: actions/checkout@v2
-      - uses: Adzz/yarn_command_action@v1.0.0
+      - uses: elstudio/actions-js-build/build@v2
+
+      - name: Commit
+        uses: elstudio/actions-js-build/commit@v3
         with:
-          ref: build
-          package-manager: npm
-          command: build
-      - run: git push
+          commitMessage: Build
