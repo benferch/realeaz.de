@@ -13,12 +13,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: build
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v1
         with:
           node-version: 12
       - run: npm install
       - run: npm build
       - name: Publish
-      - uses: mikeal/publish-to-github-action@master
+        uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
