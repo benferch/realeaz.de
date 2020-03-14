@@ -3,7 +3,7 @@ name: npm build
 on:
   push:
     branches:
-      - build
+      - master
 
 jobs:
   install:
@@ -18,7 +18,7 @@ jobs:
           command: install
 
   build:
-    runs-on: ubunti-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Build
         uses: actions/checkout@v2
