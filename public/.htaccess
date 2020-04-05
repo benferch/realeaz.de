@@ -4,7 +4,7 @@ Redirect /instagram https://www.instagram.com/_benferch/
 Redirect /github https://github.com/benferch
 Redirect /gitlab https://gitlab.com/benferch
 Redirect /bitbucket https://bitbucket.org/benferch/
-Redirect /linkedin https://www.linkedin.com/in/benferch/
+Redirect /linkedin https://www.linkedin.com/in/ferch/
 
 Options -MultiViews
     RewriteEngine On
