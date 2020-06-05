@@ -33,7 +33,7 @@ function PrivacyPage() {
                             Deutschland<br />
                             <br />
                             E-Mail: ben@benferch.de<br />
-                            https://benferch.de/imprint.html</span>
+                            https://benferch.de/imprint</span>
                     </p>
                     <h3 id="dsg-general-datatype">Arten der verarbeiteten Daten</h3>
                     <p>- Bestandsdaten (z.B., Personen-Stammdaten, Namen oder Adressen).<br />
