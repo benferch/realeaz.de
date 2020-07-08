@@ -1,6 +1,7 @@
 .vscode
 .DS_STORE
 .sass-cache
+.next
 
 # Created by https://www.gitignore.io/api/phpstorm,webstorm
 
