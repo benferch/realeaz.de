@@ -2,11 +2,8 @@ User-agent: *
 
 Disallow: /assets/
 
-Disallow: /data
-Disallow: /data.html
+Disallow: /privacy
 
 Disallow: /imprint
-Disallow: /imprint.html
 
 Disallow: /error
-Disallow: /error.html
