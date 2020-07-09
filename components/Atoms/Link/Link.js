@@ -35,16 +35,32 @@ const scroll = (target) => {
 export default function Link({ type, target, text }) {
 	if (type == 'internal') {
 		return (
-			<NextLink href={target} scroll={true}>
+			<NextLink
+				href={target}
+				scroll={true}
+				className={`${styles.link} ${styles.underline}`}
+			>
 				<a>{text}</a>
 			</NextLink>
 		);
 	} else if (type == 'external') {
-		<a href={target} target="_blank" rel="noopener noreferrer">
+		<a
+			href={target}
+			target="_blank"
+			rel="noopener noreferrer"
+			className={`${styles.link} ${styles.underline}`}
+		>
 			{text}
 		</a>;
 	} else if (type == 'scroll') {
-		return <a onClick={scroll(target)}>{text}</a>;
+		return (
+			<a
+				onClick={scroll(target)}
+				className={`${styles.link} ${styles.underline}`}
+			>
+				{text}
+			</a>
+		);
 	} else {
 		return null;
 	}
