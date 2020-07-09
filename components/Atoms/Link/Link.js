@@ -7,26 +7,33 @@ const scroll = (target) => {
 	useEffect(() => {
 		if (target.match('^[.]')) {
 			let cleanTarget = target.split('.');
-			if (cleanTarget[1].match('^[0-9]')) {
-				let newTarget = '\\' + target;
-				let cleanNewTarget = document.querySelector(newTarget);
-				cleanNewTarget.scrollIntoView({ behavior: 'smooth' });
-			} else {
-				let cleanTarget = document.querySelector(target);
-				cleanTarget.scrollIntoView({ behavior: 'smooth' });
+			let cleanNewTarget = document.getElementsByClassName(cleanTarget[1]);
+			if (document.document.getElementsByClassName(cleanTarget[1]) == null) {
+				console.error(
+					`${target} has has no class assigned that could be found on the page`
+				);
+				alert(
+					`${target} has has no class assigned that could be found on the page`
+				);
+				return;
 			}
+			cleanNewTarget.scrollIntoView({ behavior: 'smooth' });
 		} else if (target.match('^[#]')) {
 			let cleanTarget = target.split('#');
-			if (cleanTarget[1].match('^[0-9]')) {
-				let newTarget = '\\' + target;
-				let newCleanTarget = document.querySelector(newTarget);
-				newCleanTarget.scrollIntoView({ behavior: 'smooth' });
-			} else {
-				let cleanTarget = document.querySelector(target);
-				cleanTarget.scrollIntoView({ behavior: 'smooth' });
+			if (document.getElementById(cleanTarget[1]) == null) {
+				console.error(
+					`${target} has has no id assigned that could be found on the page`
+				);
+				alert(
+					`${target} has has no id assigned that could be found on the page`
+				);
+				return;
 			}
+			let cleanNewTarget = document.getElementById(cleanTarget[1]);
+			cleanNewTarget.scrollIntoView({ behavior: 'smooth' });
 		} else {
 			console.error(`${target} has has no class or id assigned`);
+			alert(`${target} has has no class or id assigned`);
 			return null;
 		}
 	});
