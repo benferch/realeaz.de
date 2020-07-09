@@ -39,7 +39,7 @@ const scroll = (target) => {
 	});
 };
 
-export default function Link({ type, target, text }) {
+export default function Link({ type, target, children }) {
 	if (type == 'internal') {
 		return (
 			<NextLink
@@ -47,7 +47,7 @@ export default function Link({ type, target, text }) {
 				scroll={true}
 				className={`${styles.link} ${styles.underline}`}
 			>
-				<a>{text}</a>
+				<a>{children}</a>
 			</NextLink>
 		);
 	} else if (type == 'external') {
@@ -57,7 +57,7 @@ export default function Link({ type, target, text }) {
 			rel="noopener noreferrer"
 			className={`${styles.link} ${styles.underline}`}
 		>
-			{text}
+			{children}
 		</a>;
 	} else if (type == 'scroll') {
 		return (
@@ -65,10 +65,14 @@ export default function Link({ type, target, text }) {
 				onClick={scroll(target)}
 				className={`${styles.link} ${styles.underline}`}
 			>
-				{text}
+				{children}
 			</a>
 		);
 	} else {
+		console.error(
+			`Your type is either not a valid type or you entered no type at all`
+		);
+		alert(`Your type is either not a valid type or you entered no type at all`);
 		return null;
 	}
 }
@@ -76,5 +80,4 @@ export default function Link({ type, target, text }) {
 Link.propTypes = {
 	type: PropTypes.oneOf(['internal', 'external', 'scroll']),
 	target: PropTypes.any.isRequired,
-	text: PropTypes.string.isRequired,
 };
