@@ -1,17 +1,17 @@
 # Todo
 
-- text type and heading type vertical with
+- [ ] text type and heading type vertical with
 
 ```css
 writing-mode: vertical-lb;
 ```
 
-- list atom
+- [ ] list atom
 
-  - item atom
+  - [ ] item atom
 
-- image atom
+- [ ] image atom
 
-  - spinning propterty
+  - [ ] spinning propterty
 
-- text indention property
+- [ ] text indention property
