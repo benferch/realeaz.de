@@ -3,7 +3,7 @@
 - [x] text type and heading type vertical with
 
 ```css
-writing-mode: vertical-lb;
+writing-mode: vertical-lr;
 ```
 
 - [ ] list atom
