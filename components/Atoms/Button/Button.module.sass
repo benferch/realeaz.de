@@ -1,0 +1,67 @@
+@import "../../../assets/css/colors"
+
+.first a
+  background: $darker-gray
+  padding: 1em
+  border-radius: 1em 0 1em 0
+  transition: all .3s ease-in-out
+  color: $white
+
+  &:hover
+    border-radius: 0 1em 0 1em
+    color: $white
+    background: $gray
+
+.second a
+  border: .1em solid $white
+  border-radius: .5em
+  padding: .5em
+  background: transparent
+  color: $white
+  margin: .2em
+  transition: all .3s ease-in-out
+
+  &:hover
+    border-color: $pink
+    box-shadow: 0 0 15px 0 $pink
+    text-shadow: 0 0 15px 0 $pink
+    color: $pink
+    background: transparentize($pink, .8)
+
+.third a
+  border: .1em solid $white
+  border-radius: .5em
+  padding: .5em
+  background: transparent
+  color: $white
+  margin: .2em
+  transition: all .3s ease-in-out
+
+  &:hover
+    border-color: $light-green
+    box-shadow: 0 0 15px 0 $light-green
+    text-shadow: 0 0 15px 0 $light-green
+    color: $light-green
+    background: transparentize($light-green, .8)
+
+.fourth
+  padding: 1em
+
+  a
+    padding: 1em
+    color: $darker-gray
+    background-color: $light-green
+
+    &:hover
+      color: $darker-gray
+
+.fifth
+  padding: 1em
+
+  a
+    padding: 1em
+    color: $white
+    background-color: $pink
+
+    &:hover
+      color: $white

@@ -8,12 +8,13 @@ import {
 	Italic,
 	Break,
 } from '../components/Atoms/';
+import Button from '../components/Atoms/Button/Button';
 
 export default function HomePage() {
 	return (
 		<>
 			<HTMLHead title="Ben Ferch" />
-			<Link type="scroll" target="#a123">
+			<Link type="scroll" target="#a123" underline>
 				Hello World
 			</Link>
 			<Container id="a123">
@@ -22,6 +23,9 @@ export default function HomePage() {
 				<Bold>bold</Bold>
 				<Break />
 				<Italic>italic</Italic>
+				<Button style="2" link type="scroll" target="#a123">
+					123
+				</Button>
 			</Container>
 		</>
 	);
