@@ -18,7 +18,9 @@ export default function HomePage() {
 				Hello World
 			</Link>
 			<Container id="a123">
-				<Heading type="h1">Hello World</Heading>
+				<Heading vertical type="h1">
+					Hello World
+				</Heading>
 				<Text type="lowlight">123</Text>
 				<Bold>bold</Bold>
 				<Break />

@@ -1,6 +1,6 @@
 # Todo
 
-- [ ] text type and heading type vertical with
+- [x] text type and heading type vertical with
 
 ```css
 writing-mode: vertical-lb;
