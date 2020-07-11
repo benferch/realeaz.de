@@ -1,5 +1,13 @@
 @import "../../../assets/css/colors"
 
+.button
+  -webkit-appearance: none
+  background-color: transparent
+  border: none
+
+  &:focus
+    outline: none
+
 .first a
   background: $darker-gray
   padding: 1em
@@ -26,7 +34,7 @@
     box-shadow: 0 0 15px 0 $pink
     text-shadow: 0 0 15px 0 $pink
     color: $pink
-    background: transparentize($pink, .8)
+    background: transparentize($pink, 0.8)
 
 .third a
   border: .1em solid $white
@@ -65,3 +73,114 @@
 
     &:hover
       color: $white
+
+.sixth a
+  display: block
+  color: $white
+  border: 3px solid $white
+  border-radius: 3px
+  padding: 4px 8px
+  background: $black
+  font-weight: bold
+  cursor: pointer
+  box-sizing: border-box
+  position: relative
+  top: -2px
+  left: -2px
+  transition: transform 0.2s
+  margin: 8px 6px 10px 6px
+  z-index: 1
+  user-select: none
+  -webkit-user-select: none
+  -moz-user-select: none
+
+  &::before
+    content: ""
+    background: $black
+    border: 3px solid $white
+    border-radius: 3px
+    position: absolute
+    top: -3px
+    left: -3px
+    height: 100%
+    width: 100%
+    z-index: -1
+
+  &::after
+    content: ""
+    display: block
+    background: $darker-gray
+    border: 3px solid $white
+    border-radius: 3px
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 3px
+    left: 3px
+    right: 0
+    z-index: -2
+    transition: transform 0.3s
+
+  &:hover, &:focus
+    transform: translate(2px, 2px)
+    color: $white
+
+  &:hover::after, &:focus::after
+    transform: translate(-2px, -3px)
+
+.seventh a
+  display: block
+  color: $white
+  border: 3px solid $white
+  border-radius: 3px
+  padding: 4px 8px
+  background: $black
+  font-weight: bold
+  cursor: pointer
+  box-sizing: border-box
+  position: relative
+  top: -2px
+  left: -2px
+  transition: transform 0.2s
+  margin: 8px 6px 10px 6px
+  z-index: 1
+  user-select: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  border-radius: 30px
+
+  &::before
+    content: ""
+    background: $black
+    border: 3px solid $white
+    border-radius: 3px
+    position: absolute
+    top: -3px
+    left: -3px
+    height: 100%
+    width: 100%
+    z-index: -1
+    border-radius: 30px
+
+  &::after
+    content: ""
+    display: block
+    background: $darker-gray
+    border: 3px solid $white
+    border-radius: 3px
+    height: 100%
+    width: 100%
+    position: absolute
+    top: 3px
+    left: 3px
+    right: 0
+    z-index: -2
+    transition: transform 0.3s
+    border-radius: 30px
+
+  &:hover, &:focus
+    transform: translate(2px, 2px)
+    color: $white
+
+  &:hover::after, &:focus::after
+    transform: translate(-2px, -3px)

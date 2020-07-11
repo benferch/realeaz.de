@@ -23,7 +23,7 @@ export default function HomePage() {
 				<Bold>bold</Bold>
 				<Break />
 				<Italic>italic</Italic>
-				<Button style="2" link type="scroll" target="#a123">
+				<Button style="7" link type="scroll" target="#a123">
 					123
 				</Button>
 			</Container>
