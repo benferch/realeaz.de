@@ -15,3 +15,11 @@ writing-mode: vertical-lb;
   - [ ] spinning propterty
 
 - [ ] text indention property
+
+```css
+/* Heading */
+font-family: 'Paytone One', sans-serif;
+
+/* Text */
+font-family: 'Montserrat', sans-serif;
+```
