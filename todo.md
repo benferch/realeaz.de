@@ -16,7 +16,9 @@ writing-mode: vertical-lb;
 
 - [ ] text indention property
 
-- [x] add and update fonts
+- [x] add fonts
+
+- [ ] update fonts
 
 ```css
 /* Heading */
