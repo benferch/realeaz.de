@@ -18,7 +18,7 @@ writing-mode: vertical-lb;
 
 - [x] add fonts
 
-- [ ] update fonts
+- [x] update fonts
 
 ```css
 /* Heading */
