@@ -16,10 +16,15 @@ writing-mode: vertical-lb;
 
 - [ ] text indention property
 
+- [x] add and update fonts
+
 ```css
 /* Heading */
 font-family: 'Paytone One', sans-serif;
 
 /* Text */
 font-family: 'Montserrat', sans-serif;
+
+/* Additional */
+font-family: 'Cutive Mono', monospace;
 ```
