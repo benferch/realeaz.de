@@ -30,3 +30,13 @@ font-family: 'Montserrat', sans-serif;
 /* Additional */
 font-family: 'Cutive Mono', monospace;
 ```
+
+- [ ] background animations
+
+- [ ] remove Molecules folder
+
+- [ ] remove Organisms folder
+
+- [ ] remove Atoms folder
+
+- [ ] all components in one place + export
