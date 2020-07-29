@@ -5,3 +5,6 @@ export { default as Text } from './Text/Text';
 export { default as Italic } from './Italic/Italic';
 export { default as Bold } from './Bold/Bold';
 export { default as Break } from './Break/Break';
+export { default as Button } from './Button/Button';
+export { default as List } from './List/List';
+export { default as ListItem } from './ListItem/ListItem';

@@ -7,8 +7,10 @@ import {
 	Bold,
 	Italic,
 	Break,
+	List,
+	Button,
+	ListItem,
 } from '../components/Atoms/';
-import Button from '../components/Atoms/Button/Button';
 
 export default function HomePage() {
 	return (
@@ -28,6 +30,9 @@ export default function HomePage() {
 				<Button style="7" link type="scroll" target="#a123">
 					123
 				</Button>
+				<List>
+					<ListItem>1238</ListItem>
+				</List>
 			</Container>
 		</>
 	);
