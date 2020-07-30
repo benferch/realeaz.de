@@ -33,10 +33,10 @@ font-family: 'Cutive Mono', monospace;
 
 - [ ] background animations
 
-- [ ] remove Molecules folder
+- [x] remove Molecules folder
 
-- [ ] remove Organisms folder
+- [x] remove Organisms folder
 
-- [ ] remove Atoms folder
+- [x] remove Atoms folder
 
-- [ ] all components in one place + export
+- [x] all components in one place + export

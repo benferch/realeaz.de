@@ -1,3 +1,4 @@
+export { default as HTMLHead } from './Head/Head';
 export { default as Heading } from './Heading/Heading';
 export { default as Container } from './Container/Container';
 export { default as Link } from './Link/Link';

@@ -1,6 +1,5 @@
-import { HTMLHead } from '../components/Organisms/';
 import {
-	Heading,
+	HTMLHead, Heading,
 	Container,
 	Link,
 	Text,
@@ -10,7 +9,7 @@ import {
 	List,
 	Button,
 	ListItem,
-} from '../components/Atoms/';
+} from '../components';
 
 export default function HomePage() {
 	return (
