@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import calcAge from '../../util/calcAge';
+import calcAge from '../util/calcAge';
 import PropTypes from 'prop-types';
 
 export default function HTMLHead({ title }) {
