@@ -1,5 +1,6 @@
 import {
-	HTMLHead, Heading,
+	HTMLHead,
+	Heading,
 	Container,
 	Link,
 	Text,
@@ -10,6 +11,7 @@ import {
 	Button,
 	ListItem,
 } from '../components';
+import Image from '../components/Image/Image';
 
 export default function HomePage() {
 	return (
@@ -26,12 +28,13 @@ export default function HomePage() {
 				<Bold>bold</Bold>
 				<Break />
 				<Italic>italic</Italic>
-				<Button style="7" link type="scroll" target="#a123">
+				<Button link type="scroll" target="#a123">
 					123
 				</Button>
-				<List>
+				<List type="unordered">
 					<ListItem>1238</ListItem>
 				</List>
+				<Image src={require('../assets/images/logo.png')}></Image>
 			</Container>
 		</>
 	);

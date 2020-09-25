@@ -6,9 +6,9 @@
 writing-mode: vertical-lr;
 ```
 
-- [ ] list atom
+- [x] list atom
 
-  - [ ] item atom
+  - [x] item atom
 
 - [ ] image atom
 
