@@ -17,10 +17,10 @@ export default function HomePage() {
 	return (
 		<>
 			<HTMLHead title="Ben Ferch" />
-			<Link type="scroll" target="#a123" underline>
-				Hello World
-			</Link>
 			<Container id="a123">
+				<Link type="scroll" target="#a123" underline>
+					Hello World
+				</Link>
 				<Heading vertical type="h1">
 					Hello World
 				</Heading>
