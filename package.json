@@ -9,7 +9,7 @@
 		"sitemap-gen": "node sitemap-gen.js"
 	},
 	"dependencies": {
-		"framer-motion": "^1.11.1",
+		"framer-motion": "^2.7.5",
 		"next": "^9.4.4",
 		"next-images": "^1.4.1",
 		"nextjs-sitemap-generator": "^1.0.0",
