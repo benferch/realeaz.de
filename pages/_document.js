@@ -1,5 +1,4 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import '../assets/css/global.sass';
 
 class MyDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -11,7 +10,7 @@ class MyDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head />
-				<body className="bg-black">
+				<body>
 					<Main />
 					<NextScript />
 				</body>
