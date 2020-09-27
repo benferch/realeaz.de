@@ -10,6 +10,7 @@ import {
 	List,
 	Button,
 	ListItem,
+	Repository,
 } from '../components';
 import Image from '../components/Image/Image';
 
@@ -35,6 +36,12 @@ export default function HomePage() {
 					<ListItem>1238</ListItem>
 				</List>
 				<Image src={require('../assets/images/logo.png')}></Image>
+				<Repository
+					title="hi123"
+					description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut l"
+					code="https://github.com/benferch/benferch.de"
+					demo="https://benferch.de"
+				/>
 			</Container>
 		</>
 	);

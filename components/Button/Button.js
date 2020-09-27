@@ -1,4 +1,4 @@
-import Link from '../Link/Link';
+import { Link } from '../';
 import styles from './Button.module.sass';
 
 export default function Button({ link, type, target, children }) {

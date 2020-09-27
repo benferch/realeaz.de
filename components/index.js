@@ -9,3 +9,5 @@ export { default as Break } from './Break/Break';
 export { default as Button } from './Button/Button';
 export { default as List } from './List/List';
 export { default as ListItem } from './ListItem/ListItem';
+export { default as Repository } from './Repository/Repository';
+export { default as Image } from './Image/Image';

@@ -16,14 +16,16 @@ export default function Link({ type, target, children, underline }) {
 				</NextLink>
 			);
 		} else if (type == 'external') {
-			<a
-				href={target}
-				target="_blank"
-				rel="noopener noreferrer"
-				className={`${styles.link} ${styles.underline}`}
-			>
-				{children}
-			</a>;
+			return (
+				<a
+					href={target}
+					target="_blank"
+					rel="noopener noreferrer"
+					className={`${styles.link} ${styles.underline}`}
+				>
+					{children}
+				</a>
+			);
 		} else if (type == 'scroll') {
 			return (
 				<a
@@ -37,9 +39,6 @@ export default function Link({ type, target, children, underline }) {
 			console.error(
 				`Your type is either not a valid type or you entered no type at all`
 			);
-			alert(
-				`Your type is either not a valid type or you entered no type at all`
-			);
 			return null;
 		}
 	} else {
@@ -50,14 +49,16 @@ export default function Link({ type, target, children, underline }) {
 				</NextLink>
 			);
 		} else if (type == 'external') {
-			<a
-				href={target}
-				target="_blank"
-				rel="noopener noreferrer"
-				className={styles.link}
-			>
-				{children}
-			</a>;
+			return (
+				<a
+					href={target}
+					target="_blank"
+					rel="noopener noreferrer"
+					className={styles.link}
+				>
+					{children}
+				</a>
+			);
 		} else if (type == 'scroll') {
 			return (
 				<a onClick={scroll(target)} className={styles.link}>
@@ -68,15 +69,12 @@ export default function Link({ type, target, children, underline }) {
 			console.error(
 				`Your type is either not a valid type or you entered no type at all`
 			);
-			alert(
-				`Your type is either not a valid type or you entered no type at all`
-			);
 			return null;
 		}
 	}
 }
 
 Link.propTypes = {
-	type: PropTypes.oneOf(['internal', 'external', 'scroll']),
+	type: PropTypes.oneOf(['internal', 'external', 'scroll']).isRequired,
 	target: PropTypes.any.isRequired,
 };
