@@ -2,11 +2,13 @@
 
 .button
   -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
   background-color: transparent
   border: $gray 3px solid
   border-radius: 10px
   background: transparent
-  padding: 0.3em
+  padding: 0.5em
   margin: 0.3em
   transition: all .3s ease-in-out
 
@@ -14,11 +16,15 @@
     color: $white
 
   &:hover
-    color: $black
-    background: $gray
+    background: transparentize($light-green, 0.8)
+    color: $light-green
+    text-shadow: 0 0 15px 0 $light-green
+    box-shadow: 0 0 15px 0 $light-green
+    border-color: $light-green
+    cursor: pointer
 
     a
-      color: $black
+      color: $light-green
 
   &:focus
     outline: none
