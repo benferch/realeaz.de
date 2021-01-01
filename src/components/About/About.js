@@ -14,7 +14,7 @@ function About() {
       <h1 className="heading">Hey.</h1>
       <p>
         My name is Ben, I am currently <span id="age">{age}</span> years old
-        live on the island of Rügen in Germany. I am interested in
+        and live on the island of Rügen in Germany. I am interested in
         webtechnologies since I was 13 years old.
         <br />
         Since August 2018 I have been working in a company where I mainly work
