@@ -1,0 +1,20 @@
+Redirect /twitter https://twitter.com/_benferch
+Redirect /twitch https://www.twitch.tv/aaakash
+Redirect /instagram https://www.instagram.com/_benferch/
+Redirect /github https://github.com/benferch
+Redirect /gitlab https://gitlab.com/benferch
+Redirect /bitbucket https://bitbucket.org/benferch/
+Redirect /linkedin https://www.linkedin.com/in/benferch/
+
+Options -MultiViews
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.html [QSA,L]
+
+<filesMatch ".(jpg|jpeg|png|gif|ico|woff|ttf)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>
