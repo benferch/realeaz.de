@@ -19,12 +19,15 @@ export default function HomePage() {
 		<>
 			<HTMLHead title="Ben Ferch" />
 			<Container id="a123">
+				<div class="row">
+					<Heading vertical type="h1">
+						About
+					</Heading>
+					<Text>I am </Text>
+				</div>
 				<Link type="scroll" target="#a123" underline>
 					Hello World
 				</Link>
-				<Heading vertical type="h1">
-					Hello World
-				</Heading>
 				<Text type="lowlight">123</Text>
 				<Bold>bold</Bold>
 				<Break />
