@@ -1,5 +1,5 @@
-import { HTMLHead } from '../components';
+import Head from '@components/Head/Head';
 
 export default function ImprintPage() {
-	return <HTMLHead title="Ben Ferch | Imprint" />;
+	return <Head title="Ben Ferch | Imprint" />;
 }

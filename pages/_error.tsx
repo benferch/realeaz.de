@@ -1,5 +1,5 @@
-import { HTMLHead } from '../components';
+import Head from '@components/Head/Head';
 
 export default function PrivacyPage() {
-	return <HTMLHead title="Ben Ferch | Error" />;
+	return <Head title="Ben Ferch | Error" />;
 }
