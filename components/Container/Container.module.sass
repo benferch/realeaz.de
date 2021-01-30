@@ -1,11 +1,17 @@
+@import "../../assets/css/breakpoints"
+
 .container
-  width: 75%
+  width: 100%
   margin: 0 auto
 
-.fullwidthcontainer
-  width: 100vw
-  position: relative
-  left: 50%
-  right: 50%
-  margin-left: -50vw
-  margin-right: -50vw
+  @include mq("xs")
+    max-width: 480px
+
+  @include mq("sm")
+    max-width: 768px
+
+  @include mq("md")
+    max-width: 1024px
+
+  @include mq("xl")
+    max-width: 1200px

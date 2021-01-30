@@ -1,8 +1,11 @@
 import Head from 'next/head';
 import calcAge from '../util/calcAge';
-import PropTypes from 'prop-types';
 
-export default function HTMLHead({ title }) {
+type Props = {
+	title: string;
+};
+
+export default function HTMLHead({ title }: Props) {
 	return (
 		<Head>
 			<meta charSet="utf-8" />
@@ -11,7 +14,7 @@ export default function HTMLHead({ title }) {
 			<meta
 				name="description"
 				content={`Hey, my name is Ben I\'m ${calcAge(
-					'08/10/2002'
+					'2002/08/10'
 				)} years old from Rügen, and I am interested in Web development. Here you can find something about me and some projects.`}
 			/>
 			<meta
@@ -24,7 +27,7 @@ export default function HTMLHead({ title }) {
 			<meta
 				property="og:description"
 				content={`Hey, my name is Ben I\'m ${calcAge(
-					'08/10/2002'
+					'2002/08/10'
 				)} years old from Rügen, and I am interested in Web development. Here you can find something about me and some projects.`}
 			/>
 			<meta property="og:url" content="https://benferch.de" />
@@ -33,7 +36,7 @@ export default function HTMLHead({ title }) {
 			<meta
 				name="twitter:description"
 				content={`Hey, my name is Ben I\'m ${calcAge(
-					'08/10/2002'
+					'2002/08/10'
 				)} years old from Rügen, and I am interested in Web development. Here you can find something about me and some projects.`}
 			/>
 			<meta name="twitter:image" content="" />
@@ -48,7 +51,3 @@ export default function HTMLHead({ title }) {
 		</Head>
 	);
 }
-
-HTMLHead.propTypes = {
-	title: PropTypes.string.isRequired,
-};
