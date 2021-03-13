@@ -1,5 +1,5 @@
-import Head from '@components/Head/Head';
+import CustomHead from ':components/CustomHead';
 
 export default function ImprintPage() {
-	return <Head title="Ben Ferch | Imprint" />;
+	return <CustomHead title="Imprint | Ben-J. Ferch" desc="Hey!" />;
 }

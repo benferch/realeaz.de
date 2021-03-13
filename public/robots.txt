@@ -1,3 +1,4 @@
+Sitemap: https://benferch.de/sitemap
 User-agent: *
 
 Disallow: /assets/
@@ -7,3 +8,5 @@ Disallow: /privacy
 Disallow: /imprint
 
 Disallow: /error
+
+Disallow: /404

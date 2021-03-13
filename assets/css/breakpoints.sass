@@ -1,9 +1,0 @@
-$breakpoints: ("xs": 480px,"sm": 768px,"md": 1024px,"xl": 1200px)
-
-@mixin mq($breakpoint)
-  @if map-has-key($breakpoints, $breakpoint)
-    @media screen and (min-width: map-get($breakpoints, $breakpoint))
-      @content
-
-  @else
-    @error "Key " #{$breakpoint} " is not a valid breakpoint."

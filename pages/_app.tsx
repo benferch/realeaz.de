@@ -1,12 +1,15 @@
-import '../assets/css/global.sass';
+import ':assets/css/style.css';
 import type { AppProps } from 'next/app';
 import { AnimatePresence } from 'framer-motion';
+import { ThemeProvider } from 'next-themes';
 
 export default function MyApp(props: AppProps) {
 	const { Component, pageProps, router } = props;
 	return (
 		<AnimatePresence exitBeforeEnter>
-			<Component {...pageProps} key={router.route} />
+			<ThemeProvider attribute="class" defaultTheme="system">
+				<Component {...pageProps} key={router.route} />
+			</ThemeProvider>
 		</AnimatePresence>
 	);
 }

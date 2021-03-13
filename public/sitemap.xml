@@ -4,19 +4,24 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
       xmlns:xhtml="http://www.w3.org/1999/xhtml">
-      <url><loc>https://benferch.de/imprint</loc>
-                
-                
-                
-                <lastmod>2020-07-07</lastmod>
-                </url><url><loc>https://benferch.de/index</loc>
-                
-                
-                
-                <lastmod>2020-07-07</lastmod>
-                </url><url><loc>https://benferch.de/privacy</loc>
-                
-                
-                
-                <lastmod>2020-07-07</lastmod>
-                </url></urlset>
+      
+	<url>
+		<loc>https://benferch.de/404</loc>
+		<lastmod>2021-03-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://benferch.de/imprint</loc>
+		<lastmod>2021-03-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://benferch.de/index</loc>
+		<lastmod>2021-03-12</lastmod>
+	</url>
+
+	<url>
+		<loc>https://benferch.de/privacy</loc>
+		<lastmod>2021-03-12</lastmod>
+	</url>
+</urlset>

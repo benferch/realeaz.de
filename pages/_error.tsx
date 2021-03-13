@@ -1,5 +1,5 @@
-import Head from '@components/Head/Head';
+import CustomHead from ':components/CustomHead';
 
 export default function PrivacyPage() {
-	return <Head title="Ben Ferch | Error" />;
+	return <CustomHead title="Error | Ben-J. Ferch" desc="Hey!" />;
 }
