@@ -3,10 +3,13 @@ import Container from ':components/Container';
 import CustomHead from ':components/CustomHead';
 import Divider from ':components/Divider';
 import Heading from ':components/Heading';
+import { languageContext, locales } from ':components/LanguageProvider';
 import CustomLink from ':components/Link';
+import List from ':components/List';
 import Profile from ':components/Profile';
 import Text from ':components/Text';
 import calcAge from ':components/util/calcAge';
+import useTranslation from ':components/util/useTranslation';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import {
 	faGithub,
@@ -15,9 +18,11 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 export default function HomePage() {
+	const { t } = useTranslation();
+	const [locale, setLocale] = useContext(languageContext);
 	const [isMounted, setMounted] = useState(false);
 	const { theme, setTheme } = useTheme();
 	useEffect(() => {
@@ -28,41 +33,40 @@ export default function HomePage() {
 			setTheme(theme === 'light' ? 'dark' : 'light');
 		}
 	};
+	function handleLocaleChange(language: string) {
+		if (!window) {
+			return;
+		}
+		localStorage.setItem('lang', language);
+		setLocale(language);
+	}
 	return (
 		<>
 			<CustomHead title="Ben-J. Ferch" desc="Hey!" />
-			<Container className="sm:flex w-full mt-12">
-				<Container className="sm:w-1/3 flex justify-center flex-col text-center items-center">
+			<Container className="sm:flex w-full mt-12 min-h-screen-80">
+				<Container className="sm:w-1/3 flex flex-col text-center items-center">
 					<Profile />
 					<div className="flex">
 						<Heading>Ben-J. Ferch</Heading>
 						<Text superscript>{calcAge('10/08/2002')}</Text>
 					</div>
-					<Text>web development</Text>
+					<Text>{t('title')}</Text>
 					<div className="flex">
-						<CustomLink
-							external
-							colorless
-							target="https://twitter.com/_benferch"
-						>
+						<CustomLink external none target="https://twitter.com/_benferch">
 							<FontAwesomeIcon
 								icon={faTwitter}
 								size="2x"
 								className="text-twitter mx-0.5"
 							/>
 						</CustomLink>
-						<CustomLink
-							external
-							colorless
-							target="https://linkedin.com/in/benferch"
-						>
+						<CustomLink external none target="https://linkedin.com/in/benferch">
 							<FontAwesomeIcon
 								icon={faLinkedin}
 								size="2x"
 								className="text-linkedin mx-0.5"
 							/>
 						</CustomLink>
-						<CustomLink external colorless target="https://github.com/benferch">
+						<CustomLink external none target="https://github.com/benferch">
 							<FontAwesomeIcon
 								icon={faGithub}
 								size="2x"
@@ -70,37 +74,94 @@ export default function HomePage() {
 							/>
 						</CustomLink>
 					</div>
-					<Heading>Contact</Heading>
-					<Text className="text-justify">
-						If you want to contact me, <br /> feel free to send me an{' '}
+					<Heading>{t('contactTitle')}</Heading>
+					<Text className="text-justify mx-8 sm:mx-auto">
+						{t('contactText')}
 						<CustomLink external target="mailto:ferch.benj@gmail.com">
-							e-mail
+							{t('contactEmail')}
 						</CustomLink>
 					</Text>
 				</Container>
-				<Divider />
+				<Divider className="rotate-90 transform sm:rotate-0" />
 				<Container className="sm:w-2/3 px-8">
-					<Heading>Lorem Ipsum</Heading>
-					<Text>Lorem Ipsum</Text>
-					<CustomLink target="/imprint">Lorem Ipsum</CustomLink>
+					<Heading level={3}>{t('workTitle')}</Heading>
+					<div className="flex justify-between max-w-md">
+						<Heading level={4}>Effective Bytes</Heading>
+						<Text className="text-muted italic">2018 - {t('workNow')}</Text>
+					</div>
+					<Text>{t('ebText')}</Text>
+					<Heading level={3}>{t('projectTitle')}</Heading>
+					<div>
+						<Heading level={4}>MetaPeta</Heading>
+						<Text>{t('mpText')}</Text>
+						<div className="flex">
+							<Button>Code</Button>
+							<Button>Demo</Button>
+						</div>
+					</div>
+					<div>
+						<Heading level={4}>PacTrac</Heading>
+						<Text>{t('ptText')}</Text>
+						<div className="flex">
+							<Button>Code</Button>
+							<Button>Demo</Button>
+						</div>
+					</div>
+					<div>
+						<Heading level={5}>Twitter Bot</Heading>
+						<Text>{t('tbText')}</Text>
+						<div className="flex">
+							<Button>Code</Button>
+							<Button>Demo</Button>
+						</div>
+					</div>
+					<Heading level={3}>Skills</Heading>
+					<List
+						items={[
+							'CSS',
+							'JavaScript',
+							'nodeJS',
+							'React',
+							'Next.js',
+							'Docker',
+							'MongoDB',
+							'Git',
+							'GitHub',
+							'Drupal',
+							'Wordpress',
+							'Linux',
+							'Windows',
+							'macOS',
+						]}
+					/>
 				</Container>
 			</Container>
-			<Container className="text-muted flex justify-between">
-				<div className="flex">
+			<Container className="text-muted flex justify-between mx-8">
+				<div className="flex text-center">
 					<Text className="mx-1">2015 - {new Date().getFullYear()}</Text>
 					<Button
 						onClick={switchTheme}
 						className="mx-1 hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
 					>
-						Switch Theme
+						{t('switchTheme')}
+					</Button>
+					<Button
+						onClick={() => {
+							handleLocaleChange(
+								localStorage.getItem('lang') === 'de' ? 'en' : 'de'
+							);
+						}}
+						className="mx-1 hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
+					>
+						{locale === 'de' ? t('english') : t('german')}
 					</Button>
 				</div>
 				<div>
-					<CustomLink disguise target="/imprint" className="mx-1">
-						Imprint
+					<CustomLink none target="/imprint" className="mx-1">
+						{t('imprint')}
 					</CustomLink>
-					<CustomLink disguise target="/privacy" className="mx-1">
-						Privacy Policy
+					<CustomLink none target="/privacy" className="mx-1">
+						{t('privacyPolicy')}
 					</CustomLink>
 				</div>
 			</Container>

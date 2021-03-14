@@ -38,5 +38,11 @@ export default function Heading({
 					{children}
 				</h4>
 			);
+		case 5:
+			return (
+				<h5 className="text-md font-medium leading-4 sm:text-l sm:leading-6 sm:truncate">
+					{children}
+				</h5>
+			);
 	}
 }

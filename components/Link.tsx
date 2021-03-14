@@ -6,15 +6,13 @@ export default function CustomLink({
 	children,
 	target,
 	external,
-	disguise = false,
-	colorless = false,
+	none = false,
 	className,
 }: {
 	children: React.ReactNode;
 	target: string;
+	none?: boolean;
 	external?: boolean;
-	disguise?: boolean;
-	colorless?: boolean;
 	className?: string;
 }) {
 	if (external) {
@@ -24,15 +22,13 @@ export default function CustomLink({
 				rel="noopener noreferrer"
 				target="_blank"
 				className={
-					disguise
+					none
 						? clsx(
 								'text-muted hover:text-mutedLight transition duration-300 ease-out',
 								className
 						  )
-						: colorless
-						? clsx('', className)
 						: clsx(
-								'dark:text-special-g dark:hover:text-muted-g text-muted-g hover:text-special-g transition duration-300 ease-out',
+								'transition duration-300 border-b-4 px-1 pt-1 pb-0.5 border-solid border-gray-500 hover:bg-gray-500 hover:bg-opacity-20',
 								className
 						  )
 				}
@@ -45,15 +41,13 @@ export default function CustomLink({
 		<Link href={target}>
 			<a
 				className={
-					disguise
+					none
 						? clsx(
 								'text-muted hover:text-mutedLight transition duration-300 ease-out',
 								className
 						  )
-						: colorless
-						? clsx('', className)
 						: clsx(
-								'dark:text-special-g dark:hover:text-muted-g text-muted-g hover:text-special-g transition duration-300',
+								'transition duration-300 border-b-4 px-1 pt-1 pb-0.5 border-solid border-gray-500 hover:bg-gray-500 hover:bg-opacity-20',
 								className
 						  )
 				}
