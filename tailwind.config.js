@@ -19,6 +19,13 @@ module.exports = {
 			},
 			textColor: {
 				muted: 'rgb(115, 115, 115)',
+				mutedLight: 'rgb(166, 166, 166)',
+				'special-b': '#00aaff',
+				'special-g': '#00ffaa',
+				'muted-g': '#008f5f',
+				twitter: '#1DA1F2',
+				linkedin: '#0e76a8',
+				github: '#333333',
 			},
 		},
 	},

@@ -32,5 +32,11 @@ export default function Heading({
 					{children}
 				</h3>
 			);
+		case 4:
+			return (
+				<h4 className="text-l font-medium leading-5 sm:text-xl sm:leading-7 sm:truncate">
+					{children}
+				</h4>
+			);
 	}
 }
