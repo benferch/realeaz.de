@@ -28,7 +28,7 @@ export default function CustomLink({
 								className
 						  )
 						: clsx(
-								'transition duration-300 border-b-4 px-1 pt-1 pb-0.5 border-solid border-gray-500 hover:bg-gray-500 hover:bg-opacity-20',
+								'transition duration-300 border-b-2 px-1 pt-1 pb-0.5 border-solid border-gray-500 hover:bg-gray-500 hover:bg-opacity-20',
 								className
 						  )
 				}

@@ -43,7 +43,7 @@ export default function HomePage() {
 	return (
 		<>
 			<CustomHead title="Ben-J. Ferch" desc="Hey!" />
-			<Container className="sm:flex w-full mt-12 min-h-screen-80">
+			<Container className="sm:flex w-full my-12 min-h-screen-80">
 				<Container className="sm:w-1/3 flex flex-col text-center items-center">
 					<Profile />
 					<div className="flex">
@@ -75,14 +75,14 @@ export default function HomePage() {
 						</CustomLink>
 					</div>
 					<Heading>{t('contactTitle')}</Heading>
-					<Text className="text-justify mx-8 sm:mx-auto">
+					<Text className="text-left mx-8 sm:mx-auto">
 						{t('contactText')}
 						<CustomLink external target="mailto:ferch.benj@gmail.com">
 							{t('contactEmail')}
 						</CustomLink>
 					</Text>
 				</Container>
-				<Divider className="rotate-90 transform sm:rotate-0" />
+				<Divider orientation="vertical" />
 				<Container className="sm:w-2/3 px-8">
 					<Heading level={3}>{t('workTitle')}</Heading>
 					<div className="flex justify-between max-w-md">

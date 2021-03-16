@@ -2,7 +2,7 @@ export const Strings = {
 	de: {
 		title: 'Webentwicklung',
 		contactTitle: 'Kontakt',
-		contactText: 'Wenn Sie mich kontaktieren möchten, schreiben sie mir eine ',
+		contactText: 'Wenn Sie mich kontaktieren möchten, schreiben Sie mir eine ',
 		contactEmail: 'E-Mail',
 		workTitle: 'Tätigkeit',
 		workNow: 'jetzt',
