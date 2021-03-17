@@ -1,0 +1,33 @@
+{
+  "name": "benferchde",
+  "private": true,
+  "version": "1.0.0",
+  "description": "This is the repository of my personal Website, which you can find [here](https://benferch.de/)",
+  "main": "package.json",
+  "author": "Ben Ferch <ben@benferch.de>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.6.2",
+    "@sanity/components": "^2.2.6",
+    "@sanity/core": "^2.6.2",
+    "@sanity/default-layout": "^2.6.2",
+    "@sanity/default-login": "^2.2.6",
+    "@sanity/desk-tool": "^2.6.3",
+    "@sanity/vision": "^2.2.6",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:benferch/benferch.de.git"
+  }
+}
