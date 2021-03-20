@@ -95,32 +95,84 @@ export default function HomePage() {
 						<Heading level={4}>MetaPeta</Heading>
 						<Text>{t('mpText')}</Text>
 						<div className="flex">
-							<Button>Code</Button>
-							<Button>Demo</Button>
+							<Button
+								onClick={() =>
+									window.open(
+										'https://github.com/Jugendhackt/MetaPeta',
+										'_blank'
+									)
+								}
+							>
+								Code
+							</Button>
+							<Button
+								onClick={() =>
+									window.open(
+										'https://jugendhackt.github.io/MetaPeta/',
+										'_blank'
+									)
+								}
+							>
+								Demo
+							</Button>
 						</div>
 					</div>
 					<div>
 						<Heading level={4}>PacTrac</Heading>
 						<Text>{t('ptText')}</Text>
 						<div className="flex">
-							<Button>Code</Button>
-							<Button>Demo</Button>
+							<Button
+								onClick={() =>
+									window.open(
+										'https://github.com/Jugendhackt/PacTrac',
+										'_blank'
+									)
+								}
+							>
+								Code
+							</Button>
+							<Button
+								onClick={() =>
+									window.open(
+										'https://jugendhackt.github.io/PacTrac/',
+										'_blank'
+									)
+								}
+							>
+								Demo
+							</Button>
 						</div>
 					</div>
 					<div>
 						<Heading level={5}>Twitter Bot</Heading>
 						<Text>{t('tbText')}</Text>
 						<div className="flex">
-							<Button>Code</Button>
-							<Button>Demo</Button>
+							<Button
+								onClick={() =>
+									window.open(
+										'https://github.com/benferch/reddit-twitter',
+										'_blank'
+									)
+								}
+							>
+								Code
+							</Button>
+							<Button
+								onClick={() =>
+									window.open('https://twitter.com/r_mkeyboards', '_blank')
+								}
+							>
+								Demo
+							</Button>
 						</div>
 					</div>
 					<Heading level={3}>Skills</Heading>
 					<List
 						items={[
 							'CSS',
+							'Tailwind CSS',
 							'JavaScript',
-							'nodeJS',
+							'Node.js',
 							'React',
 							'Next.js',
 							'Docker',
@@ -129,6 +181,7 @@ export default function HomePage() {
 							'GitHub',
 							'Drupal',
 							'Wordpress',
+							'Sanity',
 							'Linux',
 							'Windows',
 							'macOS',
