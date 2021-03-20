@@ -19,6 +19,7 @@ module.exports = {
 		extend: {
 			minHeight: {
 				'screen-80': '80vh',
+				md: '28rem',
 			},
 			maxWidth: {
 				'1/3': '33.333333%',
