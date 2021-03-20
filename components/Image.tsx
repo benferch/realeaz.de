@@ -6,25 +6,25 @@ export default function CustomImage({
 	height,
 	width,
 	className,
-	alt,
 	quality = 100,
+	...props
 }: {
 	source: string;
 	height: number;
 	width: number;
 	quality?: number;
 	className?: string;
-	alt?: string;
+	props: HTMLImageElement;
 }) {
 	return (
 		<Image
 			src={source}
 			height={height}
 			width={width}
-			alt={alt}
 			quality={quality}
 			className={clsx('', className)}
 			draggable={false}
+			{...props}
 		/>
 	);
 }

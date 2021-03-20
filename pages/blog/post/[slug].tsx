@@ -3,6 +3,8 @@ import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 import groq from 'groq';
 import CustomHead from ':components/CustomHead';
+import Image from 'next/image';
+import { useNextSanityImage } from 'next-sanity-image';
 
 function urlFor(source) {
 	return imageUrlBuilder(client).image(source);
@@ -33,7 +35,7 @@ export default function Post(props) {
 				)}
 				{authorImage && (
 					<div>
-						<img src={urlFor(authorImage).width(50).url()} />
+						<Image {...useNextSanityImage(client, authorImage)} />
 					</div>
 				)}
 				<BlockContent

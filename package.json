@@ -26,6 +26,7 @@
 		"groq": "^2.2.6",
 		"next": "^10.0.6",
 		"next-images": "^1.7.0",
+		"next-sanity-image": "^1.0.1",
 		"next-themes": "^0.0.12",
 		"nextjs-sitemap-generator": "^1.0.0",
 		"react": "^17.0.1",

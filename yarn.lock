@@ -492,7 +492,7 @@
   resolved "https://registry.yarnpkg.com/@sanity/generate-help-url/-/generate-help-url-0.140.0.tgz#f60ab75be5fdc346b9f0d1c2a0858aa3c2870109"
   integrity sha512-H/G/WA9S22TXcXST52CIiTsHx3S2hH0gvK7LnI5w76vfKS0obnDPh8jrPg4xeNRYGPuV9MHYRlyERGpRGoo4Qw==
 
-"@sanity/image-url@^0.140.15", "@sanity/image-url@^0.140.22":
+"@sanity/image-url@^0.140.15", "@sanity/image-url@^0.140.19", "@sanity/image-url@^0.140.22":
   version "0.140.22"
   resolved "https://registry.yarnpkg.com/@sanity/image-url/-/image-url-0.140.22.tgz#7a65f56bb751f7b1c5dfacfadd34ee10fc4f0fde"
   integrity sha512-CAmQZnj+KM7FSEYiWlIGDit072syicYuAw0w7R2ctMzHiZ4p9mE/g6dBnYqrqFUrw2J+GpJgPt+RVspKP8vdqA==
@@ -511,9 +511,9 @@
   integrity sha512-NBDKGj14g9Z+bopIvZcQKWCzJq5JSrdmzRR1CS+iyA3Gm8SnIWBfZa7I3mTg2X6Nu8LQXG0EPKXdOGozLS4i3w==
 
 "@tailwindcss/jit@^0.1.1":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/jit/-/jit-0.1.4.tgz#c373b89908143a5b5241fc9a905d58e3435b057d"
-  integrity sha512-4IGNNBR00dvZ79iQiXNwNWj5UX9lzXW6UWg6eg42rbSox/UlO7sLwyl0tBuaHa32zWAguHfmF1Yptn1y6iF4AQ==
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/jit/-/jit-0.1.5.tgz#b4384e986a796eff8745b8b59662a00780474724"
+  integrity sha512-f7Fdd93uD4J0hyaNWX7vrWF0pA39hh7oxHVzTqhwfUWmzWQBGevKfnniLe4GFxwfqYpYHxy5ycOWP76tzWhvrQ==
   dependencies:
     chokidar "^3.5.1"
     dlv "^1.1.3"
@@ -2158,6 +2158,13 @@ next-images@^1.7.0:
   dependencies:
     file-loader "^6.0.0"
     url-loader "^4.0.0"
+
+next-sanity-image@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/next-sanity-image/-/next-sanity-image-1.0.1.tgz#401cd42d7de36eaddfe5bd03391da4b9aef79611"
+  integrity sha512-lGaatEBBtR3eSWeGODByboEPKq4zWvo49XgZ3MZg5nlOYj8PH0Y486HONAnEM454l+HUGEN85J3XZUs3wYs9lQ==
+  dependencies:
+    "@sanity/image-url" "^0.140.19"
 
 next-themes@^0.0.12:
   version "0.0.12"

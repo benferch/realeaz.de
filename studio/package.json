@@ -17,13 +17,16 @@
     "@sanity/base": "^2.6.2",
     "@sanity/components": "^2.2.6",
     "@sanity/core": "^2.6.2",
+    "@sanity/dashboard": "^2.2.6",
     "@sanity/default-layout": "^2.6.2",
     "@sanity/default-login": "^2.2.6",
     "@sanity/desk-tool": "^2.6.3",
     "@sanity/vision": "^2.2.6",
     "prop-types": "^15.7",
     "react": "^17.0",
-    "react-dom": "^17.0"
+    "react-dom": "^17.0",
+    "sanity-plugin-dashboard-widget-document-list": "^0.0.13",
+    "sanity-plugin-dashboard-widget-notes": "^0.3.2"
   },
   "devDependencies": {},
   "repository": {
