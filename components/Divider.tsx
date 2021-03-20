@@ -31,3 +31,5 @@ export default function Divider({
 			);
 	}
 }
+
+// @TODO: Somehow this divider doesn't work on mobile screens

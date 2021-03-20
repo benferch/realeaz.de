@@ -51,26 +51,26 @@ export default function HomePage() {
 						<Text superscript>{calcAge('10/08/2002')}</Text>
 					</div>
 					<Text>{t('title')}</Text>
-					<div className="flex">
+					<div className="flex space-x-2">
 						<CustomLink external none target="https://twitter.com/_benferch">
 							<FontAwesomeIcon
 								icon={faTwitter}
 								size="2x"
-								className="text-twitter mx-0.5"
+								className="text-twitter"
 							/>
 						</CustomLink>
 						<CustomLink external none target="https://linkedin.com/in/benferch">
 							<FontAwesomeIcon
 								icon={faLinkedin}
 								size="2x"
-								className="text-linkedin mx-0.5"
+								className="text-linkedin"
 							/>
 						</CustomLink>
 						<CustomLink external none target="https://github.com/benferch">
 							<FontAwesomeIcon
 								icon={faGithub}
 								size="2x"
-								className="text-github mx-0.5"
+								className="text-github"
 							/>
 						</CustomLink>
 					</div>
@@ -82,8 +82,11 @@ export default function HomePage() {
 						</CustomLink>
 					</Text>
 				</Container>
-				<Divider orientation="vertical" />
-				<Container className="sm:w-2/3 px-8">
+				<Divider
+					orientation="vertical"
+					className="sm:rotate-0 transform rotate-90"
+				/>
+				<Container className="sm:w-2/3 mx-8 sm:mx-0">
 					<Heading level={3}>{t('workTitle')}</Heading>
 					<div className="flex justify-between max-w-md">
 						<Heading level={4}>Effective Bytes</Heading>
@@ -137,11 +140,11 @@ export default function HomePage() {
 				</Container>
 			</Container>
 			<Container className="text-muted flex justify-between mx-8">
-				<div className="flex text-center">
-					<Text className="mx-1">2015 - {new Date().getFullYear()}</Text>
+				<div className="flex text-center space-x-2">
+					<Text>2015 - {new Date().getFullYear()}</Text>
 					<Button
 						onClick={switchTheme}
-						className="mx-1 hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
+						className="hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
 					>
 						{t('switchTheme')}
 					</Button>
@@ -151,16 +154,16 @@ export default function HomePage() {
 								localStorage.getItem('lang') === 'de' ? 'en' : 'de'
 							);
 						}}
-						className="mx-1 hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
+						className="hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
 					>
 						{locale === 'de' ? t('english') : t('german')}
 					</Button>
 				</div>
-				<div>
-					<CustomLink none target="/imprint" className="mx-1">
+				<div className="space-x-2">
+					<CustomLink none target="/imprint">
 						{t('imprint')}
 					</CustomLink>
-					<CustomLink none target="/privacy" className="mx-1">
+					<CustomLink none target="/privacy">
 						{t('privacyPolicy')}
 					</CustomLink>
 				</div>
@@ -168,3 +171,5 @@ export default function HomePage() {
 		</>
 	);
 }
+
+// @TODO: Show 3 most recent blog posts, then add a link to /blog 'Read more posts'

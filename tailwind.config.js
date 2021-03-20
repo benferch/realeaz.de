@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
-	purge: ['./**/*.html', './**/*.{js,jsx,ts,tsx,vue}'],
+	purge: ['./**/*.html', './**/*.tsx', './**/*.ts'],
 	darkMode: 'class',
 	theme: {
 		container: {
@@ -12,6 +12,9 @@ module.exports = {
 			transparent: 'transparent',
 			gray: colors.trueGray,
 			emerald: colors.emerald,
+			'special-b': '#00aaff',
+			'special-g': '#00ffaa',
+			'muted-g': '#008f5f',
 		},
 		extend: {
 			minHeight: {
@@ -36,6 +39,8 @@ module.exports = {
 			},
 			boxShadow: {
 				button: '-10px 8px #737373',
+				'special-g': '0 0 10px #00ffaa',
+				'special-b': '0 0 10px #00aaff',
 			},
 		},
 	},
