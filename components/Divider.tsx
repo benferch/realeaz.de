@@ -26,10 +26,11 @@ export default function Divider({
 		case 'vertical':
 			return (
 				<span
-					className={clsx('w-0.5 bg-gray-900 dark:bg-gray-50', className)}
+					className={clsx(
+						'block h-0.5 w-[95%] sm:h-screen sm:w-0.5 bg-gray-900 dark:bg-gray-50',
+						className
+					)}
 				/>
 			);
 	}
 }
-
-// @TODO: Somehow this divider doesn't work on mobile screens

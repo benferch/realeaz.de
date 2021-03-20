@@ -11,7 +11,11 @@ export default function blogIndex(props) {
 				({ _id, title = '', slug = '', _updatedAt = '' }) =>
 					slug && (
 						<li key={_id}>
-							<Link href="/post/[slug]" as={`/post/${slug.current}`}>
+							<Link
+								prefetch
+								href="/blog/post/[slug]" /*@ts-ignore This is fine.*/
+								as={`/blog/post/${slug.current}`}
+							>
 								<a>{title}</a>
 							</Link>{' '}
 							({new Date(_updatedAt).toDateString()})
