@@ -3,12 +3,13 @@ import Container from ':components/Container';
 import CustomHead from ':components/CustomHead';
 import Divider from ':components/Divider';
 import Heading from ':components/Heading';
-import { languageContext, locales } from ':components/LanguageProvider';
+import { languageContext } from ':components/LanguageProvider';
 import CustomLink from ':components/Link';
 import List from ':components/List';
 import Profile from ':components/Profile';
 import Text from ':components/Text';
 import calcAge from ':components/util/calcAge';
+import client from ':components/util/client';
 import useTranslation from ':components/util/useTranslation';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import {
@@ -17,10 +18,14 @@ import {
 	faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import groq from 'groq';
 import { useTheme } from 'next-themes';
 import { useContext, useEffect, useState } from 'react';
+import Link from 'next/link';
 
-export default function HomePage() {
+export default function HomePage(props) {
+	const { posts = [] } = props;
+	const blog = false;
 	const { t } = useTranslation();
 	const [locale, setLocale] = useContext(languageContext);
 	const [isMounted, setMounted] = useState(false);
@@ -90,6 +95,27 @@ export default function HomePage() {
 						<Text className="text-muted italic">2018 - {t('workNow')}</Text>
 					</div>
 					<Text>{t('ebText')}</Text>
+					<Heading level={3}>Skills</Heading>
+					<List
+						items={[
+							'CSS',
+							'Tailwind CSS',
+							'JavaScript',
+							'Node.js',
+							'React',
+							'Next.js',
+							'Docker',
+							'MongoDB',
+							'Git',
+							'GitHub',
+							'Drupal',
+							'Wordpress',
+							'Sanity',
+							'Linux',
+							'Windows',
+							'macOS',
+						]}
+					/>
 					<Heading level={3}>{t('projectTitle')}</Heading>
 					<div>
 						<Heading level={4}>MetaPeta</Heading>
@@ -166,27 +192,52 @@ export default function HomePage() {
 							</Button>
 						</div>
 					</div>
-					<Heading level={3}>Skills</Heading>
-					<List
-						items={[
-							'CSS',
-							'Tailwind CSS',
-							'JavaScript',
-							'Node.js',
-							'React',
-							'Next.js',
-							'Docker',
-							'MongoDB',
-							'Git',
-							'GitHub',
-							'Drupal',
-							'Wordpress',
-							'Sanity',
-							'Linux',
-							'Windows',
-							'macOS',
-						]}
-					/>
+					{blog && (
+						<div>
+							<Heading>Blog</Heading>
+							<div className="flex flex-col">
+								{posts.map(
+									({
+										_id,
+										title = '',
+										info = '',
+										slug = '',
+										_updatedAt = '',
+									}) =>
+										slug && (
+											<li
+												key={_id}
+												className="list-none flex flex-col min-h-[4rem]"
+											>
+												<div className="flex-col">
+													<div className="flex-row inline-flex items-center space-x-2">
+														<Heading level={4}>
+															<Link
+																href="/blog/post/[slug]" /*@ts-ignore This is fine.*/
+																as={`/blog/post/${slug.current}`}
+															>
+																<a>{title}</a>
+															</Link>
+														</Heading>
+														<Text className="text-muted">
+															({new Date(_updatedAt).toDateString()})
+														</Text>
+													</div>
+													<Text>{info}</Text>
+												</div>
+											</li>
+										)
+								)}
+								<CustomLink
+									target="/blog"
+									blog
+									className="text-right inline-block"
+								>
+									{t('readMore')} →
+								</CustomLink>
+							</div>
+						</div>
+					)}
 				</Container>
 			</Container>
 			<Container className="text-muted flex justify-between mx-8 mb-12">
@@ -222,4 +273,8 @@ export default function HomePage() {
 	);
 }
 
-// @TODO: Show 3 most recent blog posts, then add a link to /blog 'Read more posts'
+HomePage.getInitialProps = async () => ({
+	posts: await client.fetch(groq`
+    *[_type == "post" && publishedAt < now()]|order(publishedAt desc)[0...3]
+  `),
+});

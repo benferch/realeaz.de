@@ -8,12 +8,14 @@ export default function CustomLink({
 	external,
 	none = false,
 	className,
+	blog,
 }: {
 	children: React.ReactNode;
 	target: string;
 	none?: boolean;
 	external?: boolean;
 	className?: string;
+	blog?: boolean;
 }) {
 	if (external) {
 		return (
@@ -32,6 +34,18 @@ export default function CustomLink({
 								className
 						  )
 				}
+			>
+				{children}
+			</a>
+		);
+	}
+	if (blog) {
+		return (
+			<a
+				href={target}
+				rel="noopener noreferrer"
+				target="_self"
+				className={clsx('', className)}
 			>
 				{children}
 			</a>

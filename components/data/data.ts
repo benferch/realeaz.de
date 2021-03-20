@@ -15,6 +15,7 @@ export const Strings = {
 			'PacTrac ist während Jugendhackt 2019 in Rostock entstanden. Es ist eine Anwendung um Sendungen von verschiedenen Versanddienstleistern nachzuverfolgen',
 		tbText:
 			'Der Twitter Bot ist ein Bot, welcher Beiträge von Subreddits auf Twitter überträgt',
+		readMore: 'Mehr lesen',
 		switchTheme: 'Theme wechseln',
 		english: 'Englisch',
 		imprint: 'Impressum',
@@ -36,6 +37,7 @@ export const Strings = {
 			'PacTrac was created at Jugendhackt 2019 in Rostock. It is a tool to track parcels from different delivery services.',
 		tbText:
 			'The Twitter Bot is a bot which mirrors posts from subreddits on Twitter.',
+		readMore: 'Read more',
 		switchTheme: 'Switch theme',
 		german: 'German',
 		imprint: 'Imprint',
