@@ -82,10 +82,7 @@ export default function HomePage() {
 						</CustomLink>
 					</Text>
 				</Container>
-				<Divider
-					orientation="vertical"
-					className="sm:rotate-0 transform rotate-90"
-				/>
+				<Divider orientation="vertical" className="m-4 sm:m-0" />
 				<Container className="sm:w-2/3 mx-8 sm:mx-0">
 					<Heading level={3}>{t('workTitle')}</Heading>
 					<div className="flex justify-between max-w-md">
@@ -139,7 +136,7 @@ export default function HomePage() {
 					/>
 				</Container>
 			</Container>
-			<Container className="text-muted flex justify-between mx-8">
+			<Container className="text-muted flex justify-between mx-8 mb-12">
 				<div className="flex text-center space-x-2">
 					<Text>2015 - {new Date().getFullYear()}</Text>
 					<Button
