@@ -23,6 +23,8 @@ import { useTheme } from 'next-themes';
 import { useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
 
+// @TODO: export footer to seperate component with toggle for translation
+
 export default function HomePage(props) {
 	const { posts = [] } = props;
 	const blog = false;

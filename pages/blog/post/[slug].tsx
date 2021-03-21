@@ -25,6 +25,10 @@ export default function Post(props) {
 		});
 	}
 
+	// @TODO: add way to display inline code, images?, text, everything
+	// @TODO: think of blocks to add to sanity
+	// @TODO: after seperating footer add footer to pages
+
 	const serializers = {
 		types: {
 			code: (props) => {
