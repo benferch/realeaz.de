@@ -7,12 +7,14 @@ export default function CustomImage({
 	width,
 	className,
 	quality = 100,
+	alt,
 }: {
 	source: string;
 	height: number;
 	width: number;
 	quality?: number;
 	className?: string;
+	alt?: string;
 }) {
 	return (
 		<Image
@@ -22,6 +24,7 @@ export default function CustomImage({
 			quality={quality}
 			className={clsx('', className)}
 			draggable={false}
+			alt={alt}
 		/>
 	);
 }

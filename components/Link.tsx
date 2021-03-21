@@ -52,7 +52,7 @@ export default function CustomLink({
 		);
 	}
 	return (
-		<Link href={target}>
+		<Link href={target} passHref>
 			<a
 				className={
 					none

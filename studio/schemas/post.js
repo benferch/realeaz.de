@@ -23,6 +23,11 @@ export default {
 			type: 'string',
 		},
 		{
+			name: 'tags',
+			title: 'Tags',
+			type: 'tags',
+		},
+		{
 			name: 'author',
 			title: 'Author',
 			type: 'reference',

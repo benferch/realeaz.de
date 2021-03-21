@@ -11,6 +11,7 @@ export default function Profile() {
 				height={192}
 				width={192}
 				className="object-cover transform scale-125 translate-y-6 translate-x-2"
+				alt="Image of a head"
 			/>
 		</div>
 	);

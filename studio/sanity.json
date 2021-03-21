@@ -15,7 +15,9 @@
     "@sanity/dashboard",
     "@sanity/desk-tool",
     "dashboard-widget-document-list",
-    "dashboard-widget-notes"
+    "dashboard-widget-notes",
+    "autocomplete-tags",
+    "@sanity/code-input"
   ],
   "env": {
     "development": {

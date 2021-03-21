@@ -1,49 +1,65 @@
 import client from ':components/util/client';
-import imageUrlBuilder from '@sanity/image-url';
 import BlockContent from '@sanity/block-content-to-react';
 import groq from 'groq';
 import CustomHead from ':components/CustomHead';
-import Image from 'next/image';
-import { useNextSanityImage } from 'next-sanity-image';
-
-function urlFor(source) {
-	return imageUrlBuilder(client).image(source);
-}
+import Link from 'next/link';
+import Container from ':components/Container';
+import Heading from ':components/Heading';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atomOneDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 
 export default function Post(props) {
 	const {
 		title = 'Missing title',
 		name = 'Missing name',
 		info = 'No Info',
-		categories,
-		authorImage,
 		body = [],
+		tags,
 	} = props;
+	let keys = '';
+	let keyword = '';
+	if (tags) {
+		tags.forEach((tag) => {
+			keys = keys.concat(`${tag.value},`);
+			keyword = keys.slice(0, keys.length - 1);
+		});
+	}
+
+	const serializers = {
+		types: {
+			code: (props) => {
+				return (
+					<SyntaxHighlighter language={props.node.language} style={atomOneDark}>
+						{props.node.code}
+					</SyntaxHighlighter>
+				);
+			},
+		},
+	};
+
 	return (
 		<>
-			<CustomHead title={title} desc={info} />
-			<article>
-				<h1>{title}</h1>
-				<span>By {name}</span>
-				{categories && (
-					<ul>
-						Posted in
-						{categories.map((category) => (
-							<li key={category}>{category}</li>
-						))}
-					</ul>
-				)}
-				{authorImage && (
-					<div>
-						<Image {...useNextSanityImage(client, authorImage)} />
-					</div>
-				)}
-				<BlockContent
-					blocks={body}
-					imageOptions={{ w: 320, h: 240, fit: 'max' }}
-					{...client.config()}
-				/>
-			</article>
+			<CustomHead title={title} desc={info} tags={keyword} />
+			<Container className="my-12">
+				<div className="flex justify-between">
+					<Heading level={1}>{title}</Heading>
+					<Heading
+						level={3}
+						className="hover:text-gray-500 transition ease-out duration-300 border-gray-500 border-solid border-b-2"
+					>
+						<Link href="/blog">Back</Link>
+					</Heading>
+				</div>
+				<article>
+					<span className="text-muted">by {name}</span>
+					<BlockContent
+						blocks={body}
+						imageOptions={{ w: 320, h: 240, fit: 'max' }}
+						serializers={serializers}
+						{...client.config()}
+					/>
+				</article>
+			</Container>
 		</>
 	);
 }
@@ -51,9 +67,8 @@ export default function Post(props) {
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
 	info,
+	tags,
   "name": author->name,
-  "categories": categories[]->title,
-  "authorImage": author->image,
   body
 }`;
 

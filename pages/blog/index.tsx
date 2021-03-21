@@ -13,6 +13,7 @@ import Image from 'next/image';
 import Text from ':components/Text';
 import Heading from ':components/Heading';
 import { useEffect, useState, useContext } from 'react';
+import List from ':components/List';
 
 //@TODO: content-visibility when available
 
@@ -58,6 +59,7 @@ export default function blogIndex(props) {
 						slug = '',
 						_updatedAt = '',
 						mainImage,
+						tags = [],
 					}) =>
 						slug && (
 							<li
@@ -74,29 +76,45 @@ export default function blogIndex(props) {
 										/>
 									</div>
 								)}
-								<div className="flex-col max-w-[32rem] min-w-[32rem]">
-									<div className="inline-flex items-center space-x-2">
-										<Heading level={4}>
+								<div className="flex justify-between flex-col max-w-[32rem] min-w-[32rem]">
+									<div className="flex-1 w-full">
+										<div className="inline-flex items-center space-x-2">
+											<Heading level={4}>
+												<Link
+													href="/blog/post/[slug]" /*@ts-ignore This is fine.*/
+													as={`/blog/post/${slug.current}`}
+												>
+													<a>{title}</a>
+												</Link>
+											</Heading>
+											<Text className="text-muted">
+												({new Date(_updatedAt).toDateString()})
+											</Text>
+										</div>
+										<Text className="break-words">{info}</Text>
+									</div>
+									<div className="flex flex-1 justify-between items-center">
+										<ul className="space-x-2 flex">
+											{tags.map((tag) => {
+												return (
+													<li
+														key={tag.value}
+														className="self-center cursor-default text-xs list-none px-3 border-[1px] font-semibold text-special-g bg-transparent-special-g border-special-g rounded-xl border-solid"
+													>
+														{tag.value}
+													</li>
+												);
+											})}
+										</ul>
+										<Text className="hover:text-gray-500 dark:border-gray-50 border-gray-900 border-solid border-b-2 transition ease-out duration-300">
 											<Link
 												href="/blog/post/[slug]" /*@ts-ignore This is fine.*/
 												as={`/blog/post/${slug.current}`}
 											>
-												<a>{title}</a>
+												<a>Read more →</a>
 											</Link>
-										</Heading>
-										<Text className="text-muted">
-											({new Date(_updatedAt).toDateString()})
 										</Text>
 									</div>
-									<Text className="break-words">{info}</Text>
-									<Text className="text-right">
-										<Link
-											href="/blog/post/[slug]" /*@ts-ignore This is fine.*/
-											as={`/blog/post/${slug.current}`}
-										>
-											<a>Read more</a>
-										</Link>
-									</Text>
 								</div>
 							</li>
 						)

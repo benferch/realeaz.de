@@ -15,6 +15,7 @@
   ],
   "dependencies": {
     "@sanity/base": "^2.6.2",
+    "@sanity/code-input": "^2.2.6",
     "@sanity/components": "^2.2.6",
     "@sanity/core": "^2.6.2",
     "@sanity/dashboard": "^2.2.6",
@@ -25,6 +26,7 @@
     "prop-types": "^15.7",
     "react": "^17.0",
     "react-dom": "^17.0",
+    "sanity-plugin-autocomplete-tags": "^1.0.1",
     "sanity-plugin-dashboard-widget-document-list": "^0.0.13",
     "sanity-plugin-dashboard-widget-notes": "^0.3.2"
   },

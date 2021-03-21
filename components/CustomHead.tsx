@@ -4,10 +4,12 @@ export default function CustomHead({
 	title,
 	desc,
 	tags,
+	children,
 }: {
 	title: string;
 	desc: string;
 	tags?: string;
+	children?: React.ReactNode;
 }) {
 	return (
 		<Head>
@@ -26,6 +28,7 @@ export default function CustomHead({
 			<meta property="og:image" content="" />
 			<meta name="author" content="Ben-Jannik Ferch" />
 			<meta name="robots" content="nofollow" />
+			{children}
 		</Head>
 	);
 }
