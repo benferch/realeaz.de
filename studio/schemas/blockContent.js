@@ -65,6 +65,22 @@ export default {
 			options: { hotspot: true },
 			fields: [
 				{
+					type: 'number',
+					name: 'width',
+					title: 'Width',
+					options: {
+						isHighlighted: true,
+					},
+				},
+				{
+					type: 'number',
+					name: 'height',
+					title: 'Height',
+					options: {
+						isHighlighted: true,
+					},
+				},
+				{
 					type: 'text',
 					name: 'alt',
 					title: 'Alternative text',

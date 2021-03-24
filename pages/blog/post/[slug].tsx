@@ -41,7 +41,6 @@ export default function Post(props) {
 				);
 			},
 			image: (props) => {
-				console.log(props);
 				return (
 					<Image
 						width={300}
