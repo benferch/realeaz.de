@@ -13,7 +13,6 @@ import Image from 'next/image';
 import Text from ':components/Text';
 import Heading from ':components/Heading';
 import { useEffect, useState, useContext } from 'react';
-import List from ':components/List';
 
 //@TODO: content-visibility when available
 
@@ -42,7 +41,7 @@ export default function blogIndex(props) {
 		<>
 			<CustomHead title="Blog | Ben-J. Ferch" desc="Hey!" />
 			<Container className="my-12 space-y-4">
-				<div className="flex justify-between">
+				<div className="flex justify-between items-center">
 					<Heading level={1}>Blog</Heading>
 					<Heading
 						level={3}

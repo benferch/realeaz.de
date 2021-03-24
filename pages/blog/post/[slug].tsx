@@ -7,6 +7,8 @@ import Container from ':components/Container';
 import Heading from ':components/Heading';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
+import Image from 'next/image';
+import { getImageUrl } from '@sanity/block-content-to-hyperscript/internals';
 
 export default function Post(props) {
 	const {
@@ -25,7 +27,7 @@ export default function Post(props) {
 		});
 	}
 
-	// @TODO: add way to display inline code, images?, text, everything
+	// @TODO: add way to display text, everything
 	// @TODO: think of blocks to add to sanity
 	// @TODO: after seperating footer add footer to pages
 
@@ -38,6 +40,17 @@ export default function Post(props) {
 					</SyntaxHighlighter>
 				);
 			},
+			image: (props) => {
+				console.log(props);
+				return (
+					<Image
+						width={300}
+						height={300}
+						className="object-contain"
+						src={getImageUrl(props)}
+					/>
+				);
+			},
 		},
 	};
 
@@ -45,8 +58,11 @@ export default function Post(props) {
 		<>
 			<CustomHead title={title} desc={info} tags={keyword} />
 			<Container className="my-12">
-				<div className="flex justify-between">
-					<Heading level={1}>{title}</Heading>
+				<div className="flex justify-between items-center">
+					<div>
+						<Heading level={1}>{title}</Heading>
+						<span className="text-muted">by {name}</span>
+					</div>
 					<Heading
 						level={3}
 						className="hover:text-gray-500 transition ease-out duration-300 border-gray-500 border-solid border-b-2"
@@ -54,11 +70,9 @@ export default function Post(props) {
 						<Link href="/blog">Back</Link>
 					</Heading>
 				</div>
-				<article>
-					<span className="text-muted">by {name}</span>
+				<article className="mx-[5rem]">
 					<BlockContent
 						blocks={body}
-						imageOptions={{ w: 320, h: 240, fit: 'max' }}
 						serializers={serializers}
 						{...client.config()}
 					/>
