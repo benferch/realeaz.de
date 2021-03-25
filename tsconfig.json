@@ -19,6 +19,6 @@
 		"isolatedModules": true,
 		"jsx": "preserve"
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "sitemap-gen.js"],
 	"exclude": ["frontend/node_modules"]
 }

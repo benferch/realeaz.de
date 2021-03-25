@@ -42,12 +42,15 @@ export default function Post(props) {
 			},
 			image: (props) => {
 				return (
-					<Image
-						width={300}
-						height={300}
-						className="object-contain"
-						src={getImageUrl(props)}
-					/>
+					<div className="flex justify-center">
+						<Image
+							width={props.node.width ? props.node.width : 400}
+							height={props.node.height ? props.node.height : 400}
+							alt={props.node.alt ? props.node.alt : ''}
+							className="object-contain"
+							src={getImageUrl(props)}
+						/>
+					</div>
 				);
 			},
 		},
