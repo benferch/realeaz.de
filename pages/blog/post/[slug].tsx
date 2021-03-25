@@ -9,6 +9,8 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import Image from 'next/image';
 import { getImageUrl } from '@sanity/block-content-to-hyperscript/internals';
+import Text from ':components/Text';
+import CustomLink from ':components/Link';
 
 export default function Post(props) {
 	const {
@@ -32,7 +34,55 @@ export default function Post(props) {
 	// @TODO: after seperating footer add footer to pages
 
 	const serializers = {
+		list: (props) =>
+			props.type === 'bullet' ? (
+				<ul className="list-disc">{props.children}</ul>
+			) : (
+				<ol className="list-decimal">{props.children}</ol>
+			),
+		listItem: (props) =>
+			props.type === 'bullet' ? (
+				<li>{props.children}</li>
+			) : (
+				<li>{props.children}</li>
+			),
+		marks: {
+			strong: (props) => {
+				return <Text className="font-bold">{props.children}</Text>;
+			},
+			em: (props) => {
+				return <Text className="italic">{props.children}</Text>;
+			},
+			link: (props) => {
+				console.log(props);
+				return (
+					<CustomLink target={props.mark.href} external>
+						{props.children}
+					</CustomLink>
+				);
+			},
+		},
 		types: {
+			block: (props) => {
+				switch (props.node.style) {
+					case 'h1':
+						return <Heading level={1}>{props.children}</Heading>;
+					case 'h2':
+						return <Heading level={2}>{props.children}</Heading>;
+					case 'h3':
+						return <Heading level={3}>{props.children}</Heading>;
+					case 'h4':
+						return <Heading level={4}>{props.children}</Heading>;
+					case 'blockquote':
+						return (
+							<Text className="border-l-2 pl-2 bg-transparent-grey-500 dark:border-gray-50 border-gray-900">
+								{props.children}
+							</Text>
+						);
+					default:
+						return <Text>{props.children}</Text>;
+				}
+			},
 			code: (props) => {
 				return (
 					<SyntaxHighlighter language={props.node.language} style={atomOneDark}>

@@ -16,6 +16,7 @@ module.exports = {
 			'special-g': '#00ffaa',
 			'muted-g': '#008f5f',
 			'transparent-special-g': 'rgba(0, 255, 170, 0.1)',
+			'transparent-grey-500': 'rgba(115, 115, 115, 0.1)',
 		},
 		extend: {
 			minHeight: {

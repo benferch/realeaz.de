@@ -225,9 +225,9 @@
     prop-types "^15.6.2"
 
 "@sanity/client@^2.2.6":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-2.7.0.tgz#dfdf2d1415f9f55ba05a2559fc244b85686646dc"
-  integrity sha512-IyCtw+Vrpji18jqlOtDvioovGyiN/uWvy+ZGEoaoecu6FqbOVxXUIwTFWtU+7oDuk451gARn1MzCCOgukidY0w==
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@sanity/client/-/client-2.7.1.tgz#0163ecad3ad0875dac5a87bfa20a1652dd3e6a80"
+  integrity sha512-uKMlB4v8PDQQd2+5MGC2ccE/5lteJoqeH6iPr5ELC/608KonazMrOx7ROS0gxjNlDEq7NkJePaWwiaNu1xdujA==
   dependencies:
     "@sanity/eventsource" "2.2.6"
     "@sanity/generate-help-url" "2.2.6"
