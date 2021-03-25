@@ -21,6 +21,7 @@
 		"@sanity/image-url": "^0.140.22",
 		"clsx": "^1.1.1",
 		"framer-motion": "^3.0.0",
+		"get-website-favicon": "^0.0.7",
 		"groq": "^2.2.6",
 		"next": "^10.0.6",
 		"next-compose-plugins": "^2.2.1",

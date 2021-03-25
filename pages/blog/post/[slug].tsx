@@ -29,7 +29,6 @@ export default function Post(props) {
 		});
 	}
 
-	// @TODO: add way to display text, everything
 	// @TODO: think of blocks to add to sanity
 	// @TODO: after seperating footer add footer to pages
 
