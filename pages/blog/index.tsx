@@ -1,9 +1,7 @@
-import Button from ':components/Button';
 import Link from 'next/link';
 import client from ':components/util/client';
 import { languageContext } from ':components/LanguageProvider';
 import groq from 'groq';
-import CustomLink from ':components/Link';
 import { useTheme } from 'next-themes';
 import useTranslation from ':components/util/useTranslation';
 import Container from ':components/Container';
@@ -13,6 +11,7 @@ import Image from 'next/image';
 import Text from ':components/Text';
 import Heading from ':components/Heading';
 import { useEffect, useState, useContext } from 'react';
+import Footer from ':components/Footer';
 
 //@TODO: content-visibility when available
 
@@ -119,35 +118,7 @@ export default function blogIndex(props) {
 						)
 				)}
 			</Container>
-			<Container className="text-muted flex justify-between mx-8 mb-12">
-				<div className="flex text-center space-x-2">
-					<Text>2015 - {new Date().getFullYear()}</Text>
-					<Button
-						onClick={switchTheme}
-						className="hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
-					>
-						{t('switchTheme')}
-					</Button>
-					<Button
-						onClick={() => {
-							handleLocaleChange(
-								localStorage.getItem('lang') === 'de' ? 'en' : 'de'
-							);
-						}}
-						className="hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
-					>
-						{locale === 'de' ? t('english') : t('german')}
-					</Button>
-				</div>
-				<div className="space-x-2">
-					<CustomLink none target="/imprint">
-						{t('imprint')}
-					</CustomLink>
-					<CustomLink none target="/privacy">
-						{t('privacyPolicy')}
-					</CustomLink>
-				</div>
-			</Container>
+			<Footer themeSwitch />
 		</>
 	);
 }

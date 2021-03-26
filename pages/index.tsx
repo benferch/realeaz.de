@@ -2,6 +2,7 @@ import Button from ':components/Button';
 import Container from ':components/Container';
 import CustomHead from ':components/CustomHead';
 import Divider from ':components/Divider';
+import Footer from ':components/Footer';
 import Heading from ':components/Heading';
 import { languageContext } from ':components/LanguageProvider';
 import CustomLink from ':components/Link';
@@ -19,34 +20,12 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import groq from 'groq';
-import { useTheme } from 'next-themes';
-import { useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
-
-// @TODO: export footer to seperate component with toggle for translation
 
 export default function HomePage(props) {
 	const { posts = [] } = props;
 	const blog = false;
 	const { t } = useTranslation();
-	const [locale, setLocale] = useContext(languageContext);
-	const [isMounted, setMounted] = useState(false);
-	const { theme, setTheme } = useTheme();
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-	const switchTheme = () => {
-		if (isMounted) {
-			setTheme(theme === 'light' ? 'dark' : 'light');
-		}
-	};
-	function handleLocaleChange(language: string) {
-		if (!window) {
-			return;
-		}
-		localStorage.setItem('lang', language);
-		setLocale(language);
-	}
 	return (
 		<>
 			<CustomHead title="Ben-J. Ferch" desc="Hey!" />
@@ -242,35 +221,7 @@ export default function HomePage(props) {
 					)}
 				</Container>
 			</Container>
-			<Container className="text-muted flex justify-between mx-8 mb-12">
-				<div className="flex text-center space-x-2">
-					<Text>2015 - {new Date().getFullYear()}</Text>
-					<Button
-						onClick={switchTheme}
-						className="hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
-					>
-						{t('switchTheme')}
-					</Button>
-					<Button
-						onClick={() => {
-							handleLocaleChange(
-								localStorage.getItem('lang') === 'de' ? 'en' : 'de'
-							);
-						}}
-						className="hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
-					>
-						{locale === 'de' ? t('english') : t('german')}
-					</Button>
-				</div>
-				<div className="space-x-2">
-					<CustomLink none target="/imprint">
-						{t('imprint')}
-					</CustomLink>
-					<CustomLink none target="/privacy">
-						{t('privacyPolicy')}
-					</CustomLink>
-				</div>
-			</Container>
+			<Footer themeSwitch langSwitch />
 		</>
 	);
 }

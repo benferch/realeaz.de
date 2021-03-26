@@ -11,6 +11,7 @@ import Image from 'next/image';
 import { getImageUrl } from '@sanity/block-content-to-hyperscript/internals';
 import Text from ':components/Text';
 import CustomLink from ':components/Link';
+import Footer from ':components/Footer';
 
 export default function Post(props) {
 	const {
@@ -30,7 +31,6 @@ export default function Post(props) {
 	}
 
 	// @TODO: think of blocks to add to sanity
-	// @TODO: after seperating footer add footer to pages
 
 	const serializers = {
 		list: (props) =>
@@ -129,6 +129,7 @@ export default function Post(props) {
 					/>
 				</article>
 			</Container>
+			<Footer themeSwitch />
 		</>
 	);
 }
