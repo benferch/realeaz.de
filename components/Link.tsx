@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import clsx from 'clsx';
+import Image from ':components/Image';
 
 export default function CustomLink({
 	children,
@@ -8,6 +9,7 @@ export default function CustomLink({
 	external,
 	none = false,
 	className,
+	symbol,
 	blog,
 }: {
 	children: React.ReactNode;
@@ -15,6 +17,7 @@ export default function CustomLink({
 	none?: boolean;
 	external?: boolean;
 	className?: string;
+	symbol?: boolean;
 	blog?: boolean;
 }) {
 	if (external) {
@@ -47,6 +50,35 @@ export default function CustomLink({
 				target="_self"
 				className={clsx('', className)}
 			>
+				{children}
+			</a>
+		);
+	}
+	if (symbol) {
+		return (
+			<a
+				href={target}
+				rel="noopener noreferrer"
+				target="_blank"
+				className={
+					none
+						? clsx(
+								'text-muted hover:text-mutedLight transition duration-300 ease-out space-x-2 inline-flex items-center',
+								className
+						  )
+						: clsx(
+								'transition duration-300 border-b-2 px-1 pt-1 pb-0.5 border-solid border-gray-500 hover:bg-gray-500 hover:bg-opacity-20 space-x-2 inline-flex items-center',
+								className
+						  )
+				}
+			>
+				<span>
+					<img
+						src={`https://jmswrnr.com/api/favicon?url=${target}`}
+						height={16}
+						width={16}
+					/>
+				</span>
 				{children}
 			</a>
 		);
