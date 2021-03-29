@@ -20,6 +20,9 @@ export const Strings = {
 		english: 'Englisch',
 		imprint: 'Impressum',
 		privacyPolicy: 'Datenschutzerklärung',
+		errMsg:
+			'Die Seite, die Sie suchen, wurde möglicherweise entfernt, ihr Name wurde geändert oder sie ist vorübergehend nicht verfügbar.',
+		errHomeLink: 'Zurück zur Startseite',
 	},
 	en: {
 		title: 'web development',
@@ -42,5 +45,8 @@ export const Strings = {
 		german: 'German',
 		imprint: 'Imprint',
 		privacyPolicy: 'Privacy Policy',
+		errMsg:
+			'The page you are looking for might have been removed had its name changed or is temporarily unavailable.',
+		errHomeLink: 'Return to homepage',
 	},
 };

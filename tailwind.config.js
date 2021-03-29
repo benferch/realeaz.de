@@ -17,6 +17,8 @@ module.exports = {
 			'muted-g': '#008f5f',
 			'transparent-special-g': 'rgba(0, 255, 170, 0.1)',
 			'transparent-grey-500': 'rgba(115, 115, 115, 0.1)',
+			muted: 'rgb(115, 115, 115)',
+			mutedLight: 'rgb(166, 166, 166)',
 		},
 		extend: {
 			minHeight: {
@@ -41,7 +43,7 @@ module.exports = {
 				github: '#333333',
 			},
 			boxShadow: {
-				button: '-10px 8px #737373',
+				button: '-10px 8px #ffffff',
 				'special-g': '0 0 10px #00ffaa',
 				'special-b': '0 0 10px #00aaff',
 			},

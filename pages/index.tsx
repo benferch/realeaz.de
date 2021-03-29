@@ -4,7 +4,6 @@ import CustomHead from ':components/CustomHead';
 import Divider from ':components/Divider';
 import Footer from ':components/Footer';
 import Heading from ':components/Heading';
-import { languageContext } from ':components/LanguageProvider';
 import CustomLink from ':components/Link';
 import List from ':components/List';
 import Profile from ':components/Profile';
