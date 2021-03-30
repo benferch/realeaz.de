@@ -1,5 +1,5 @@
 import Container from ':components/Container';
-import CustomHead from ':components/CustomHead';
+import CustomHead from ':components/Head';
 import Footer from ':components/Footer';
 import Heading from ':components/Heading';
 import Text from ':components/Text';
@@ -10,7 +10,7 @@ export default function ImprintPage() {
 	const { t } = useTranslation();
 	return (
 		<>
-			<CustomHead title="Imprint | Ben-J. Ferch" desc="Hey!" />
+			<CustomHead title="Imprint | Ben-J. Ferch" desc="Hey!" noIndex />
 			<Container className="my-12">
 				<div className="flex items-center justify-between">
 					<Heading level={1}>Impressum</Heading>

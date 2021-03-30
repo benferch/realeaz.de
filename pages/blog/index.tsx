@@ -5,7 +5,7 @@ import groq from 'groq';
 import { useTheme } from 'next-themes';
 import useTranslation from ':components/util/useTranslation';
 import Container from ':components/Container';
-import CustomHead from ':components/CustomHead';
+import CustomHead from ':components/Head';
 import { useNextSanityImage } from 'next-sanity-image';
 import Image from 'next/image';
 import Text from ':components/Text';

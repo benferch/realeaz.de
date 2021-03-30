@@ -5,10 +5,12 @@ export default function CustomHead({
 	desc,
 	tags,
 	children,
+	noIndex,
 }: {
 	title: string;
 	desc: string;
 	tags?: string;
+	noIndex?: boolean;
 	children?: React.ReactNode;
 }) {
 	return (
@@ -27,7 +29,11 @@ export default function CustomHead({
 			<meta property="og:url" content="https://benferch.de" />
 			<meta property="og:image" content="" />
 			<meta name="author" content="Ben-Jannik Ferch" />
-			<meta name="robots" content="nofollow" />
+			{noIndex ? (
+				<meta name="robots" content="none" />
+			) : (
+				<meta name="robots" content="nofollow" />
+			)}
 			{children}
 		</Head>
 	);

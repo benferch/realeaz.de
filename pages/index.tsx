@@ -1,6 +1,6 @@
 import Button from ':components/Button';
 import Container from ':components/Container';
-import CustomHead from ':components/CustomHead';
+import CustomHead from ':components/Head';
 import Divider from ':components/Divider';
 import Footer from ':components/Footer';
 import Heading from ':components/Heading';

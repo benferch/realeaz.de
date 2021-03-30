@@ -1,5 +1,5 @@
 import Container from ':components/Container';
-import CustomHead from ':components/CustomHead';
+import CustomHead from ':components/Head';
 import Heading from ':components/Heading';
 import Button from ':components/Button';
 import Text from ':components/Text';
@@ -10,7 +10,7 @@ export default function PrivacyPage() {
 	const { t } = useTranslation();
 	return (
 		<>
-			<CustomHead title="Error | Ben-J. Ferch" desc="Hey!" />
+			<CustomHead title="Error | Ben-J. Ferch" desc="Hey!" noIndex />
 			<Container className="h-[90vh] flex flex-col justify-center">
 				<Heading level={1}>Error!</Heading>
 				<Text>{t('errMsg')}</Text>
