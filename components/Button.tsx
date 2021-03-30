@@ -4,11 +4,20 @@ import React, { ButtonHTMLAttributes } from 'react';
 export default function Button({
 	children,
 	className,
+	footer,
 	...props
 }: ButtonHTMLAttributes<HTMLButtonElement> & {
 	children: React.ReactNode;
 	className?: string;
+	footer?: boolean;
 }) {
+	if (footer) {
+		return (
+			<button className={clsx('', className)} {...props}>
+				{children}
+			</button>
+		);
+	}
 	return (
 		<button
 			className={clsx(

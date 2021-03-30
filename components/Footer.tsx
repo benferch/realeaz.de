@@ -45,6 +45,7 @@ export default function Footer({
 				{themeSwitch && (
 					<Button
 						onClick={switchTheme}
+						footer
 						className="hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
 					>
 						{t('switchTheme')}
@@ -57,6 +58,7 @@ export default function Footer({
 								localStorage.getItem('lang') === 'de' ? 'en' : 'de'
 							);
 						}}
+						footer
 						className="hover:text-mutedLight transition duration-300 ease-out focus:outline-none"
 					>
 						{locale === 'de' ? t('english') : t('german')}

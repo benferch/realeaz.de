@@ -15,6 +15,7 @@ export default function Favicon(req: NextApiRequest, res: NextApiResponse) {
 	function resolveUrl(url, base) {
 		return new URL(url, base).href;
 	}
+	//@ts-ignore This is fine.
 	parseFavicon(req.query.url, textFetcher, bufferFetcher).subscribe((icon) => {
 		let favicon = icon.reference === '/favicon.ico' && {
 			url: `${req.query.url}${icon.url}`,
