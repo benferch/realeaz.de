@@ -11,6 +11,7 @@ export default function CustomLink({
 	className,
 	symbol,
 	blog,
+	ariaLabel,
 }: {
 	children: React.ReactNode;
 	target: string;
@@ -19,6 +20,7 @@ export default function CustomLink({
 	className?: string;
 	symbol?: boolean;
 	blog?: boolean;
+	ariaLabel?: string;
 }) {
 	if (external) {
 		return (
@@ -26,6 +28,7 @@ export default function CustomLink({
 				href={target}
 				rel="noopener noreferrer"
 				target="_blank"
+				aria-label={ariaLabel}
 				className={
 					none
 						? clsx(
@@ -49,6 +52,7 @@ export default function CustomLink({
 				rel="noopener noreferrer"
 				target="_self"
 				className={clsx('', className)}
+				aria-label={ariaLabel}
 			>
 				{children}
 			</a>
@@ -60,6 +64,7 @@ export default function CustomLink({
 				href={target}
 				rel="noopener noreferrer"
 				target="_blank"
+				aria-label={ariaLabel}
 				className={
 					none
 						? clsx(
@@ -86,6 +91,7 @@ export default function CustomLink({
 	return (
 		<Link href={target} passHref>
 			<a
+				aria-label={ariaLabel}
 				className={
 					none
 						? clsx(

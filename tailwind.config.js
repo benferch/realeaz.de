@@ -17,8 +17,8 @@ module.exports = {
 			'muted-g': '#008f5f',
 			'transparent-special-g': 'rgba(0, 255, 170, 0.1)',
 			'transparent-grey-500': 'rgba(115, 115, 115, 0.1)',
-			muted: 'rgb(115, 115, 115)',
-			mutedLight: 'rgb(166, 166, 166)',
+			muted: 'rgb(163, 163, 163)',
+			mutedLight: 'rgb(201, 201, 201)',
 		},
 		extend: {
 			minHeight: {
@@ -33,8 +33,8 @@ module.exports = {
 				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
 			},
 			textColor: {
-				muted: 'rgb(115, 115, 115)',
-				mutedLight: 'rgb(166, 166, 166)',
+				muted: 'rgb(163, 163, 163)',
+				mutedLight: 'rgb(201, 201, 201)',
 				'special-b': '#00aaff',
 				'special-g': '#00ffaa',
 				'muted-g': '#008f5f',

@@ -37,21 +37,36 @@ export default function HomePage(props) {
 					</div>
 					<Text>{t('title')}</Text>
 					<div className="flex space-x-2">
-						<CustomLink external none target="https://twitter.com/_benferch">
+						<CustomLink
+							external
+							none
+							target="https://twitter.com/_benferch"
+							ariaLabel="Twitter"
+						>
 							<FontAwesomeIcon
 								icon={faTwitter}
 								size="2x"
 								className="text-twitter"
 							/>
 						</CustomLink>
-						<CustomLink external none target="https://linkedin.com/in/benferch">
+						<CustomLink
+							external
+							none
+							target="https://linkedin.com/in/benferch"
+							ariaLabel="LinkedIn"
+						>
 							<FontAwesomeIcon
 								icon={faLinkedin}
 								size="2x"
 								className="text-linkedin"
 							/>
 						</CustomLink>
-						<CustomLink external none target="https://github.com/benferch">
+						<CustomLink
+							external
+							none
+							target="https://github.com/benferch"
+							ariaLabel="GitHub"
+						>
 							<FontAwesomeIcon
 								icon={faGithub}
 								size="2x"
