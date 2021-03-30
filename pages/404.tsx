@@ -15,7 +15,7 @@ export default function PrivacyPage() {
 				<Heading level={1}>Error!</Heading>
 				<Text>{t('errMsg')}</Text>
 				<Button className="max-w-1/3" onClick={() => window.open('/', '_self')}>
-					{t('errHomeLink')}
+					{t('homeLink')}
 				</Button>
 			</Container>
 			<Footer />
