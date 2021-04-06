@@ -38,7 +38,10 @@ export default function Footer({
 	}
 	return (
 		<Container
-			className={clsx('text-muted flex justify-between mx-8 mb-12', className)}
+			className={clsx(
+				'text-muted flex justify-between mx-8 mb-12 max-w-full',
+				className
+			)}
 		>
 			<div className="flex text-center space-x-2">
 				<Text>2015 - {new Date().getFullYear()}</Text>
