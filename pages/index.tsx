@@ -10,7 +10,6 @@ import Profile from ':components/Profile';
 import Text from ':components/Text';
 import calcAge from ':components/util/calcAge';
 import client from ':components/util/client';
-import useTranslation from ':components/util/useTranslation';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import {
 	faGithub,
@@ -24,7 +23,6 @@ import Link from 'next/link';
 export default function HomePage(props) {
 	const { posts = [] } = props;
 	const blog = false;
-	const { t } = useTranslation();
 	return (
 		<>
 			<CustomHead title="Ben-J. Ferch" desc="Hey!" />
@@ -35,7 +33,7 @@ export default function HomePage(props) {
 						<Heading>Ben-J. Ferch</Heading>
 						<Text superscript>{calcAge('10/08/2002')}</Text>
 					</div>
-					<Text>{t('title')}</Text>
+					<Text>web development</Text>
 					<div className="flex space-x-2">
 						<CustomLink
 							external
@@ -74,22 +72,25 @@ export default function HomePage(props) {
 							/>
 						</CustomLink>
 					</div>
-					<Heading>{t('contactTitle')}</Heading>
+					<Heading>Contact</Heading>
 					<Text className="text-left mx-8 sm:mx-auto">
-						{t('contactText')}
+						If you want to contact me feel free to send me an
 						<CustomLink external target="mailto:ferch.benj@gmail.com">
-							{t('contactEmail')}
+							e-mail
 						</CustomLink>
 					</Text>
 				</Container>
 				<Divider orientation="vertical" className="m-4 sm:m-0" />
 				<Container className="sm:w-2/3 mx-8 sm:mx-0">
-					<Heading level={3}>{t('workTitle')}</Heading>
+					<Heading level={3}>Work</Heading>
 					<div className="flex justify-between max-w-md">
 						<Heading level={4}>Effective Bytes</Heading>
-						<Text className="text-muted italic">2018 - {t('workNow')}</Text>
+						<Text className="text-muted italic">2018 - now</Text>
 					</div>
-					<Text>{t('ebText')}</Text>
+					<Text>
+						Web development with Drupal and Wordpress, server adminisration and
+						deployment
+					</Text>
 					<Heading level={3}>Skills</Heading>
 					<List
 						items={[
@@ -111,10 +112,13 @@ export default function HomePage(props) {
 							'macOS',
 						]}
 					/>
-					<Heading level={3}>{t('projectTitle')}</Heading>
+					<Heading level={3}>Projects</Heading>
 					<div>
 						<Heading level={4}>MetaPeta</Heading>
-						<Text>{t('mpText')}</Text>
+						<Text>
+							MetaPeta was created at Jugendhackt 2018 in Schwerin. It is a tool
+							to remove meta data from images.
+						</Text>
 						<div className="flex">
 							<Button
 								onClick={() =>
@@ -140,7 +144,10 @@ export default function HomePage(props) {
 					</div>
 					<div>
 						<Heading level={4}>PacTrac</Heading>
-						<Text>{t('ptText')}</Text>
+						<Text>
+							PacTrac was created at Jugendhackt 2019 in Rostock. It is a tool
+							to track parcels from different delivery services.
+						</Text>
 						<div className="flex">
 							<Button
 								onClick={() =>
@@ -166,7 +173,10 @@ export default function HomePage(props) {
 					</div>
 					<div>
 						<Heading level={5}>Twitter Bot</Heading>
-						<Text>{t('tbText')}</Text>
+						<Text>
+							The Twitter Bot is a bot which mirrors posts from subreddits on
+							Twitter.
+						</Text>
 						<div className="flex">
 							<Button
 								onClick={() =>
@@ -228,14 +238,14 @@ export default function HomePage(props) {
 									blog
 									className="text-right inline-block"
 								>
-									{t('readMore')} →
+									Read more →
 								</CustomLink>
 							</div>
 						</div>
 					)}
 				</Container>
 			</Container>
-			<Footer themeSwitch langSwitch />
+			<Footer themeSwitch />
 		</>
 	);
 }

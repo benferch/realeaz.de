@@ -1,0 +1,10 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+body {
+	@apply dark:bg-black bg-white dark:text-white text-black transition duration-300 ease-out antialiased;
+}

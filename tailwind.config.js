@@ -20,6 +20,8 @@ module.exports = {
 			'transparent-grey-500': 'rgba(115, 115, 115, 0.1)',
 			muted: 'rgb(163, 163, 163)',
 			mutedLight: 'rgb(201, 201, 201)',
+			white: '#fff',
+			black: '#000'
 		},
 		extend: {
 			minHeight: {

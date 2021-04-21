@@ -2,12 +2,10 @@ import Text from ':components/Text';
 import Heading from ':components/Heading';
 import CustomHead from ':components/Head';
 import CustomLink from ':components/Link';
-import useTranslation from ':components/util/useTranslation';
 import Container from ':components/Container';
 import Footer from ':components/Footer';
 
 export default function PrivacyPage() {
-	const { t } = useTranslation();
 	return (
 		<>
 			<CustomHead title="Privacy Policy | Ben-J. Ferch" desc="Hey!" noIndex />
@@ -15,7 +13,7 @@ export default function PrivacyPage() {
 				<div className="flex items-center justify-between">
 					<Heading level={1}>Datenschutzerklärung</Heading>
 					<CustomLink className="max-w-2/3" target="/" none>
-						{t('homeLink')}
+						Return to homepage
 					</CustomLink>
 				</div>
 				<Text>

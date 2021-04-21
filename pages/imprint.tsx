@@ -4,10 +4,8 @@ import Footer from ':components/Footer';
 import Heading from ':components/Heading';
 import Text from ':components/Text';
 import CustomLink from ':components/Link';
-import useTranslation from ':components/util/useTranslation';
 
 export default function ImprintPage() {
-	const { t } = useTranslation();
 	return (
 		<>
 			<CustomHead title="Imprint | Ben-J. Ferch" desc="Hey!" noIndex />
@@ -15,7 +13,7 @@ export default function ImprintPage() {
 				<div className="flex items-center justify-between">
 					<Heading level={1}>Impressum</Heading>
 					<CustomLink className="max-w-2/3" target="/" none>
-						{t('homeLink')}
+						Return to hompepage
 					</CustomLink>
 				</div>
 				<Heading level={2}>Angaben gem&auml;&szlig; &sect; 5 TMG</Heading>

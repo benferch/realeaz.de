@@ -1,40 +1,17 @@
 import Link from 'next/link';
 import client from ':components/util/client';
-import { languageContext } from ':components/LanguageProvider';
 import groq from 'groq';
-import { useTheme } from 'next-themes';
-import useTranslation from ':components/util/useTranslation';
 import Container from ':components/Container';
 import CustomHead from ':components/Head';
 import { useNextSanityImage } from 'next-sanity-image';
 import Image from 'next/image';
 import Text from ':components/Text';
 import Heading from ':components/Heading';
-import { useEffect, useState, useContext } from 'react';
 import Footer from ':components/Footer';
 
 //@TODO: content-visibility when available
 
 export default function blogIndex(props) {
-	const { t } = useTranslation();
-	const [locale, setLocale] = useContext(languageContext);
-	const [isMounted, setMounted] = useState(false);
-	const { theme, setTheme } = useTheme();
-	useEffect(() => {
-		setMounted(true);
-	}, []);
-	const switchTheme = () => {
-		if (isMounted) {
-			setTheme(theme === 'light' ? 'dark' : 'light');
-		}
-	};
-	function handleLocaleChange(language: string) {
-		if (!window) {
-			return;
-		}
-		localStorage.setItem('lang', language);
-		setLocale(language);
-	}
 	const { posts = [] } = props;
 	return (
 		<>
