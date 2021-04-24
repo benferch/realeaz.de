@@ -11,49 +11,37 @@ module.exports = {
 		},
 		colors: {
 			transparent: 'transparent',
-			gray: colors.trueGray,
-			emerald: colors.emerald,
-			'special-b': '#00aaff',
-			'special-g': '#00ffaa',
-			'muted-g': '#008f5f',
-			'transparent-special-g': 'rgba(0, 255, 170, 0.1)',
-			'transparent-grey-500': 'rgba(115, 115, 115, 0.1)',
-			muted: 'rgb(163, 163, 163)',
-			mutedLight: 'rgb(201, 201, 201)',
 			white: '#fff',
-			black: '#000'
+			black: '#000',
+			gray: colors.gray,
+			twitter: '#1DA1F2',
+			linkedin: '#0e76a8',
+			github: '#333333',
+			brandBlue: '#00aaff',
+			brandGreen: '#00ffaa',
 		},
 		extend: {
-			minHeight: {
-				'screen-80': '80vh',
-				md: '28rem',
-			},
-			maxWidth: {
-				'1/3': '33.333333%',
-				'2/3': '66.666667%',
-			},
 			fontFamily: {
 				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
 			},
-			textColor: {
-				muted: 'rgb(163, 163, 163)',
-				mutedLight: 'rgb(201, 201, 201)',
-				'special-b': '#00aaff',
-				'special-g': '#00ffaa',
-				'muted-g': '#008f5f',
-				twitter: '#1DA1F2',
-				linkedin: '#0e76a8',
-				github: '#333333',
+			textShadow: {
+				white: '0 0 20px #fff',
+				active: '0 0 20px #00aaff',
+				hover: '0 0 30px #00ffaa',
 			},
-			boxShadow: {
-				button: '-10px 8px #ffffff',
-				'special-g': '0 0 10px #00ffaa',
-				'special-b': '0 0 10px #00aaff',
+			keyframes: {
+				wave: {
+					'0%, 50%, 100%': { transform: 'rotate(0deg)' },
+					'25%, 75%': { transform: 'rotate(20deg)' },
+				},
+			},
+			animation: {
+				wave: 'wave 1s ease-in-out 1s 6',
 			},
 		},
 	},
 	variants: {
 		extend: {},
 	},
-	plugins: [],
+	plugins: [require('tailwindcss-textshadow')],
 };
