@@ -10,8 +10,7 @@
 		"sitemap-gen": "next-sitemap"
 	},
 	"dependencies": {
-		"@babel/runtime": "^7.13.10",
-		"@fontsource/inter": "^4.2.2",
+		"@fontsource/jetbrains-mono": "^4.2.2",
 		"@fortawesome/fontawesome-free": "^5.15.2",
 		"@fortawesome/fontawesome-svg-core": "^1.2.34",
 		"@fortawesome/free-brands-svg-icons": "^5.15.2",

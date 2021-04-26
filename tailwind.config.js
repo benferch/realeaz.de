@@ -22,7 +22,7 @@ module.exports = {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+				mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
 			},
 			textShadow: {
 				white: '0 0 20px #fff',

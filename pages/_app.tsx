@@ -1,4 +1,4 @@
-import ':assets/css/globals.css';
+import ':assets/css/globals.scss';
 import type { AppProps } from 'next/app';
 import { AnimatePresence } from 'framer-motion';
 import { ThemeProvider } from 'next-themes';
