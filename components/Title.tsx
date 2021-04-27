@@ -6,7 +6,7 @@ export default function Title({
 	children,
 	className,
 }: {
-	level: number;
+	level?: number;
 	children: React.ReactNode;
 	className?: string;
 }) {
