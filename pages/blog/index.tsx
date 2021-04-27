@@ -6,7 +6,7 @@ import CustomHead from ':components/Head';
 import { useNextSanityImage } from 'next-sanity-image';
 import Image from 'next/image';
 import Text from ':components/Text';
-import Heading from ':components/Heading';
+import Heading from ':components/Title';
 import Footer from ':components/Footer';
 
 //@TODO: content-visibility when available

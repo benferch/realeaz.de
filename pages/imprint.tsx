@@ -1,7 +1,7 @@
 import Container from ':components/Container';
 import CustomHead from ':components/Head';
 import Footer from ':components/Footer';
-import Heading from ':components/Heading';
+import Heading from ':components/Title';
 import Text from ':components/Text';
 import CustomLink from ':components/Link';
 

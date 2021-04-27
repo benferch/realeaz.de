@@ -1,5 +1,5 @@
 import Text from ':components/Text';
-import Heading from ':components/Heading';
+import Heading from ':components/Title';
 import CustomHead from ':components/Head';
 import CustomLink from ':components/Link';
 import Container from ':components/Container';

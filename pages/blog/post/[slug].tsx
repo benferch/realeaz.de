@@ -4,7 +4,7 @@ import groq from 'groq';
 import CustomHead from ':components/Head';
 import Link from 'next/link';
 import Container from ':components/Container';
-import Heading from ':components/Heading';
+import Heading from ':components/Title';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atomOneDark } from 'react-syntax-highlighter/dist/cjs/styles/hljs';
 import Image from 'next/image';

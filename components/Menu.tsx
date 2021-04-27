@@ -7,12 +7,12 @@ export default function Menu({
 	active: 'home' | 'about' | 'projects' | 'uses';
 }) {
 	return (
-		<nav className="space-x-4">
+		<nav className="space-x-4 mb-6">
 			<Link href="/">
 				<a
 					className={clsx(
-						'font-extrabold text-5xl',
-						active == 'home' ? 'border-b-8 border-white' : ''
+						'font-extrabold sm:text-5xl text-xl',
+						active == 'home' ? 'border-b-4 lg:border-b-8 border-white' : ''
 					)}
 				>
 					HOME
@@ -21,8 +21,8 @@ export default function Menu({
 			<Link href="/about">
 				<a
 					className={clsx(
-						'font-extrabold text-5xl',
-						active == 'about' ? 'border-b-8 border-white' : ''
+						'font-extrabold sm:text-5xl text-xl',
+						active == 'about' ? 'border-b-4 lg:border-b-8 border-white' : ''
 					)}
 				>
 					ABOUT
@@ -31,8 +31,8 @@ export default function Menu({
 			<Link href="/projects">
 				<a
 					className={clsx(
-						'font-extrabold text-5xl',
-						active == 'projects' ? 'border-b-8 border-white' : ''
+						'font-extrabold sm:text-5xl text-xl',
+						active == 'projects' ? 'border-b-4 lg:border-b-8 border-white' : ''
 					)}
 				>
 					PROJECTS
@@ -41,8 +41,8 @@ export default function Menu({
 			<Link href="/uses">
 				<a
 					className={clsx(
-						'font-extrabold text-5xl',
-						active == 'uses' ? 'border-b-8 border-white' : ''
+						'font-extrabold sm:text-5xl text-xl',
+						active == 'uses' ? 'border-b-4 lg:border-b-8 border-white' : ''
 					)}
 				>
 					USES
