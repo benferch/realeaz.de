@@ -9,7 +9,12 @@ export default function Box({
 	className?: string;
 }) {
 	return (
-		<div className={clsx('w-[50%] h-60 bg-white mx-auto p-2', className)}>
+		<div
+			className={clsx(
+				'w-[50%] h-60 dark:bg-white bg-black mx-auto p-2',
+				className
+			)}
+		>
 			{children}
 		</div>
 	);
