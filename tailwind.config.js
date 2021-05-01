@@ -36,7 +36,7 @@ module.exports = {
 				},
 			},
 			animation: {
-				wave: 'wave 1s ease-in-out 1s 6',
+				wave: 'wave 1s ease-in-out 1s 4',
 			},
 		},
 	},

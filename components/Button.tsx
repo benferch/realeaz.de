@@ -1,13 +1,11 @@
 import clsx from 'clsx';
-import Link from 'next/link';
-import React from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 
 export default function Button({
 	children,
-	props,
-}: {
+	...props
+}: ButtonHTMLAttributes<HTMLButtonElement> & {
 	children: React.ReactNode;
-	props?: React.ButtonHTMLAttributes<HTMLButtonElement>;
 }) {
 	return (
 		<button

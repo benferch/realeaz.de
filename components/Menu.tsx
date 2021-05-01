@@ -12,7 +12,9 @@ export default function Menu({
 				<a
 					className={clsx(
 						'font-extrabold sm:text-5xl text-xl',
-						active == 'home' ? 'border-b-4 lg:border-b-8 border-white' : ''
+						active == 'home'
+							? 'border-b-4 lg:border-b-8 dark:border-white border-black'
+							: ''
 					)}
 				>
 					HOME
@@ -22,7 +24,9 @@ export default function Menu({
 				<a
 					className={clsx(
 						'font-extrabold sm:text-5xl text-xl',
-						active == 'about' ? 'border-b-4 lg:border-b-8 border-white' : ''
+						active == 'about'
+							? 'border-b-4 lg:border-b-8 dark:border-white border-black'
+							: ''
 					)}
 				>
 					ABOUT
@@ -32,7 +36,9 @@ export default function Menu({
 				<a
 					className={clsx(
 						'font-extrabold sm:text-5xl text-xl',
-						active == 'projects' ? 'border-b-4 lg:border-b-8 border-white' : ''
+						active == 'projects'
+							? 'border-b-4 lg:border-b-8 dark:border-white border-black'
+							: ''
 					)}
 				>
 					PROJECTS
@@ -42,7 +48,9 @@ export default function Menu({
 				<a
 					className={clsx(
 						'font-extrabold sm:text-5xl text-xl',
-						active == 'uses' ? 'border-b-4 lg:border-b-8 border-white' : ''
+						active == 'uses'
+							? 'border-b-4 lg:border-b-8 dark:border-white border-black'
+							: ''
 					)}
 				>
 					USES
