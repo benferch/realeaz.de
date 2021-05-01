@@ -9,7 +9,6 @@ export default function HomePage() {
 			<Background />
 			<Container>
 				<Menu active="home" />
-				<WorkHistory current={history.current} previous={history.previous} />
 			</Container>
 		</>
 	);
