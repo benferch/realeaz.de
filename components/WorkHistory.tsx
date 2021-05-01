@@ -28,8 +28,8 @@ export default function WorkHistory({
 		<Box className="text-black h-auto p-8 space-y-3">
 			<div className="flex">
 				<div className="w-auto mr-2 flex flex-col items-center">
-					<div className="w-8 h-8 border-8 border-black rounded-full" />
-					<div className="h-[30%] w-4 bg-black rounded-b-full mt-7 absolute" />
+					<div className="w-5 h-5 border-[5px] border-black rounded-full" />
+					<div className="h-[30%] w-2 bg-black rounded-b-full mt-4 absolute" />
 				</div>
 				<div className="w-full">
 					<div className="flex items-baseline justify-between">
@@ -47,8 +47,8 @@ export default function WorkHistory({
 				return (
 					<div className="flex">
 						<div className="w-auto mr-2 flex flex-col items-center">
-							<div className="w-8 h-8 bg-black rounded-full" />
-							<div className="h-[calc(30%+20px)] lg:h-[30%] w-4 bg-black rounded-b-full -mt-2 absolute" />
+							<div className="w-5 h-5 bg-black rounded-full" />
+							<div className="h-[calc(30%+20px)] lg:h-[30%] w-2 bg-black rounded-b-full -mt-2 absolute" />
 						</div>
 						<div className="w-full">
 							<div className="flex items-baseline justify-between">
