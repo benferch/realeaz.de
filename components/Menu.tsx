@@ -8,7 +8,7 @@ export default function Menu({
 }) {
 	return (
 		<nav className="space-x-4 mb-6">
-			<Link href="/" prefetch>
+			<Link href="/">
 				<a
 					className={clsx(
 						'font-extrabold sm:text-5xl text-xl',
@@ -18,7 +18,7 @@ export default function Menu({
 					HOME
 				</a>
 			</Link>
-			<Link href="/about" prefetch>
+			<Link href="/about">
 				<a
 					className={clsx(
 						'font-extrabold sm:text-5xl text-xl',
@@ -28,7 +28,7 @@ export default function Menu({
 					ABOUT
 				</a>
 			</Link>
-			<Link href="/projects" prefetch>
+			<Link href="/projects">
 				<a
 					className={clsx(
 						'font-extrabold sm:text-5xl text-xl',
@@ -38,7 +38,7 @@ export default function Menu({
 					PROJECTS
 				</a>
 			</Link>
-			<Link href="/uses" prefetch>
+			<Link href="/uses">
 				<a
 					className={clsx(
 						'font-extrabold sm:text-5xl text-xl',
