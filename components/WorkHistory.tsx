@@ -14,17 +14,22 @@ export const history = {
       My tasks consist of website creation with Drupal and \
       WordPress as well as server administration and deployment.',
 	},
-	previous: [
+	previous: [],
+};
+
+/* 
+	Test Data:
 		[
 			'Google LLC',
 			'2020 - now',
-			'Effective Bytes is a family-owned company that provides \
-	web backend development solutions. \
-	My tasks consist of website creation with Drupal and \
-	WordPress as well as server administration and deployment.',
+			'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
 		],
-	],
-};
+		[
+			'Google LLC',
+			'2020 - now',
+			'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+		], 
+*/
 
 export default function WorkHistory({
 	current,
@@ -34,14 +39,14 @@ export default function WorkHistory({
 	previous: Array<any>;
 }) {
 	return (
-		<Box className="text-black h-[calc(100%+80px)] p-8 space-y-3 mt-8">
+		<Box className="text-black p-8 space-y-3 mt-8">
 			<Bold>
 				<Title level={2}>WORK</Title>
 			</Bold>
 			<div className="flex">
 				<div className="w-auto mr-2 flex flex-col items-center">
 					<div className="w-5 h-5 border-[5px] border-black rounded-full" />
-					<div className="h-[20%] w-2 bg-black rounded-b-full mt-4 absolute" />
+					<div className="h-[17%] md:h-[10%] w-2 bg-black rounded-b-full mt-4 absolute" />
 				</div>
 				<div className="w-full">
 					<div className="flex items-baseline justify-between">
@@ -60,7 +65,7 @@ export default function WorkHistory({
 					<div className="flex">
 						<div className="w-auto mr-2 flex flex-col items-center">
 							<div className="w-5 h-5 bg-black rounded-full" />
-							<div className="h-[20%] w-2 bg-black rounded-b-full -mt-2 absolute" />
+							<div className="h-[17%] md:h-[15%] w-2 bg-black rounded-b-full -mt-2 absolute" />
 						</div>
 						<div className="w-full">
 							<div className="flex items-baseline justify-between">

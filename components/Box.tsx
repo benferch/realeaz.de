@@ -11,7 +11,7 @@ export default function Box({
 	return (
 		<div
 			className={clsx(
-				'md:w-[75%] h-auto pb-20 dark:bg-white bg-black mx-auto p-2',
+				'md:w-[75%] h-auto pb-20 bg-gray-300 mx-auto p-2',
 				className
 			)}
 		>

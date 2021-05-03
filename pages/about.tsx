@@ -5,7 +5,7 @@ import Container from ':components/Container';
 import Footer from ':components/Footer';
 import Menu from ':components/Menu';
 import Muted from ':components/Muted';
-import SkillList, { items } from ':components/SkillList';
+import SkillList from ':components/SkillList';
 import Text from ':components/Text';
 import Title from ':components/Title';
 import WorkHistory, { history } from ':components/WorkHistory';
