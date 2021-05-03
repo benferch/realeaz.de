@@ -9,7 +9,10 @@ export default function Button({
 }) {
 	return (
 		<button
-			className={clsx('dark:bg-black bg-white px-12 py-2', props?.className)}
+			className={clsx(
+				'dark:bg-black bg-white dark:text-white text-black px-12 py-2',
+				props?.className
+			)}
 			{...props}
 		>
 			{children}
