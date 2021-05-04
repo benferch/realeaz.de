@@ -3,6 +3,7 @@ import Footer from ':components/Footer';
 import Title from ':components/Title';
 import Text from ':components/Text';
 import CustomLink from ':components/Link';
+import Bold from ':components/Bold';
 
 export default function ImprintPage() {
 	return (
@@ -11,7 +12,11 @@ export default function ImprintPage() {
 				<Container className="my-12">
 					<div className="flex items-center justify-between">
 						<Title level={1}>Impressum</Title>
-						<CustomLink href="/">Return to hompepage</CustomLink>
+						<CustomLink href="/">
+							<Bold>
+								<Title level={2}>Return to homepage</Title>
+							</Bold>
+						</CustomLink>
 					</div>
 					<Title level={2} className="my-5">
 						Angaben gem&auml;&szlig; &sect; 5 TMG
@@ -24,7 +29,9 @@ export default function ImprintPage() {
 						18574 Garz
 					</Text>{' '}
 					<br />
-					<Title level={2}>Kontakt</Title>
+					<Title level={2} className="my-2">
+						Kontakt
+					</Title>
 					<Text>
 						Telefon: 015234223262
 						<br />
