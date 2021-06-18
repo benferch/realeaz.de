@@ -16,13 +16,12 @@ export default function HomePage() {
 				<Container noMx>
 					<Bold>
 						<Title level={1}>
-							Hi, I'm Ben <span className="animate-wave inline-block">👋</span>
+							Hi, I&apos;m Ben{' '}
+							<span className="animate-wave inline-block">👋</span>
 						</Title>
 					</Bold>
 					<Muted>
-						<Text className="mt-2">
-							a developer and mechanical keyboard enthusiast from germany
-						</Text>
+						<Text className="mt-2">a developer from Germany</Text>
 					</Muted>
 				</Container>
 			</Container>

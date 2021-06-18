@@ -15,7 +15,7 @@ export default function ProjectsPage() {
 			<Background />
 			<Container>
 				<Menu active="projects" />
-				<Container className="space-y-8">
+				<Container className="space-y-8" reducedMt>
 					<Box className="text-black p-8 pb-6">
 						<Bold>
 							<Title level={2}>TWITTER BOT</Title>

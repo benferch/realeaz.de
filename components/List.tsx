@@ -8,13 +8,13 @@ export default function List({
 	return type == 'u' ? (
 		<ul className="list-disc space-y-2">
 			{items.map((item) => {
-				return <li>{item}</li>;
+				return <li key={item}>{item}</li>;
 			})}
 		</ul>
 	) : (
 		<ol className="list-decimal space-y-2">
 			{items.map((item) => {
-				return <li>{item}</li>;
+				return <li key={item}>{item}</li>;
 			})}
 		</ol>
 	);

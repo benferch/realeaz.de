@@ -16,20 +16,20 @@ export default function AboutPage() {
 			<Background />
 			<Container>
 				<Menu active="about" />
-				<Container noMx>
+				<Container noMx reducedMt>
 					<Bold>
-						<Title level={1}>I'm Ben,</Title>
+						<Title level={1}>I&apos;m Ben,</Title>
 					</Bold>
 					<Muted>
 						<Text className="mt-2 text-justify w-3/4 xl:w-1/2">
 							a developer from Germany. <br /> My interest in development was
 							sparked in 2015 when I attended a website building course, since
 							then I have been steadily improving my skills. <br />
-							Since 2018 I've been working at Effective Bytes, where my main
-							tasks consist of creating websites with Drupal and WordPress,
+							Since 2018 I&apos;ve been working at Effective Bytes, where my
+							main tasks consist of creating websites with Drupal and WordPress,
 							server administration and deployment are also part of it. I also
 							spend my free time creating websites, for which I mostly use
-							Next.js. When I'm not doing this, I am probably riding my
+							Next.js. When I&apos;m not doing this, I am probably riding my
 							motorcycle.
 						</Text>
 					</Muted>

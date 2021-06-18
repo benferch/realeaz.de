@@ -391,7 +391,7 @@ export default function PrivacyPage() {
 							6 Abs. 1 lit. b. (im Rahmen vertraglicher-/vorvertraglicher
 							Beziehungen), Art. 6 Abs. 1 lit. f. (andere Anfragen) DSGVO
 							verarbeitet.. Die Angaben der Nutzer können in einem
-							Customer-Relationship-Management System ("CRM System") oder
+							Customer-Relationship-Management System (&quot;CRM System&quot;) oder
 							vergleichbarer Anfragenorganisation gespeichert werden.
 							<br />
 							<br />

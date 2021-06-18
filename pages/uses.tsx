@@ -11,7 +11,7 @@ export default function UsesPage() {
 			<Background />
 			<Container>
 				<Menu active="uses" />
-				<Container className="space-y-8">
+				<Container className="space-y-8" reducedMt>
 					<div>
 						<Bold>
 							<Title level={2}>Hardware</Title>

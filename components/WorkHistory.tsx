@@ -62,7 +62,7 @@ export default function WorkHistory({
 			</div>
 			{previous.map((el) => {
 				return (
-					<div className="flex">
+					<div className="flex" key={el[0]}>
 						<div className="w-auto mr-2 flex flex-col items-center">
 							<div className="w-5 h-5 bg-black rounded-full" />
 							<div className="h-[17%] md:h-[15%] w-2 bg-black rounded-b-full -mt-2 absolute" />
