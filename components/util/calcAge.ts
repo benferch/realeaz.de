@@ -7,8 +7,6 @@ const calcAge = (dob: string) => {
 		age--;
 	}
 	return age;
-}
-
-// calcAge("2002/08/10")
+};
 
 export default calcAge;

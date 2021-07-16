@@ -1,8 +1,5 @@
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
-import Button from './Button';
-
-import Muted from './Muted';
 
 export default function ThemeSwitch() {
 	const [isMounted, setMounted] = useState(false);
@@ -15,12 +12,5 @@ export default function ThemeSwitch() {
 			setTheme(theme === 'light' ? 'dark' : 'light');
 		}
 	};
-	return (
-		<Button
-			onClick={switchTheme}
-			className="hover:text-mutedLight transition duration-300 ease-out focus:outline-none p-0"
-		>
-			<Muted>Switch Theme</Muted>
-		</Button>
-	);
+	// TODO: return button to switch theme
 }

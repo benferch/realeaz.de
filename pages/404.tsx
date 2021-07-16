@@ -1,3 +1,3 @@
-export default function PrivacyPage() {
+export default function Page404() {
 	return <></>;
 }
