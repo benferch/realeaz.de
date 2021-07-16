@@ -1,0 +1,11 @@
+/* purgecss start ignore */
+@import '~@fontsource/jetbrains-mono/index.css';
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+
+@tailwind utilities;
+
+body {
+	@apply dark:bg-black bg-white dark:text-white text-black font-mono transition duration-300 ease-out antialiased;
+}

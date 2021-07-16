@@ -1,12 +1,14 @@
+# *
 User-agent: *
+Allow: /
 
-Disallow: /assets/
-
-Disallow: /data
-Disallow: /data.html
-
+# *
+User-agent: *
 Disallow: /imprint
-Disallow: /imprint.html
+Disallow: /privacy
 
-Disallow: /error
-Disallow: /error.html
+# Host
+Host: https://benferch.de
+
+# Sitemaps
+Sitemap: https://benferch.de/sitemap.xml
